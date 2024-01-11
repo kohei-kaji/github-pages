@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MISC | Kohei Kajikawa</title>
-    <link>https://example.com/misc/</link>
-      <atom:link href="https://example.com/misc/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kohei-kaji.github.io/misc/</link>
+      <atom:link href="https://kohei-kaji.github.io/misc/index.xml" rel="self" type="application/rss+xml" />
     <description>MISC</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Sat, 20 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kohei-kaji.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>MISC</title>
-      <link>https://example.com/misc/</link>
+      <link>https://kohei-kaji.github.io/misc/</link>
     </image>
     
     <item>
       <title>統語変換は文化進化から生じるのか？：等位接続構造での検討</title>
-      <link>https://example.com/misc/%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%83%95%E3%82%A7%E3%82%B9-2024/</link>
+      <link>https://kohei-kaji.github.io/misc/%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%83%95%E3%82%A7%E3%82%B9-2024/</link>
       <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/misc/%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%83%95%E3%82%A7%E3%82%B9-2024/</guid>
+      <guid>https://kohei-kaji.github.io/misc/%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%83%95%E3%82%A7%E3%82%B9-2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>統語変換はコミュニケーションから創発するのか？</title>
-      <link>https://example.com/misc/ninjalsalon-2024/</link>
+      <link>https://kohei-kaji.github.io/misc/ninjalsalon-2024/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/misc/ninjalsalon-2024/</guid>
+      <guid>https://kohei-kaji.github.io/misc/ninjalsalon-2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>自然言語の統語構造における相互情報量の解析と数理モデル化</title>
-      <link>https://example.com/misc/mims-2023/</link>
+      <link>https://kohei-kaji.github.io/misc/mims-2023/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/misc/mims-2023/</guid>
+      <guid>https://kohei-kaji.github.io/misc/mims-2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CCGによる日本語文処理のモデリング</title>
-      <link>https://example.com/misc/ewfl8-2023/</link>
+      <link>https://kohei-kaji.github.io/misc/ewfl8-2023/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/misc/ewfl8-2023/</guid>
+      <guid>https://kohei-kaji.github.io/misc/ewfl8-2023/</guid>
       <description>&lt;!--
 
 ---

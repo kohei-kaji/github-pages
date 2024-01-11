@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Kohei Kajikawa</title>
-    <link>https://example.com/publication/</link>
-      <atom:link href="https://example.com/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kohei-kaji.github.io/publication/</link>
+      <atom:link href="https://kohei-kaji.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Sun, 19 Nov 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kohei-kaji.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
-      <link>https://example.com/publication/</link>
+      <link>https://kohei-kaji.github.io/publication/</link>
     </image>
     
     <item>
       <title>Analyzing Japanese Cleft Construction in Combinatory Categorial Grammar</title>
-      <link>https://example.com/publication/kajikawa-2023-lenls/kajikawa-2023/</link>
+      <link>https://kohei-kaji.github.io/publication/kajikawa-2023-lenls/kajikawa-2023/</link>
       <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/kajikawa-2023-lenls/kajikawa-2023/</guid>
+      <guid>https://kohei-kaji.github.io/publication/kajikawa-2023-lenls/kajikawa-2023/</guid>
       <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Formalizing Argument Structures with Combinatory Categorial Grammar</title>
-      <link>https://example.com/publication/isono-etal-2023-lncs/isono-etal-2023/</link>
+      <link>https://kohei-kaji.github.io/publication/isono-etal-2023-lncs/isono-etal-2023/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/isono-etal-2023-lncs/isono-etal-2023/</guid>
+      <guid>https://kohei-kaji.github.io/publication/isono-etal-2023-lncs/isono-etal-2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CCGによる日本語文処理のモデリング</title>
-      <link>https://example.com/publication/kajikawa-etal-2023-nlp/</link>
+      <link>https://kohei-kaji.github.io/publication/kajikawa-etal-2023-nlp/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/kajikawa-etal-2023-nlp/</guid>
+      <guid>https://kohei-kaji.github.io/publication/kajikawa-etal-2023-nlp/</guid>
       <description>&lt;p&gt;組合せ範疇文法（CCG）を使って、&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>極小主義に動機づけられた統語的教示に基づく言語モデル</title>
-      <link>https://example.com/publication/isono-etal-2023-nlp/</link>
+      <link>https://kohei-kaji.github.io/publication/isono-etal-2023-nlp/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/isono-etal-2023-nlp/</guid>
+      <guid>https://kohei-kaji.github.io/publication/isono-etal-2023-nlp/</guid>
       <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Formalizing argument structures with Combinatory Categorial Grammar</title>
-      <link>https://example.com/publication/isono-etal-2022-lenls/isono-etal-2022/</link>
+      <link>https://kohei-kaji.github.io/publication/isono-etal-2022-lenls/isono-etal-2022/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/isono-etal-2022-lenls/isono-etal-2022/</guid>
+      <guid>https://kohei-kaji.github.io/publication/isono-etal-2022-lenls/isono-etal-2022/</guid>
       <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
 </description>
     </item>

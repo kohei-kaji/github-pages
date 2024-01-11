@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>journal | Kohei Kajikawa</title>
-    <link>https://example.com/publication-type/journal/</link>
-      <atom:link href="https://example.com/publication-type/journal/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kohei-kaji.github.io/publication-type/journal/</link>
+      <atom:link href="https://kohei-kaji.github.io/publication-type/journal/index.xml" rel="self" type="application/rss+xml" />
     <description>journal</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kohei-kaji.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>journal</title>
-      <link>https://example.com/publication-type/journal/</link>
+      <link>https://kohei-kaji.github.io/publication-type/journal/</link>
     </image>
     
     <item>
       <title>Formalizing Argument Structures with Combinatory Categorial Grammar</title>
-      <link>https://example.com/publication/isono-etal-2023-lncs/isono-etal-2023/</link>
+      <link>https://kohei-kaji.github.io/publication/isono-etal-2023-lncs/isono-etal-2023/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/isono-etal-2023-lncs/isono-etal-2023/</guid>
+      <guid>https://kohei-kaji.github.io/publication/isono-etal-2023-lncs/isono-etal-2023/</guid>
       <description></description>
     </item>
     

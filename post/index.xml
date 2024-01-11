@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Kohei Kajikawa</title>
-    <link>https://example.com/post/</link>
-      <atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kohei-kaji.github.io/post/</link>
+      <atom:link href="https://kohei-kaji.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Thu, 12 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kohei-kaji.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
-      <link>https://example.com/post/</link>
+      <link>https://kohei-kaji.github.io/post/</link>
     </image>
     
     <item>
       <title>CCGに関する情報集</title>
-      <link>https://example.com/post/ccg/</link>
+      <link>https://kohei-kaji.github.io/post/ccg/</link>
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/ccg/</guid>
+      <guid>https://kohei-kaji.github.io/post/ccg/</guid>
       <description>&lt;p&gt;生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら人口に膾炙しているとは言い難い理論ですので、布教のため、参照したら良いであろう情報を記します。&lt;/p&gt;
 &lt;p&gt;布教のために一番効果的なのは、直感的でわかりやすい日本語による解説ブログを書いて読んでもらうことだろうと思うのですが、そんなパワーはなかったので諦めます。&lt;/p&gt;
 &lt;h2 id=&#34;文献案内&#34;&gt;文献案内&lt;/h2&gt;
