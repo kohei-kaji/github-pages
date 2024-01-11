@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Kohei Kajikawa</title>
+    <link>https://example.com/post/</link>
+      <atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Thu, 12 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://example.com/post/</link>
+    </image>
+    
+    <item>
+      <title>CCGに関する情報集</title>
+      <link>https://example.com/post/ccg/</link>
+      <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/ccg/</guid>
+      <description>&lt;p&gt;生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら人口に膾炙しているとは言い難い理論ですので、布教のため、参照したら良いであろう情報を記します。&lt;/p&gt;
+&lt;p&gt;布教のために一番効果的なのは、直感的でわかりやすい日本語による解説ブログを書いて読んでもらうことだろうと思うのですが、そんなパワーはなかったので諦めます。&lt;/p&gt;
+&lt;h2 id=&#34;文献案内&#34;&gt;文献案内&lt;/h2&gt;
+&lt;h3 id=&#34;理論言語学関係&#34;&gt;理論言語学関係&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steedman (1996)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;CCG本の最初。&lt;/li&gt;
+&lt;li&gt;100ページ強と薄く、読みやすい。&lt;/li&gt;
+&lt;li&gt;1冊目として一番良さそう。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mitpress.mit.edu/9780262692687/the-syntactic-process/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steedman (2000)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Steedman (1996) の強化版。&lt;/li&gt;
+&lt;li&gt;若干の理論的改訂あり。&lt;/li&gt;
+&lt;li&gt;Google Scholarでは出版年が誤って2001となっており、ちらほらSteedman (2001)として論文中に登場してしまう。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://era.ed.ac.uk/handle/1842/562&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Baldridge (2002)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Jason Baldridge氏による博論。&lt;/li&gt;
+&lt;li&gt;言語理論としてのCCGを大きく進化させた。&lt;/li&gt;
+&lt;li&gt;個人的には、Steedman (2000) よりわかりやすいと思う。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.9640.jp/book_view/?468&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;戸次 (2010)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;日本語CCG本。&lt;/li&gt;
+&lt;li&gt;日本語文法の論文としても面白い。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jstage.jst.go.jp/article/nihongonokenkyu/7/3/7_KJ00007729621/_pdf/-char/ja&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;書評 (矢田部, 2011)&lt;/a&gt;も面白い。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/10.1002/9781444395037.ch5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steedman and Baldridge (2011)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;非常にわかりやすく簡潔にまとまったCCGの解説論文。&lt;/li&gt;
+&lt;li&gt;そのため、Steedman (1996)や(2000)と並んでしばしば引用されている。&lt;/li&gt;
+&lt;li&gt;さくっとかつ網羅的に理解したい場合におすすめ。&lt;/li&gt;
+&lt;li&gt;Non-Transformational Syntaxという本の1チャプター。&lt;/li&gt;
+&lt;li&gt;この本はほかの章も良い。Sag and Wasowの章が好き。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://direct.mit.edu/ling/article-abstract/doi/10.1162/ling_a_00521/117700/On-Internal-Merge?redirectedFrom=PDF&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steedman (2023)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;ほとんどミニマリストに向けて書いてあるLIの論文。&lt;/li&gt;
+&lt;li&gt;ミニマリストがCCGをはじめる際には一番わかりやすいと思われる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;parser関係&#34;&gt;Parser関係&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ここでのparserとは、文を入力とし、確率的に計算した構文木を返してくれるNLP parser（構文解析器）のことです。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/J07-4004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clark and Curran (2007)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;C&amp;amp;C parserとして有名。&lt;/li&gt;
+&lt;li&gt;（いまだに現役だったりする。Supertaggerの評価用としてよく見る。）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/D14-1107/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lewis and Steedman (2014)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;（初の、ではなかったと思うが）深層学習モデルとして有名。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P16-4018/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Noji and Miyao (2016)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;日本語CCG parser。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P17-1026/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yoshikawa et al. (2017)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;日本語深層学習CCG parser。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/J07-3004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hockenmaier and Steedman (2007)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;英語CCGbank。&lt;/li&gt;
+&lt;li&gt;PennTreeBank (WSJ) からの自動変換。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P13-1103/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Uematsu et al. (2013)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;日本語CCGBank。&lt;/li&gt;
+&lt;li&gt;係り受けコーパスである京都大学テキストコーパス（毎日新聞）からの自動変換。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;人間の文処理関係&#34;&gt;（人間の）文処理関係&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/BF00360804&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ades and Steedman (1982)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;一番最初のCCG論文。&lt;/li&gt;
+&lt;li&gt;当初より逐次的な文処理を意図して作っていることが明確で良い。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/W12-4623/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demberg (2012)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;CCGの逐次的な構造構築に関して、統語論・心理言語学の知見から述べられている。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.13312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanojevic et al. (2023)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;CCGによる、英語文処理（fMRIによる血行動態）のモデリング。&lt;/li&gt;
+&lt;li&gt;貢献は大きく分けて2つ。
+&lt;ol&gt;
+&lt;li&gt;CCGが、CFG（文脈自由文法）よりもより高い精度で血行動態を予測できることを示した。言語理論としてより妥当なCCGが、逐次的な文処理のモデル化の際にも優れていることを示した。&lt;/li&gt;
+&lt;li&gt;CCGの構造構築操作由来の予測子と、LLMで算出したSurprisalが血行動態の予測において別々に効いた。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;その他有用な文献&#34;&gt;その他有用な文献&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/E.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Combinatory Categorial Grammar&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;NLPの教科書として有名なDan Jurafsky氏とJames Martin氏による&lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Speech and Language Processing&lt;/a&gt;の1チャプター。&lt;/li&gt;
+&lt;li&gt;文法規則とチャートパーザの挙動がちょっとわかるようになる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://homepages.inf.ed.ac.uk/steedman/papers/ccg/moravcsik2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Combinatory Categorial Grammar&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Mark Steedman氏による、割と網羅的なCCGの解説論文。&lt;/li&gt;
+&lt;li&gt;必ずしもわかりやすいわけではないので、最初に読むものとしては向いていない。&lt;/li&gt;
+&lt;li&gt;なんとなくわかってから読むとSteedman氏がどういったことがしたいのかわかる気がする。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://homepages.inf.ed.ac.uk/steedman/papers/ccg/book2DRAFT160622.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Combinatory Categorial Grammar&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Mark Steedman氏によるCCG本のドラフト。&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;完成するのだろうか。&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;新しいことも多く書いてあり、出版が楽しみ。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2109.10044&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clark (2021)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;C&amp;amp;C parserのStephen Clark氏によるCCGのparsingに関する論文。&lt;/li&gt;
+&lt;li&gt;個人的には、CCGのparsingに関する解説として非常にわかりやすく学びが多い。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ccg-parserを触ってみよう&#34;&gt;CCG parserを触ってみよう！&lt;/h2&gt;
+&lt;h3 id=&#34;depccghttpsgithubcommasashi-ydepccg&#34;&gt;&lt;a href=&#34;https://github.com/masashi-y/depccg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;depccg&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Pythonによる英日CCG parser。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;mailto:Python@3.6&#34;&gt;Python@3.6&lt;/a&gt;以上、gcc@4.8以上が必要。&lt;/li&gt;
+&lt;li&gt;READMEが丁寧なので、基本そのまま従えば動かせる。
+&lt;ul&gt;
+&lt;li&gt;1点だけ、&lt;code&gt;depccg_{en/ja} download&lt;/code&gt;コマンドはうまくいかないので、モデルの学習済みパラメータはリンク先のGoogle Driveから直接落としてこないといけない。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lightbluehttpsgithubcomdaisukebekkilightblue&#34;&gt;&lt;a href=&#34;https://github.com/DaisukeBekki/lightblue&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lightblue&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Haskellによる日本語CCG parser。&lt;/li&gt;
+&lt;li&gt;Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられるので準備は非常に楽。他はよくわかりません。&lt;/li&gt;
+&lt;li&gt;残りはREADMEに従えば動かせる。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ccgtoolshttpsgithubcomstanojevicccgtools&#34;&gt;&lt;a href=&#34;https://github.com/stanojevic/ccgtools&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ccgtools&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Python, Cythonによる英中CCG parser。&lt;/li&gt;
+&lt;li&gt;高性能 (元State-of-the-Art)。&lt;/li&gt;
+&lt;li&gt;作成者であるMilos Stanojevic氏は、Scalaで&lt;a href=&#34;https://github.com/stanojevic/Rotating-CCG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rotating-CCG&lt;/a&gt;というparserも作っている（論文は&lt;a href=&#34;https://aclanthology.org/N19-1020/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanojevic and Steedman, 2019&lt;/a&gt;）。&lt;/li&gt;
+&lt;li&gt;Google Colab上で動かせるようにしてくれているので、環境構築の必要がなく非常に便利。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

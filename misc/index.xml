@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MISC | Kohei Kajikawa</title>
+    <link>https://example.com/misc/</link>
+      <atom:link href="https://example.com/misc/index.xml" rel="self" type="application/rss+xml" />
+    <description>MISC</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Sat, 20 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>MISC</title>
+      <link>https://example.com/misc/</link>
+    </image>
+    
+    <item>
+      <title>統語変換は文化進化から生じるのか？：等位接続構造での検討</title>
+      <link>https://example.com/misc/%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%83%95%E3%82%A7%E3%82%B9-2024/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/misc/%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%83%95%E3%82%A7%E3%82%B9-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>統語変換はコミュニケーションから創発するのか？</title>
+      <link>https://example.com/misc/ninjalsalon-2024/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/misc/ninjalsalon-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>自然言語の統語構造における相互情報量の解析と数理モデル化</title>
+      <link>https://example.com/misc/mims-2023/</link>
+      <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/misc/mims-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CCGによる日本語文処理のモデリング</title>
+      <link>https://example.com/misc/ewfl8-2023/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/misc/ewfl8-2023/</guid>
+      <description>&lt;!--
+
+---
+title: CCGによる日本語文処理のモデリング
+summary: 梶川康平 / Encouraging Workshop on Formal Linguistics 8 (EWFL8) / 東京大学 駒場キャンパス 18号館
+date: &#34;2023-03-29&#34;
+
+# Optional external URL for project (replaces project detail page).
+external_link: &#34;https://ewflling.com/&#34;
+
+url_code: &#34;&#34;
+url_pdf: &#34;&#34;
+url_slides: &#34;https://www.dropbox.com/s/jfbo2nfz0ur4sse/230329_EWFL_Kajikawa.pdf?dl=0&#34;
+url_video: &#34;&#34;
+
+--- --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
