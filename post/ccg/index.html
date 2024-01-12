@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 12, 2024 --><html lang="en-us" >
+<!-- Last Published: January 13, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -851,11 +851,12 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら人口に膾炙しているとは言い難い理論ですので、布教のため、参照したら良いであろう情報を記します。</p>
-<p>布教のために一番効果的なのは、直感的でわかりやすい日本語による解説ブログを書いて読んでもらうことだろうと思うのですが、そんなパワーはなかったので諦めます。</p>
+      <p>生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら人口に膾炙しているとは言い難い理論ですので、CCGの広まりを願い、参照したら良いであろう情報を記します。</p>
 <h2 id="文献案内">文献案内</h2>
 <h3 id="理論言語学関係">理論言語学関係</h3>
 <ul>
+<li>統語・意味の理論としてのCCGを理解したい場合に参照すべき文献たちです。</li>
+<li>その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないのでわかっていません。</li>
 <li><a href="https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/" target="_blank" rel="noopener">Steedman (1996)</a>
 <ul>
 <li>CCG本の最初。</li>
@@ -911,28 +912,37 @@
 </li>
 <li><a href="https://aclanthology.org/D14-1107/" target="_blank" rel="noopener">Lewis and Steedman (2014)</a>
 <ul>
-<li>（初の、ではなかったと思うが）深層学習モデルとして有名。</li>
+<li><a href="https://github.com/mikelewis0/easyccg" target="_blank" rel="noopener">EasyCCG</a>として有名。</li>
+<li>深層学習 + A* search。</li>
 </ul>
 </li>
 <li><a href="https://aclanthology.org/P16-4018/" target="_blank" rel="noopener">Noji and Miyao (2016)</a>
 <ul>
-<li>日本語CCG parser。</li>
+<li>日本語CCG parserの<a href="https://github.com/mynlp/jigg" target="_blank" rel="noopener">Jigg</a>。</li>
 </ul>
 </li>
 <li><a href="https://aclanthology.org/P17-1026/" target="_blank" rel="noopener">Yoshikawa et al. (2017)</a>
 <ul>
-<li>日本語深層学習CCG parser。</li>
+<li>日本語CCG parserの<a href="https://github.com/masashi-y/depccg" target="_blank" rel="noopener">depccg</a>。</li>
 </ul>
 </li>
 <li><a href="https://aclanthology.org/J07-3004/" target="_blank" rel="noopener">Hockenmaier and Steedman (2007)</a>
 <ul>
-<li>英語CCGbank。</li>
-<li>PennTreeBank (WSJ) からの自動変換。</li>
+<li>英語CCGbank。
+<ul>
+<li>空白なし小文字b</li>
+</ul>
+</li>
+<li>Penn Treebank (WSJ) からの自動変換。</li>
 </ul>
 </li>
 <li><a href="https://aclanthology.org/P13-1103/" target="_blank" rel="noopener">Uematsu et al. (2013)</a>
 <ul>
-<li>日本語CCGBank。</li>
+<li>日本語CCGBank。
+<ul>
+<li>空白なし大文字B</li>
+</ul>
+</li>
 <li>係り受けコーパスである京都大学テキストコーパス（毎日新聞）からの自動変換。</li>
 </ul>
 </li>
@@ -961,6 +971,22 @@
 </li>
 </ul>
 </li>
+</ul>
+<h3 id="生成力関係">生成力関係</h3>
+<ul>
+<li><a href="https://link.springer.com/article/10.1007/BF01191624" target="_blank" rel="noopener">Vijay-Shanker and Weir (1994)</a></li>
+</ul>
+<h3 id="標準形関係">標準形関係</h3>
+<ul>
+<li>CCGでは、同じ意味を複数の異なる統語構造で表現することができます（spurious ambiguity）。このおかげで、逐次的な合成による構造構築が可能なのですが、統語構造と意味の間に一対一対応が取れないことから、parserを作る上では問題になると考えられていました。</li>
+<li>標準形の定義により、同じ意味を表す複数の異なる統語構造を1つに絞ることができます。</li>
+<li><a href="https://aclanthology.org/P96-1011/" target="_blank" rel="noopener">Eisner (1996)</a>
+<ul>
+<li><a href="https://www.cs.jhu.edu/~jason/papers/eisner.acl96-proof.html" target="_blank" rel="noopener">証明に関する情報</a></li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/P08-1038/" target="_blank" rel="noopener">Hoyt and Baldridge (2008)</a></li>
+<li><a href="https://aclanthology.org/C10-1053/" target="_blank" rel="noopener">Hockenmaier and Bisk (2010)</a></li>
 </ul>
 <h3 id="その他有用な文献">その他有用な文献</h3>
 <ul>
@@ -992,6 +1018,10 @@
 </li>
 </ul>
 <h2 id="ccg-parserを触ってみよう">CCG parserを触ってみよう！</h2>
+<ul>
+<li>CCGは、他の文法理論に比べ、高精度なNLP parserが数おおく整備されている、という点で非常に有用です。</li>
+<li>特に、下記のparserたちは動かすのにそこまで難易度が高くないのでおすすめです。</li>
+</ul>
 <h3 id="depccghttpsgithubcommasashi-ydepccg"><a href="https://github.com/masashi-y/depccg" target="_blank" rel="noopener">depccg</a></h3>
 <ul>
 <li>Pythonによる英日CCG parser。</li>
@@ -1005,8 +1035,9 @@
 <h3 id="lightbluehttpsgithubcomdaisukebekkilightblue"><a href="https://github.com/DaisukeBekki/lightblue" target="_blank" rel="noopener">lightblue</a></h3>
 <ul>
 <li>Haskellによる日本語CCG parser。</li>
-<li>Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられるので準備は非常に楽。他はよくわかりません。</li>
+<li>Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられるので準備は非常に楽。他のOSではよくわかりません。</li>
 <li>残りはREADMEに従えば動かせる。</li>
+<li><a href="https://www.9640.jp/book_view/?468" target="_blank" rel="noopener">戸次 (2010)</a>+$\alpha$がそのまま実装されているので、語彙項目を参照するのに使い勝手が良い。</li>
 </ul>
 <h3 id="ccgtoolshttpsgithubcomstanojevicccgtools"><a href="https://github.com/stanojevic/ccgtools" target="_blank" rel="noopener">ccgtools</a></h3>
 <ul>

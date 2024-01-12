@@ -41,7 +41,9 @@
       <link>https://kohei-kaji.github.io/github-pages/publication/kajikawa-2023-lenls/kajikawa-2023/</link>
       <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://kohei-kaji.github.io/github-pages/publication/kajikawa-2023-lenls/kajikawa-2023/</guid>
-      <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
+      <description>&lt;p&gt;日本語のcleft（分裂文・断裂文）において、focus（焦点）位置に絶対にガ格名詞句を置くことができない（たとえば、　&lt;em&gt;花子を呼んだのは太郎がだ&lt;/em&gt;　は非文。）が、他の格ならOK（&lt;em&gt;花子が呼んだのは太郎をだ&lt;/em&gt;　はOK）、という事実を、CCGの統語論で解決することを提案した論文です。
+具体的に、Kratzer (1996) によるconstructivistのアプローチを参考にした格付与のシステムをCCGで形式化しています。
+これにより、日本語においてガ格だけが他の格と絶対的に異なる挙動をするという事実（長距離かき混ぜ、small clause）も説明できることを示しています。&lt;/p&gt;
 </description>
     </item>
     
@@ -97,7 +99,8 @@
       <link>https://kohei-kaji.github.io/github-pages/publication/isono-etal-2023-lncs/isono-etal-2023/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://kohei-kaji.github.io/github-pages/publication/isono-etal-2023-lncs/isono-etal-2023/</guid>
-      <description></description>
+      <description>&lt;p&gt;主流生成文法の分散形態論 (Distributed Morphology, DM) を、CCGで形式化することを目指した研究です。&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -129,7 +132,7 @@ url_video: &#34;&#34;
       <link>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2023-nlp/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2023-nlp/</guid>
-      <description>&lt;p&gt;組合せ範疇文法（CCG）を使って、&lt;/p&gt;
+      <description>&lt;p&gt;CCG（組合せ範疇文法）を使って、日本語の逐次的な文処理をモデリングしたおそらく初の研究です。&lt;/p&gt;
 </description>
     </item>
     
@@ -147,11 +150,12 @@ url_video: &#34;&#34;
       <link>https://kohei-kaji.github.io/github-pages/post/ccg/</link>
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://kohei-kaji.github.io/github-pages/post/ccg/</guid>
-      <description>&lt;p&gt;生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら人口に膾炙しているとは言い難い理論ですので、布教のため、参照したら良いであろう情報を記します。&lt;/p&gt;
-&lt;p&gt;布教のために一番効果的なのは、直感的でわかりやすい日本語による解説ブログを書いて読んでもらうことだろうと思うのですが、そんなパワーはなかったので諦めます。&lt;/p&gt;
+      <description>&lt;p&gt;生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら人口に膾炙しているとは言い難い理論ですので、CCGの広まりを願い、参照したら良いであろう情報を記します。&lt;/p&gt;
 &lt;h2 id=&#34;文献案内&#34;&gt;文献案内&lt;/h2&gt;
 &lt;h3 id=&#34;理論言語学関係&#34;&gt;理論言語学関係&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;統語・意味の理論としてのCCGを理解したい場合に参照すべき文献たちです。&lt;/li&gt;
+&lt;li&gt;その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないのでわかっていません。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steedman (1996)&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;CCG本の最初。&lt;/li&gt;
@@ -207,28 +211,37 @@ url_video: &#34;&#34;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/D14-1107/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lewis and Steedman (2014)&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;（初の、ではなかったと思うが）深層学習モデルとして有名。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mikelewis0/easyccg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EasyCCG&lt;/a&gt;として有名。&lt;/li&gt;
+&lt;li&gt;深層学習 + A* search。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P16-4018/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Noji and Miyao (2016)&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;日本語CCG parser。&lt;/li&gt;
+&lt;li&gt;日本語CCG parserの&lt;a href=&#34;https://github.com/mynlp/jigg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jigg&lt;/a&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P17-1026/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yoshikawa et al. (2017)&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;日本語深層学習CCG parser。&lt;/li&gt;
+&lt;li&gt;日本語CCG parserの&lt;a href=&#34;https://github.com/masashi-y/depccg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;depccg&lt;/a&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/J07-3004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hockenmaier and Steedman (2007)&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;英語CCGbank。&lt;/li&gt;
-&lt;li&gt;PennTreeBank (WSJ) からの自動変換。&lt;/li&gt;
+&lt;li&gt;英語CCGbank。
+&lt;ul&gt;
+&lt;li&gt;空白なし小文字b&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Penn Treebank (WSJ) からの自動変換。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P13-1103/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Uematsu et al. (2013)&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;日本語CCGBank。&lt;/li&gt;
+&lt;li&gt;日本語CCGBank。
+&lt;ul&gt;
+&lt;li&gt;空白なし大文字B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;係り受けコーパスである京都大学テキストコーパス（毎日新聞）からの自動変換。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -257,6 +270,22 @@ url_video: &#34;&#34;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;生成力関係&#34;&gt;生成力関係&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/BF01191624&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vijay-Shanker and Weir (1994)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;標準形関係&#34;&gt;標準形関係&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CCGでは、同じ意味を複数の異なる統語構造で表現することができます（spurious ambiguity）。このおかげで、逐次的な合成による構造構築が可能なのですが、統語構造と意味の間に一対一対応が取れないことから、parserを作る上では問題になると考えられていました。&lt;/li&gt;
+&lt;li&gt;標準形の定義により、同じ意味を表す複数の異なる統語構造を1つに絞ることができます。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P96-1011/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eisner (1996)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cs.jhu.edu/~jason/papers/eisner.acl96-proof.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;証明に関する情報&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P08-1038/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hoyt and Baldridge (2008)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/C10-1053/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hockenmaier and Bisk (2010)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;その他有用な文献&#34;&gt;その他有用な文献&lt;/h3&gt;
 &lt;ul&gt;
@@ -288,6 +317,10 @@ url_video: &#34;&#34;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;ccg-parserを触ってみよう&#34;&gt;CCG parserを触ってみよう！&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CCGは、他の文法理論に比べ、高精度なNLP parserが数おおく整備されている、という点で非常に有用です。&lt;/li&gt;
+&lt;li&gt;特に、下記のparserたちは動かすのにそこまで難易度が高くないのでおすすめです。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;depccghttpsgithubcommasashi-ydepccg&#34;&gt;&lt;a href=&#34;https://github.com/masashi-y/depccg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;depccg&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Pythonによる英日CCG parser。&lt;/li&gt;
@@ -301,8 +334,9 @@ url_video: &#34;&#34;
 &lt;h3 id=&#34;lightbluehttpsgithubcomdaisukebekkilightblue&#34;&gt;&lt;a href=&#34;https://github.com/DaisukeBekki/lightblue&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lightblue&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Haskellによる日本語CCG parser。&lt;/li&gt;
-&lt;li&gt;Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられるので準備は非常に楽。他はよくわかりません。&lt;/li&gt;
+&lt;li&gt;Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられるので準備は非常に楽。他のOSではよくわかりません。&lt;/li&gt;
 &lt;li&gt;残りはREADMEに従えば動かせる。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.9640.jp/book_view/?468&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;戸次 (2010)&lt;/a&gt;+$\alpha$がそのまま実装されているので、語彙項目を参照するのに使い勝手が良い。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;ccgtoolshttpsgithubcomstanojevicccgtools&#34;&gt;&lt;a href=&#34;https://github.com/stanojevic/ccgtools&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ccgtools&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -319,7 +353,7 @@ url_video: &#34;&#34;
       <link>https://kohei-kaji.github.io/github-pages/publication/isono-etal-2022-lenls/isono-etal-2022/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://kohei-kaji.github.io/github-pages/publication/isono-etal-2022-lenls/isono-etal-2022/</guid>
-      <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
+      <description>&lt;p&gt;主流生成文法の分散形態論 (Distributed Morphology, DM) を、CCGで形式化することを目指した研究です。&lt;/p&gt;
 </description>
     </item>
     
@@ -507,7 +541,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-368712459&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-397581624&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -517,7 +551,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-368712459&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-397581624&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
