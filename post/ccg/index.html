@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 13, 2024 --><html lang="en-us" >
+<!-- Last Published: January 14, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -279,7 +279,7 @@
 
   
 
-<meta name="description" content="CCG（組合せ範疇文法）に関する雑多な文献案内・parser案内。" />
+<meta name="description" content="CCG（組合せ範疇文法）に関する雑多な文献案内・parser案内など。" />
 
 
 
@@ -328,7 +328,7 @@
 <meta property="og:site_name" content="Kohei Kajikawa" />
 <meta property="og:url" content="https://kohei-kaji.github.io/github-pages/post/ccg/" />
 <meta property="og:title" content="CCGに関する情報集 | Kohei Kajikawa" />
-<meta property="og:description" content="CCG（組合せ範疇文法）に関する雑多な文献案内・parser案内。" /><meta property="og:image" content="https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:description" content="CCG（組合せ範疇文法）に関する雑多な文献案内・parser案内など。" /><meta property="og:image" content="https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -383,7 +383,7 @@
       "url": "https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "CCG（組合せ範疇文法）に関する雑多な文献案内・parser案内。"
+  "description": "CCG（組合せ範疇文法）に関する雑多な文献案内・parser案内など。"
 }
 </script>
 
@@ -823,7 +823,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    2 min read
   </span>
   
 
@@ -852,11 +852,11 @@
 
     <div class="article-style">
       <p>生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら人口に膾炙しているとは言い難い理論ですので、CCGの広まりを願い、参照したら良いであろう情報を記します。</p>
-<h2 id="文献案内">文献案内</h2>
+<h1 id="文献案内">文献案内</h1>
 <h3 id="理論言語学関係">理論言語学関係</h3>
 <ul>
 <li>統語・意味の理論としてのCCGを理解したい場合に参照すべき文献たちです。</li>
-<li>その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないのでわかっていません。</li>
+<li>その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないので含まていません（Steedman (2000)にはそのあたりも載っています）。</li>
 <li><a href="https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/" target="_blank" rel="noopener">Steedman (1996)</a>
 <ul>
 <li>CCG本の最初。</li>
@@ -1017,7 +1017,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="ccg-parserを触ってみよう">CCG parserを触ってみよう！</h2>
+<h1 id="ccg-parserを触ってみよう">CCG parserを触ってみよう！</h1>
 <ul>
 <li>CCGは、他の文法理論に比べ、高精度なNLP parserが数おおく整備されている、という点で非常に有用です。</li>
 <li>特に、下記のparserたちは動かすのにそこまで難易度が高くないのでおすすめです。</li>
@@ -1037,7 +1037,7 @@
 <li>Haskellによる日本語CCG parser。</li>
 <li>Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられるので準備は非常に楽。他のOSではよくわかりません。</li>
 <li>残りはREADMEに従えば動かせる。</li>
-<li><a href="https://www.9640.jp/book_view/?468" target="_blank" rel="noopener">戸次 (2010)</a>+$\alpha$がそのまま実装されているので、語彙項目を参照するのに使い勝手が良い。</li>
+<li><a href="https://www.9640.jp/book_view/?468" target="_blank" rel="noopener">戸次 (2010)</a>+アルファがそのまま実装されているので、語彙項目を参照するのに使い勝手が良い。</li>
 </ul>
 <h3 id="ccgtoolshttpsgithubcomstanojevicccgtools"><a href="https://github.com/stanojevic/ccgtools" target="_blank" rel="noopener">ccgtools</a></h3>
 <ul>
@@ -1045,6 +1045,49 @@
 <li>高性能 (元State-of-the-Art)。</li>
 <li>作成者であるMilos Stanojevic氏は、Scalaで<a href="https://github.com/stanojevic/Rotating-CCG" target="_blank" rel="noopener">Rotating-CCG</a>というparserも作っている（論文は<a href="https://aclanthology.org/N19-1020/" target="_blank" rel="noopener">Stanojevic and Steedman, 2019</a>）。</li>
 <li>Google Colab上で動かせるようにしてくれているので、環境構築の必要がなく非常に便利。</li>
+</ul>
+<h1 id="ccgの導出木をlatexでかく">CCGの導出木をLaTeXでかく</h1>
+<h3 id="ccgstyhttpsgithubcomjasonbaldridgecg-latex"><a href="https://github.com/jasonbaldridge/cg-latex" target="_blank" rel="noopener">ccg.sty</a></h3>
+<ul>
+<li>Jason Baldridge氏によるスタイルファイル。</li>
+<li>その他、CTL, 照明木用のスタイルファイルも公開してくれている。</li>
+<li>使い方：
+<ul>
+<li><code>ccg.sty</code>をTeXファイルと同じディレクトリにおき、以下のようにする：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\documentclass[10pt,a4paper]{article}
+</span></span><span class="line"><span class="cl">\usepackage{ccg}
+</span></span><span class="line"><span class="cl">\begin{document}
+</span></span><span class="line"><span class="cl">\deriv{3}{
+</span></span><span class="line"><span class="cl">    \text{Taro} &amp; \text{likes} &amp; \text{Hanako} \\
+</span></span><span class="line"><span class="cl">    \uline{1} &amp; \uline{1} &amp; \uline{1} \\
+</span></span><span class="line"><span class="cl">    \mathit{NP} &amp; \mathit{S\bs NP/NP} &amp; \mathit{NP} \\
+</span></span><span class="line"><span class="cl">    &amp; \fapply{2} \\
+</span></span><span class="line"><span class="cl">    &amp; \mc{2}{\mathit{S\bs NP}} \\
+</span></span><span class="line"><span class="cl">    \bapply{3} \\
+</span></span><span class="line"><span class="cl">    \mc{3}{\mathit{S}}
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">\end{document}
+</span></span></code></pre></div><ul>
+<li>導出木のサイズを変えるのには、<code>\deriv{hoge}{fuga}</code>の前にたとえば<code>\scriptsize\deriv{hoge}{fuga}</code>のようにする。</li>
+<li>通常通り、linguexパッケージで文番号をつけるには、以下のようにする：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\ex.\label{hoge-label}
+</span></span><span class="line"><span class="cl">\deriv{hoge}{fuga}
+</span></span></code></pre></div><ul>
+<li>ulemパッケージ（下線とか打ち消し線を挿入するもの）を入れると、<code>\uline{}</code>が衝突してしまう。
+<ul>
+<li>ccg.styに<code>\newcommand{\ulines}[1]{\ul{#1}}</code>などと追加して、<code>\deriv</code>内では<code>\ul{}</code>を使うようにすれば良い。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ccg-latexstyhttpsgithubcombozsahinccg-latex"><a href="https://github.com/bozsahin/ccg-latex" target="_blank" rel="noopener">ccg-latex.sty</a></h3>
+<ul>
+<li>Cem Bozsahin氏によるスタイルファイル。</li>
+<li>上述のccg.styよりも充実していそうに思われる（少なくとも、READMEやexampleは充実している）。</li>
+<li>個人的には、ccg.styで困っていないので使っていない。ので、存在しか知らない。</li>
 </ul>
 
     </div>

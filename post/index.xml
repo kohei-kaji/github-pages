@@ -18,11 +18,11 @@
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://kohei-kaji.github.io/github-pages/post/ccg/</guid>
       <description>&lt;p&gt;生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら人口に膾炙しているとは言い難い理論ですので、CCGの広まりを願い、参照したら良いであろう情報を記します。&lt;/p&gt;
-&lt;h2 id=&#34;文献案内&#34;&gt;文献案内&lt;/h2&gt;
+&lt;h1 id=&#34;文献案内&#34;&gt;文献案内&lt;/h1&gt;
 &lt;h3 id=&#34;理論言語学関係&#34;&gt;理論言語学関係&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;統語・意味の理論としてのCCGを理解したい場合に参照すべき文献たちです。&lt;/li&gt;
-&lt;li&gt;その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないのでわかっていません。&lt;/li&gt;
+&lt;li&gt;その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないので含まていません（Steedman (2000)にはそのあたりも載っています）。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steedman (1996)&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;CCG本の最初。&lt;/li&gt;
@@ -183,7 +183,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;ccg-parserを触ってみよう&#34;&gt;CCG parserを触ってみよう！&lt;/h2&gt;
+&lt;h1 id=&#34;ccg-parserを触ってみよう&#34;&gt;CCG parserを触ってみよう！&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;CCGは、他の文法理論に比べ、高精度なNLP parserが数おおく整備されている、という点で非常に有用です。&lt;/li&gt;
 &lt;li&gt;特に、下記のparserたちは動かすのにそこまで難易度が高くないのでおすすめです。&lt;/li&gt;
@@ -203,7 +203,7 @@
 &lt;li&gt;Haskellによる日本語CCG parser。&lt;/li&gt;
 &lt;li&gt;Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられるので準備は非常に楽。他のOSではよくわかりません。&lt;/li&gt;
 &lt;li&gt;残りはREADMEに従えば動かせる。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.9640.jp/book_view/?468&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;戸次 (2010)&lt;/a&gt;+$\alpha$がそのまま実装されているので、語彙項目を参照するのに使い勝手が良い。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.9640.jp/book_view/?468&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;戸次 (2010)&lt;/a&gt;+アルファがそのまま実装されているので、語彙項目を参照するのに使い勝手が良い。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;ccgtoolshttpsgithubcomstanojevicccgtools&#34;&gt;&lt;a href=&#34;https://github.com/stanojevic/ccgtools&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ccgtools&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -211,6 +211,49 @@
 &lt;li&gt;高性能 (元State-of-the-Art)。&lt;/li&gt;
 &lt;li&gt;作成者であるMilos Stanojevic氏は、Scalaで&lt;a href=&#34;https://github.com/stanojevic/Rotating-CCG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rotating-CCG&lt;/a&gt;というparserも作っている（論文は&lt;a href=&#34;https://aclanthology.org/N19-1020/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanojevic and Steedman, 2019&lt;/a&gt;）。&lt;/li&gt;
 &lt;li&gt;Google Colab上で動かせるようにしてくれているので、環境構築の必要がなく非常に便利。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ccgの導出木をlatexでかく&#34;&gt;CCGの導出木をLaTeXでかく&lt;/h1&gt;
+&lt;h3 id=&#34;ccgstyhttpsgithubcomjasonbaldridgecg-latex&#34;&gt;&lt;a href=&#34;https://github.com/jasonbaldridge/cg-latex&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ccg.sty&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Jason Baldridge氏によるスタイルファイル。&lt;/li&gt;
+&lt;li&gt;その他、CTL, 照明木用のスタイルファイルも公開してくれている。&lt;/li&gt;
+&lt;li&gt;使い方：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ccg.sty&lt;/code&gt;をTeXファイルと同じディレクトリにおき、以下のようにする：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\documentclass[10pt,a4paper]{article}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\usepackage{ccg}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\begin{document}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\deriv{3}{
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    \text{Taro} &amp;amp; \text{likes} &amp;amp; \text{Hanako} \\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    \uline{1} &amp;amp; \uline{1} &amp;amp; \uline{1} \\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    \mathit{NP} &amp;amp; \mathit{S\bs NP/NP} &amp;amp; \mathit{NP} \\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;amp; \fapply{2} \\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;amp; \mc{2}{\mathit{S\bs NP}} \\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    \bapply{3} \\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    \mc{3}{\mathit{S}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\end{document}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;導出木のサイズを変えるのには、&lt;code&gt;\deriv{hoge}{fuga}&lt;/code&gt;の前にたとえば&lt;code&gt;\scriptsize\deriv{hoge}{fuga}&lt;/code&gt;のようにする。&lt;/li&gt;
+&lt;li&gt;通常通り、linguexパッケージで文番号をつけるには、以下のようにする：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\ex.\label{hoge-label}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\deriv{hoge}{fuga}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;ulemパッケージ（下線とか打ち消し線を挿入するもの）を入れると、&lt;code&gt;\uline{}&lt;/code&gt;が衝突してしまう。
+&lt;ul&gt;
+&lt;li&gt;ccg.styに&lt;code&gt;\newcommand{\ulines}[1]{\ul{#1}}&lt;/code&gt;などと追加して、&lt;code&gt;\deriv&lt;/code&gt;内では&lt;code&gt;\ul{}&lt;/code&gt;を使うようにすれば良い。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ccg-latexstyhttpsgithubcombozsahinccg-latex&#34;&gt;&lt;a href=&#34;https://github.com/bozsahin/ccg-latex&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ccg-latex.sty&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Cem Bozsahin氏によるスタイルファイル。&lt;/li&gt;
+&lt;li&gt;上述のccg.styよりも充実していそうに思われる（少なくとも、READMEやexampleは充実している）。&lt;/li&gt;
+&lt;li&gt;個人的には、ccg.styで困っていないので使っていない。ので、存在しか知らない。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
