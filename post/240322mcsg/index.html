@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: March 25, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.6" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/github-pages/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/github-pages/css/wowchemy.32e2e32cf1a4c1ea152e519f8b1fda79.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/github-pages/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/github-pages/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Kohei Kajikawa" />
+
+
+
+
+
+  
+
+<meta name="description" content="自然言語の文法が弱文脈依存文法 (Mildly Context-Sensitive Grammar) レベルなのでは？となるまでの歴史と、関連する議論について。" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kohei-kaji.github.io/github-pages/post/240322mcsg/" />
+<link rel="canonical" href="https://kohei-kaji.github.io/github-pages/post/240322mcsg/" />
+
+
+
+  <link rel="manifest" href="/github-pages/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Kohei Kajikawa" />
+<meta property="og:url" content="https://kohei-kaji.github.io/github-pages/post/240322mcsg/" />
+<meta property="og:title" content="弱文脈依存文法にまつわる理論言語学のはなし | Kohei Kajikawa" />
+<meta property="og:description" content="自然言語の文法が弱文脈依存文法 (Mildly Context-Sensitive Grammar) レベルなのでは？となるまでの歴史と、関連する議論について。" /><meta property="og:image" content="https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2024-03-22T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2024-03-22T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kohei-kaji.github.io/github-pages/post/240322mcsg/"
+  },
+  "headline": "弱文脈依存文法にまつわる理論言語学のはなし",
+  
+  "datePublished": "2024-03-22T00:00:00Z",
+  "dateModified": "2024-03-22T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Kohei Kajikawa"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kohei Kajikawa",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "自然言語の文法が弱文脈依存文法 (Mildly Context-Sensitive Grammar) レベルなのでは？となるまでの歴史と、関連する議論について。"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>弱文脈依存文法にまつわる理論言語学のはなし | Kohei Kajikawa</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c42c896211b81a916f0a7173338cc43f" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/github-pages/js/wowchemy-init.min.3a6bdbdff5d8a89d6e651adb3deec035.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/github-pages/">Kohei Kajikawa</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/github-pages/">Kohei Kajikawa</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#misc"><span>MISC</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#experience"><span>Experience</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>弱文脈依存文法にまつわる理論言語学のはなし</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Mar 22, 2024
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>近年、計算言語学・NLPの方で、言語モデルの評価の文脈や、自然言語の統計的普遍性に関する研究の文脈で、自然言語の文法の生成力に関する議論が再注目されているように思われます。
+生成力に関しては、理論言語学の知見が今に至るまで少しずつ着実に積み重ねられているものの、情報源が少なすぎるので、これまでの議論と関連研究をまとめて置いておきます。</p>
+<h2 id="自然言語は弱文脈依存言語なのか">自然言語は弱文脈依存言語なのか？</h2>
+<p>用語や歴史の説明は抜きにして、一旦結論から言うと、自然言語の文法が弱文脈依存文法（Mildly Context-Sensitive Grammar; MCSG）であるということは明確に示されているわけではありません。
+ただ、少なくとも以下の2つの事実から、「自然言語の文法は弱文脈依存文法である」という言説には一定の支持が得られています。そのため、しばしば弱文脈依存仮説（MCS Hypothesis）などとも呼ばれています。</p>
+<h3 id="1-文脈自由文法では表現できない構文が自然言語に存在する">1. 文脈自由文法では表現できない構文が自然言語に存在する。</h3>
+<p><a href="https://link.springer.com/article/10.1007/BF00630917" target="_blank" rel="noopener">Shieber (1985)</a> により、Swiss-German（ドイツ語のスイス方言）の従属節中には、統語的にcross-serial dependencies（連続交差依存）が成り立ち、これにより自然言語には文脈自由文法では作れない表現が存在することが示されました。</p>
+<p>cross-serial dependenciesとは、以下のような（ここでは連続する動詞と対応する主格の項）の依存関係が交差しあっている状況です（文は <a href="https://link.springer.com/article/10.1007/BF00630917" target="_blank" rel="noopener">Shieber (1985)</a> より）。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_20a7967ca1d31600103a0def10c1d86b.webp 400w,
+               /github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_69c2d7021031db7542dc5b5c96063837.webp 760w,
+               /github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_20a7967ca1d31600103a0def10c1d86b.webp"
+               width="760"
+               height="188"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>非常に雑にいうと、依存関係が交差しないネストした（入れ子構造になっている）関係だと文脈自由文法で表現できるのですが、連続交差依存は文脈自由文法では表現できません。
+余談ですが、私は高校生のころ、英語を読むときに句や節ごとに括弧でかこんで読んでいました。いま考えてみると、これは私が英語を文脈自由文法で解析していたことになります。
+もしSwiss-Germanを勉強することになっていたら、このような読み方はできなかったはずです。</p>
+<p>cross-serial dependenciesはそうあるわけではなく、上記の文と同じ意味を日本語で表そうとすると、以下のように、依存関係は交差せず、入れ子構造になります。
+cross-serial dependencies自体は確かにレアな状況ですが、そのような状況が存在しないわけではないので、自然言語の文法を文脈自由文法で済ますのは不十分であるといえます。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_1f1fce02d02b52c4d78216845415c5d7.webp 400w,
+               /github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_29f1feae91ce6a5f9bccbfb4346d7e90.webp 760w,
+               /github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_1f1fce02d02b52c4d78216845415c5d7.webp"
+               width="760"
+               height="252"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>ちなみに、同時期に <a href="https://link.springer.com/article/10.1007/BF00630918" target="_blank" rel="noopener">Culy (1985)</a> にて、Bambaraを用いて、形態的にも文脈自由文法で表現できない事例が存在することが示されています。</p>
+<h3 id="2-数多くの独立に提案された文法理論が弱文脈依存文法である">2. 数多くの（独立に提案された）文法理論が、弱文脈依存文法である。</h3>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0022000075800195" target="_blank" rel="noopener">Joshi et al. (1975)</a> によるTree Adjoining Grammar（TAG; 木接合文法）をはじめ、多くの文法理論が、特に80-90年代にかけて、計算・数理言語学の分野で提案されましたが、そのほとんどが最終的に文脈自由文法と文脈依存文法の間にいることが示されました。
+これは、多くの計算・数理言語学者の間である種の「合意」がとれた状況とも言えるでしょう。</p>
+<p>これについては、<a href="https://academic.oup.com/book/26119/chapter-abstract/194151165?redirectedFrom=fulltext" target="_blank" rel="noopener">Stabler (2013)</a> にてわかりやすくレビューされていますので、少々長いですが引用して提示しておきます。</p>
+<details>
+<summary>Stabler (2013); p.4より</summary>
+In particular, a very significant computational consensus was identified by Joshi (1985) in his hypothesis that human languages are both strongly and weakly mildly context sensitive (MCS). While any empirical test of this hypothesis still depends on a network of theoretical assumptions, the claim is so fundamental that it can be connected to many diverse traditions in grammar. To say that language is "strongly and weakly" MCS is to say that MCS grammars can both define the sentences of human languages (weak adequacy) and also provide the structures of those languages (strong adequacy). Joshi’s original definition of MCS grammars was partly informal, so there are now various precise versions of his claim. One is that human languages are defined by tree adjoining grammars (TAGs) or closely related grammars, and another theoretically weaker (and hence empirically stronger) position is that human language are definable by the more expressive (set local) multi-component TAGs or closely related grammars. The most remarkable thing about this claim came out of the innocent-sounding phrase "or closely related grammars," because it was discovered that a wide range of independently proposed grammar formalisms falls under that description. In particular, a series of papers beginning in the 1980’s and 1990’s established the following inclusion relations among the languages defined by various kinds of grammars, across traditions:
+CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
+</details>
+<p>上記引用にて、</p>
+<ul>
+<li>CFGはContext-Free Grammar（文脈自由文法）</li>
+<li>CCGはCombinatory Categorial Grammar（組合せ範疇文法; <a href="https://link.springer.com/article/10.1007/BF00360804" target="_blank" rel="noopener">Ades and Steedman (1982)</a>; <a href="https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/" target="_blank" rel="noopener">Steedman (1996)</a>）</li>
+<li>TAGはTree Adjoining Grammar（木接合文法; <a href="https://www.sciencedirect.com/science/article/pii/S0022000075800195" target="_blank" rel="noopener">Joshi et al. (1975)</a>）</li>
+<li>MCTAGはMulti-Component Tree Adjoining Grammar（<a href="https://benjamins.com/catalog/z.35.07jos" target="_blank" rel="noopener">Joshi (1987)</a>）</li>
+<li>ACGはAbstract Categorial Grammar（<a href="https://aclanthology.org/P01-1033/" target="_blank" rel="noopener">de Groote (2001)</a>）</li>
+<li>MCFGはMultiple Context Free Grammar（多重文脈自由文法; <a href="https://www.sciencedirect.com/science/article/pii/030439759190374B" target="_blank" rel="noopener">Seki et al. (1991)</a>）
+<ul>
+<li>MCFGはLCFRS（Linear Context Free Rewriting System; <a href="https://dl.acm.org/doi/10.3115/981175.981190" target="_blank" rel="noopener">Vijay-Shanker et al. (1987)</a>）と同一という話だった気がするがちょっと詳しくないので覚えていないです。</li>
+</ul>
+</li>
+<li>MGはMinimalist Grammar（<a href="https://link.springer.com/chapter/10.1007/BFb0052152" target="_blank" rel="noopener">Stabler (1997)</a>; <a href="https://academic.oup.com/edited-volume/38634/chapter/335332383" target="_blank" rel="noopener">Stabler (2011)</a>）</li>
+<li>CSGはContext Sensitive Grammar（文脈依存文法）</li>
+</ul>
+<p>を指します（定訳があるものは定訳を、また、その文法が提案されている代表的な論文情報を付与しています）。</p>
+<p>また、このほかにも、</p>
+<ul>
+<li>Linear Indexed Grammar（LIG; <a href="https://cir.nii.ac.jp/crid/1571698599593629312" target="_blank" rel="noopener">Pollard (1984)</a>）</li>
+<li>Head Grammar（HG; <a href="https://link.springer.com/chapter/10.1007/978-94-009-1337-0_3" target="_blank" rel="noopener">Gazdar (1985)</a>）</li>
+</ul>
+<p>も、弱文脈依存文法の仲間であることが示されています (<a href="https://link.springer.com/article/10.1007/BF01191624" target="_blank" rel="noopener">Vijay-Shanker and Weir, 1994</a>)。</p>
+<p>ただ、ここで面白いのは、弱文脈依存文法は一枚岩ではなく、上記の <a href="https://academic.oup.com/book/26119/chapter-abstract/194151165?redirectedFrom=fulltext" target="_blank" rel="noopener">Stabler (2013)</a> の引用の最後の関係式で表されているように、2つのクラスに分類できます。
+具体的に、CCG, TAG, LIG, HGと、MCTAG, ACG, MCFG, LCFRS, MGです（MGにも複数の亜種があります）。</p>
+<p>いまは、それぞれのクラスにおいてそれぞれの優位性が主張されている段階で、これに関しての合意はまだとられていません。
+たとえば、最近ではCCGサイドからは <a href="https://aclanthology.org/2021.cl-1.2/" target="_blank" rel="noopener">Stanojevic and Steedman (2020)</a> が、MGサイドからは <a href="https://benjamins.com/catalog/elt.00033.fra" target="_blank" rel="noopener">Frank and Hunter (2021)</a> などが出ています（もっと色々出ていると思いますが）。</p>
+<p>もちろん、各文法理論内でも、「どのような操作を仮定するか」で揺れはあるので、上記の関係が必ずしも成り立つとは限りません。たとえばCCGは、slash-typingを導入することで（＝組合せ規則の適用に制限をかけることで）、TAGよりも弱生成力が低くなることも示されています (<a href="https://direct.mit.edu/coli/article/41/2/215/1507/Lexicalization-and-Generative-Power-in-CCG" target="_blank" rel="noopener">Kuhlmann et al., 2015</a>)。</p>
+<p>また、Head-driven Phrase Structure Grammar (HPSG; <a href="https://press.uchicago.edu/ucp/books/book/chicago/H/bo3618318.html" target="_blank" rel="noopener">Pollard and Sag (1994)</a>) やType Logical Grammar (TLG; <a href="https://plato.stanford.edu/entries/typelogical-grammar/" target="_blank" rel="noopener">適切な引用がわからないのでSEPへ</a>) のような、チューリング完全な文法理論もあります。</p>
+<h2 id="弱文脈依存文法の心理的妥当性">弱文脈依存文法の心理的妥当性</h2>
+<p>上記のような議論ほど有名ではありませんが、最近では、計算心理言語学の分野においても、弱文脈依存文法 (MCSG) の文脈自由文法 (CFG) に対する優位性は主張されています。
+たとえば、<a href="https://www.sciencedirect.com/science/article/abs/pii/S0093934X15300687" target="_blank" rel="noopener">Brennan et al. (2016)</a> や <a href="https://academic.oup.com/book/34998/chapter-abstract/298696095?redirectedFrom=fulltext" target="_blank" rel="noopener">Li and Hale (2019)</a> はMGとCFGを比較して、<a href="https://onlinelibrary.wiley.com/doi/10.1111/cogs.13312" target="_blank" rel="noopener">Stanojevic et al. (2023)</a> はCCGとCFGを比較して、それぞれMCSGであるMG, CCGの方が、CFGよりも適切に、人が物語を聞いている間の<a href="https://bsd.neuroinf.jp/wiki/%E6%A9%9F%E8%83%BD%E7%9A%84%E7%A3%81%E6%B0%97%E5%85%B1%E9%B3%B4%E7%94%BB%E5%83%8F%E6%B3%95#BOLD%E4%BF%A1%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A6%8B" target="_blank" rel="noopener">BOLD信号（Blood Oxygen Level Dependent signals; 脳活動を反映した信号）</a>を予測できることを示しました。</p>
+<p>もちろん、<a href="https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-051421-020803" target="_blank" rel="noopener">Hale et al. (2022)</a> で指摘されているように、こうした結果は必ずしもMCSGが <em>uniquely the right theory of human grammar</em> (<a href="https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-051421-020803" target="_blank" rel="noopener">Hale et al., 2022; p.12</a>) であるということを意味しているわけではありませんが、MCSGが、人間の文処理に関して、CFGでは説明できていないところを説明できているのは確かです。</p>
+<h2 id="そもそもの用語説明弱生成力と強生成力">そもそもの用語説明：弱生成力と強生成力</h2>
+<p>ここまで特に断りなく使っていましたが、「生成力（generative capacity）」といったとき、「弱生成力 (weak generative capacity)」と「強生成力 (strong generative capacity)」という2つの概念があります (<a href="https://www.jstor.org/stable/j.ctt17kk81z" target="_blank" rel="noopener">Chomsky, 1965</a>; <a href="https://www.iwanami.co.jp/book/b280256.html" target="_blank" rel="noopener">福井・辻子, 2017; 日本語訳</a>)。</p>
+<p><strong>弱生成力</strong>は、ある文法が作ることのできる文字列（単語の配列）の集合に関する概念で、文法の弱生成力が等しいかつ語彙が等しい言語同士では、作ることのできる文字列の集合は完全に一致します。
+つまり、弱生成力の議論において、文法とは、「容認可能な文字列のみを受理し、容認不可能な文字列は排除する装置」のことを意味します。
+<a href="https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A7%E3%83%A0%E3%82%B9%E3%82%AD%E3%83%BC%E9%9A%8E%E5%B1%A4" target="_blank" rel="noopener">チョムスキー階層</a>（下図。図は<a href="https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0077" target="_blank" rel="noopener">Jager and Rogers (2012)</a>より。）という概念は、弱生成力のクラス分けに関するものです（<a href="https://ieeexplore.ieee.org/document/1056813" target="_blank" rel="noopener">Chomsky (1956)</a>; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0049237X08720238" target="_blank" rel="noopener">Chomsky and Schutzenberger (1963)</a>）。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_31f3929bd74a2c22f411dfbfcf04b457.webp 400w,
+               /github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_8ea3de3bb44268c8e67851daafdd8269.webp 760w,
+               /github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_31f3929bd74a2c22f411dfbfcf04b457.webp"
+               width="760"
+               height="592"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>自然言語の弱生成力の議論に関しては、<a href="https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0077" target="_blank" rel="noopener">Jager and Rogers (2012)</a>, <a href="https://timhunter.humspace.ucla.edu/papers/blackwell-chomsky-hierarchy.pdf" target="_blank" rel="noopener">Hunter (2020)</a>, <a href="https://rlevy.github.io/9.19-syllabus/syllabus.html" target="_blank" rel="noopener">Roger Levyの計算心理言語学の授業のWeek 7</a> あたりが良かったです。</p>
+<p><strong>強生成力</strong>は、ある文法が作ることのできる木構造の集合に関する概念であり、Chomsky自身は弱生成力ではなく強生成力を研究の対象とするべし、としました。
+木構造は（ほぼすべての理論において）意味や韻律の理論と直接関わるので、単に容認可能な文字列を識別する装置を考えるのでは不十分だ、ということでしょう。
+ただ、強生成力それ自体に明確な定義があるわけではなく、そのために理論ニュートラルな議論が難しくなっている、というのが現状です。
+私が知らないだけかもしれませんが、Chomskyを中心とした主流生成文法においても、強生成力の議論がなされている、というイメージはないです。</p>
+<p>もちろん、強生成力についての議論はまったくないわけではなく、最近では、CCGとTAGが弱生成力だけではなく、強生成力においても等価である、と主張されています (<a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00393/106789/Strong-Equivalence-of-TAG-and-CCG" target="_blank" rel="noopener">Schiffer and Maletti, 2021</a>)。</p>
+<h2 id="歴史概要自然言語は文脈自由文法で表現できるのか">歴史概要：自然言語は文脈自由文法で表現できるのか？</h2>
+<p>respectively読みの話や、GazdarらによるGPSGの提案など、Shieber (1985) までの話を書きたかった（というかこれがメインだった）はずだが、力尽きたので一旦おいておきます。</p>
+<h2 id="おわりに">おわりに：</h2>
+<p>ここまで、自然言語の文法の弱生成力に関する議論について見てきましたが、そうはいっても本当に自然言語は弱文脈依存なのでしょうか。
+実はここまでの議論は、<a href="https://www.degruyter.com/document/doi/10.1515/9783112316009/html" target="_blank" rel="noopener">Chomsky (1957)</a> で指摘されているように、「文法が有限個」という暗黙の前提を置いた上での議論です。
+考えてみれば当たり前の話で、観測したすべての自然言語の文を「記述」したいと思ったとき、それらの文以下の数の有限状態オートマトンさえ準備すれば、目的は達成されるかもしれません。
+さすがに「そんな記述がしたいわけではない」と言われて終わりな話ですが、自然言語には部分的に正規言語っぽい部分があるのも事実です（具体的に、日本語の助動詞などまさに正規言語でしょう。古文の助動詞を思い出すとわかりすい気がします）。</p>
+<p>また、正規言語で自然言語を語るのはさすがに厳しそうに思われますが、文脈自由文法は実際に自然言語の記述に広く使われています。
+例えば、<a href="https://catalog.ldc.upenn.edu/LDC99T42" target="_blank" rel="noopener">Penn Treebank</a> (<a href="https://aclanthology.org/J93-2004/" target="_blank" rel="noopener">Marcus et al., 1993</a>) はまさに文脈自由文法によるアノテーションであり、多言語に拡張されているところを見る限り、大きな問題は生じていないようです。
+同様に、<a href="https://universaldependencies.org/" target="_blank" rel="noopener">Universal Dependencies (UD)</a> (<a href="https://aclanthology.org/2020.lrec-1.497/" target="_blank" rel="noopener">Nirve et al., 2020</a>) においても、（依存関係が交差していない木をprojective、交差している木をnon-projectiveというのですが、）他言語においてもほとんどの木がprojectiveであると報告されています。つまり、UDコーパスのほとんどは文脈自由文法で記述できているということです。</p>
+<p>一方で、extraposition from NPやscramblingといった構文は、分析の仕方にも依りますが、非常に文脈依存性を感じるところではないでしょうか。
+Extraposition from NPとは、たとえば
+<em>The man fell into the pit who had been chased by dogs.</em>
+のような文で、ここで、<em>The man</em> とそこにかかる関係節 <em>who &hellip;</em> の間に動詞句 <em>fell into the pit</em> が入っている構造です。
+Scramblingは、日本語でよくある、
+<em>花子に太郎が会った。</em> のような、名詞句の語順が通常と入れ替わった状態のものです。</p>
+<p>また、<a href="https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog2805_4" target="_blank" rel="noopener">Stabler (2004)</a> では、英語においてもcross-serial dependenciesは存在している主張されています（画像は<a href="https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog2805_4" target="_blank" rel="noopener">Stabler (2004; p.701)</a> より）。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_a2466ec94972e908168211e64f38aee2.webp 400w,
+               /github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_e0daf76219e4e38c32848e569e5598a7.webp 760w,
+               /github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_a2466ec94972e908168211e64f38aee2.webp"
+               width="760"
+               height="108"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>つまり、当然ながら、分析の仕方次第で見え方は変わります。</p>
+<p>個人的には、CCGやMGによる人間の文処理のモデリング研究から計算言語学・計算心理言語学の勉強を始めた人間なので、弱文脈依存仮説は割と「そういうもの」として理解している方の人間であり、いまも昔もずっと「ではなぜ自然言語は弱文脈依存なのか？」ということを考えていますが、ふとしたときに、人間言語って正規言語っぽいなぁ、少なくとも使っている間は正規言語っぽく理解しているなぁと思うときがあります。</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fpost%2F240322mcsg%2F&amp;text=%E5%BC%B1%E6%96%87%E8%84%88%E4%BE%9D%E5%AD%98%E6%96%87%E6%B3%95%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8B%E7%90%86%E8%AB%96%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fpost%2F240322mcsg%2F&amp;t=%E5%BC%B1%E6%96%87%E8%84%88%E4%BE%9D%E5%AD%98%E6%96%87%E6%B3%95%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8B%E7%90%86%E8%AB%96%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=%E5%BC%B1%E6%96%87%E8%84%88%E4%BE%9D%E5%AD%98%E6%96%87%E6%B3%95%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8B%E7%90%86%E8%AB%96%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97&amp;body=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fpost%2F240322mcsg%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fpost%2F240322mcsg%2F&amp;title=%E5%BC%B1%E6%96%87%E8%84%88%E4%BE%9D%E5%AD%98%E6%96%87%E6%B3%95%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8B%E7%90%86%E8%AB%96%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%E5%BC%B1%E6%96%87%E8%84%88%E4%BE%9D%E5%AD%98%E6%96%87%E6%B3%95%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8B%E7%90%86%E8%AB%96%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97%20https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fpost%2F240322mcsg%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fpost%2F240322mcsg%2F&amp;title=%E5%BC%B1%E6%96%87%E8%84%88%E4%BE%9D%E5%AD%98%E6%96%87%E6%B3%95%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8B%E7%90%86%E8%AB%96%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%81%AE%E3%81%AF%E3%81%AA%E3%81%97" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kohei-kaji.github.io/github-pages"><img class="avatar mr-3 avatar-square" src="/github-pages/authors/admin/avatar_hu5e77f4d9582ecb2ef9b61916b6f99c6d_390193_270x270_fill_q75_lanczos_center.jpeg" alt="Kohei Kajikawa"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kohei-kaji.github.io/github-pages">Kohei Kajikawa</a></h5>
+      <h6 class="card-subtitle">Master student at the University of Tokyo (UTokyo).</h6>
+      <p class="card-text">My research interests include computational linguistics and computational psycholinguistics.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/github-pages/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/qjqw1223" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/kohei-kaji" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Kohei Kajikawa.
+  </p>
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/github-pages/js/vendor-bundle.min.938a3a7554cd9f6602290411f64d2617.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/github-pages/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/github-pages/en/js/wowchemy.min.60fe1434e02d590a4bff48c0ebde046c.js"></script>
+
+
+
+  <script src="/github-pages/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/github-pages/js/wowchemy-publication.9137013a66774049159934c29c3f0205.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

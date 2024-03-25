@@ -5,7 +5,7 @@
     <link>https://kohei-kaji.github.io/github-pages/post/</link>
       <atom:link href="https://kohei-kaji.github.io/github-pages/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Thu, 12 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Fri, 22 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
@@ -13,16 +13,221 @@
     </image>
     
     <item>
+      <title>弱文脈依存文法にまつわる理論言語学のはなし</title>
+      <link>https://kohei-kaji.github.io/github-pages/post/240322mcsg/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/post/240322mcsg/</guid>
+      <description>&lt;p&gt;近年、計算言語学・NLPの方で、言語モデルの評価の文脈や、自然言語の統計的普遍性に関する研究の文脈で、自然言語の文法の生成力に関する議論が再注目されているように思われます。
+生成力に関しては、理論言語学の知見が今に至るまで少しずつ着実に積み重ねられているものの、情報源が少なすぎるので、これまでの議論と関連研究をまとめて置いておきます。&lt;/p&gt;
+&lt;h2 id=&#34;自然言語は弱文脈依存言語なのか&#34;&gt;自然言語は弱文脈依存言語なのか？&lt;/h2&gt;
+&lt;p&gt;用語や歴史の説明は抜きにして、一旦結論から言うと、自然言語の文法が弱文脈依存文法（Mildly Context-Sensitive Grammar; MCSG）であるということは明確に示されているわけではありません。
+ただ、少なくとも以下の2つの事実から、「自然言語の文法は弱文脈依存文法である」という言説には一定の支持が得られています。そのため、しばしば弱文脈依存仮説（MCS Hypothesis）などとも呼ばれています。&lt;/p&gt;
+&lt;h3 id=&#34;1-文脈自由文法では表現できない構文が自然言語に存在する&#34;&gt;1. 文脈自由文法では表現できない構文が自然言語に存在する。&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/BF00630917&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Shieber (1985)&lt;/a&gt; により、Swiss-German（ドイツ語のスイス方言）の従属節中には、統語的にcross-serial dependencies（連続交差依存）が成り立ち、これにより自然言語には文脈自由文法では作れない表現が存在することが示されました。&lt;/p&gt;
+&lt;p&gt;cross-serial dependenciesとは、以下のような（ここでは連続する動詞と対応する主格の項）の依存関係が交差しあっている状況です（文は &lt;a href=&#34;https://link.springer.com/article/10.1007/BF00630917&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Shieber (1985)&lt;/a&gt; より）。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
+               /github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_20a7967ca1d31600103a0def10c1d86b.webp 400w,
+               /github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_69c2d7021031db7542dc5b5c96063837.webp 760w,
+               /github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_20a7967ca1d31600103a0def10c1d86b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;188&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;非常に雑にいうと、依存関係が交差しないネストした（入れ子構造になっている）関係だと文脈自由文法で表現できるのですが、連続交差依存は文脈自由文法では表現できません。
+余談ですが、私は高校生のころ、英語を読むときに句や節ごとに括弧でかこんで読んでいました。いま考えてみると、これは私が英語を文脈自由文法で解析していたことになります。
+もしSwiss-Germanを勉強することになっていたら、このような読み方はできなかったはずです。&lt;/p&gt;
+&lt;p&gt;cross-serial dependenciesはそうあるわけではなく、上記の文と同じ意味を日本語で表そうとすると、以下のように、依存関係は交差せず、入れ子構造になります。
+cross-serial dependencies自体は確かにレアな状況ですが、そのような状況が存在しないわけではないので、自然言語の文法を文脈自由文法で済ますのは不十分であるといえます。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
+               /github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_1f1fce02d02b52c4d78216845415c5d7.webp 400w,
+               /github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_29f1feae91ce6a5f9bccbfb4346d7e90.webp 760w,
+               /github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_1f1fce02d02b52c4d78216845415c5d7.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;252&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;ちなみに、同時期に &lt;a href=&#34;https://link.springer.com/article/10.1007/BF00630918&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Culy (1985)&lt;/a&gt; にて、Bambaraを用いて、形態的にも文脈自由文法で表現できない事例が存在することが示されています。&lt;/p&gt;
+&lt;h3 id=&#34;2-数多くの独立に提案された文法理論が弱文脈依存文法である&#34;&gt;2. 数多くの（独立に提案された）文法理論が、弱文脈依存文法である。&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0022000075800195&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joshi et al. (1975)&lt;/a&gt; によるTree Adjoining Grammar（TAG; 木接合文法）をはじめ、多くの文法理論が、特に80-90年代にかけて、計算・数理言語学の分野で提案されましたが、そのほとんどが最終的に文脈自由文法と文脈依存文法の間にいることが示されました。
+これは、多くの計算・数理言語学者の間である種の「合意」がとれた状況とも言えるでしょう。&lt;/p&gt;
+&lt;p&gt;これについては、&lt;a href=&#34;https://academic.oup.com/book/26119/chapter-abstract/194151165?redirectedFrom=fulltext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (2013)&lt;/a&gt; にてわかりやすくレビューされていますので、少々長いですが引用して提示しておきます。&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Stabler (2013); p.4より&lt;/summary&gt;
+In particular, a very significant computational consensus was identified by Joshi (1985) in his hypothesis that human languages are both strongly and weakly mildly context sensitive (MCS). While any empirical test of this hypothesis still depends on a network of theoretical assumptions, the claim is so fundamental that it can be connected to many diverse traditions in grammar. To say that language is &#34;strongly and weakly&#34; MCS is to say that MCS grammars can both define the sentences of human languages (weak adequacy) and also provide the structures of those languages (strong adequacy). Joshi’s original definition of MCS grammars was partly informal, so there are now various precise versions of his claim. One is that human languages are defined by tree adjoining grammars (TAGs) or closely related grammars, and another theoretically weaker (and hence empirically stronger) position is that human language are definable by the more expressive (set local) multi-component TAGs or closely related grammars. The most remarkable thing about this claim came out of the innocent-sounding phrase &#34;or closely related grammars,&#34; because it was discovered that a wide range of independently proposed grammar formalisms falls under that description. In particular, a series of papers beginning in the 1980’s and 1990’s established the following inclusion relations among the languages defined by various kinds of grammars, across traditions:
+CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
+&lt;/details&gt;
+&lt;p&gt;上記引用にて、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CFGはContext-Free Grammar（文脈自由文法）&lt;/li&gt;
+&lt;li&gt;CCGはCombinatory Categorial Grammar（組合せ範疇文法; &lt;a href=&#34;https://link.springer.com/article/10.1007/BF00360804&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ades and Steedman (1982)&lt;/a&gt;; &lt;a href=&#34;https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steedman (1996)&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;TAGはTree Adjoining Grammar（木接合文法; &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0022000075800195&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joshi et al. (1975)&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;MCTAGはMulti-Component Tree Adjoining Grammar（&lt;a href=&#34;https://benjamins.com/catalog/z.35.07jos&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joshi (1987)&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;ACGはAbstract Categorial Grammar（&lt;a href=&#34;https://aclanthology.org/P01-1033/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;de Groote (2001)&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;MCFGはMultiple Context Free Grammar（多重文脈自由文法; &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/030439759190374B&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seki et al. (1991)&lt;/a&gt;）
+&lt;ul&gt;
+&lt;li&gt;MCFGはLCFRS（Linear Context Free Rewriting System; &lt;a href=&#34;https://dl.acm.org/doi/10.3115/981175.981190&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vijay-Shanker et al. (1987)&lt;/a&gt;）と同一という話だった気がするがちょっと詳しくないので覚えていないです。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MGはMinimalist Grammar（&lt;a href=&#34;https://link.springer.com/chapter/10.1007/BFb0052152&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (1997)&lt;/a&gt;; &lt;a href=&#34;https://academic.oup.com/edited-volume/38634/chapter/335332383&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (2011)&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;CSGはContext Sensitive Grammar（文脈依存文法）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を指します（定訳があるものは定訳を、また、その文法が提案されている代表的な論文情報を付与しています）。&lt;/p&gt;
+&lt;p&gt;また、このほかにも、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linear Indexed Grammar（LIG; &lt;a href=&#34;https://cir.nii.ac.jp/crid/1571698599593629312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pollard (1984)&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;Head Grammar（HG; &lt;a href=&#34;https://link.springer.com/chapter/10.1007/978-94-009-1337-0_3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gazdar (1985)&lt;/a&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;も、弱文脈依存文法の仲間であることが示されています (&lt;a href=&#34;https://link.springer.com/article/10.1007/BF01191624&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vijay-Shanker and Weir, 1994&lt;/a&gt;)。&lt;/p&gt;
+&lt;p&gt;ただ、ここで面白いのは、弱文脈依存文法は一枚岩ではなく、上記の &lt;a href=&#34;https://academic.oup.com/book/26119/chapter-abstract/194151165?redirectedFrom=fulltext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (2013)&lt;/a&gt; の引用の最後の関係式で表されているように、2つのクラスに分類できます。
+具体的に、CCG, TAG, LIG, HGと、MCTAG, ACG, MCFG, LCFRS, MGです（MGにも複数の亜種があります）。&lt;/p&gt;
+&lt;p&gt;いまは、それぞれのクラスにおいてそれぞれの優位性が主張されている段階で、これに関しての合意はまだとられていません。
+たとえば、最近ではCCGサイドからは &lt;a href=&#34;https://aclanthology.org/2021.cl-1.2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanojevic and Steedman (2020)&lt;/a&gt; が、MGサイドからは &lt;a href=&#34;https://benjamins.com/catalog/elt.00033.fra&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Frank and Hunter (2021)&lt;/a&gt; などが出ています（もっと色々出ていると思いますが）。&lt;/p&gt;
+&lt;p&gt;もちろん、各文法理論内でも、「どのような操作を仮定するか」で揺れはあるので、上記の関係が必ずしも成り立つとは限りません。たとえばCCGは、slash-typingを導入することで（＝組合せ規則の適用に制限をかけることで）、TAGよりも弱生成力が低くなることも示されています (&lt;a href=&#34;https://direct.mit.edu/coli/article/41/2/215/1507/Lexicalization-and-Generative-Power-in-CCG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kuhlmann et al., 2015&lt;/a&gt;)。&lt;/p&gt;
+&lt;p&gt;また、Head-driven Phrase Structure Grammar (HPSG; &lt;a href=&#34;https://press.uchicago.edu/ucp/books/book/chicago/H/bo3618318.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pollard and Sag (1994)&lt;/a&gt;) やType Logical Grammar (TLG; &lt;a href=&#34;https://plato.stanford.edu/entries/typelogical-grammar/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;適切な引用がわからないのでSEPへ&lt;/a&gt;) のような、チューリング完全な文法理論もあります。&lt;/p&gt;
+&lt;h2 id=&#34;弱文脈依存文法の心理的妥当性&#34;&gt;弱文脈依存文法の心理的妥当性&lt;/h2&gt;
+&lt;p&gt;上記のような議論ほど有名ではありませんが、最近では、計算心理言語学の分野においても、弱文脈依存文法 (MCSG) の文脈自由文法 (CFG) に対する優位性は主張されています。
+たとえば、&lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S0093934X15300687&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Brennan et al. (2016)&lt;/a&gt; や &lt;a href=&#34;https://academic.oup.com/book/34998/chapter-abstract/298696095?redirectedFrom=fulltext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Li and Hale (2019)&lt;/a&gt; はMGとCFGを比較して、&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/10.1111/cogs.13312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanojevic et al. (2023)&lt;/a&gt; はCCGとCFGを比較して、それぞれMCSGであるMG, CCGの方が、CFGよりも適切に、人が物語を聞いている間の&lt;a href=&#34;https://bsd.neuroinf.jp/wiki/%E6%A9%9F%E8%83%BD%E7%9A%84%E7%A3%81%E6%B0%97%E5%85%B1%E9%B3%B4%E7%94%BB%E5%83%8F%E6%B3%95#BOLD%E4%BF%A1%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A6%8B&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BOLD信号（Blood Oxygen Level Dependent signals; 脳活動を反映した信号）&lt;/a&gt;を予測できることを示しました。&lt;/p&gt;
+&lt;p&gt;もちろん、&lt;a href=&#34;https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-051421-020803&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hale et al. (2022)&lt;/a&gt; で指摘されているように、こうした結果は必ずしもMCSGが &lt;em&gt;uniquely the right theory of human grammar&lt;/em&gt; (&lt;a href=&#34;https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-051421-020803&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hale et al., 2022; p.12&lt;/a&gt;) であるということを意味しているわけではありませんが、MCSGが、人間の文処理に関して、CFGでは説明できていないところを説明できているのは確かです。&lt;/p&gt;
+&lt;h2 id=&#34;そもそもの用語説明弱生成力と強生成力&#34;&gt;そもそもの用語説明：弱生成力と強生成力&lt;/h2&gt;
+&lt;p&gt;ここまで特に断りなく使っていましたが、「生成力（generative capacity）」といったとき、「弱生成力 (weak generative capacity)」と「強生成力 (strong generative capacity)」という2つの概念があります (&lt;a href=&#34;https://www.jstor.org/stable/j.ctt17kk81z&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chomsky, 1965&lt;/a&gt;; &lt;a href=&#34;https://www.iwanami.co.jp/book/b280256.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;福井・辻子, 2017; 日本語訳&lt;/a&gt;)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;弱生成力&lt;/strong&gt;は、ある文法が作ることのできる文字列（単語の配列）の集合に関する概念で、文法の弱生成力が等しいかつ語彙が等しい言語同士では、作ることのできる文字列の集合は完全に一致します。
+つまり、弱生成力の議論において、文法とは、「容認可能な文字列のみを受理し、容認不可能な文字列は排除する装置」のことを意味します。
+&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A7%E3%83%A0%E3%82%B9%E3%82%AD%E3%83%BC%E9%9A%8E%E5%B1%A4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;チョムスキー階層&lt;/a&gt;（下図。図は&lt;a href=&#34;https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0077&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jager and Rogers (2012)&lt;/a&gt;より。）という概念は、弱生成力のクラス分けに関するものです（&lt;a href=&#34;https://ieeexplore.ieee.org/document/1056813&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chomsky (1956)&lt;/a&gt;; &lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S0049237X08720238&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chomsky and Schutzenberger (1963)&lt;/a&gt;）。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
+               /github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_31f3929bd74a2c22f411dfbfcf04b457.webp 400w,
+               /github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_8ea3de3bb44268c8e67851daafdd8269.webp 760w,
+               /github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_31f3929bd74a2c22f411dfbfcf04b457.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;592&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;自然言語の弱生成力の議論に関しては、&lt;a href=&#34;https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0077&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jager and Rogers (2012)&lt;/a&gt;, &lt;a href=&#34;https://timhunter.humspace.ucla.edu/papers/blackwell-chomsky-hierarchy.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hunter (2020)&lt;/a&gt;, &lt;a href=&#34;https://rlevy.github.io/9.19-syllabus/syllabus.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roger Levyの計算心理言語学の授業のWeek 7&lt;/a&gt; あたりが良かったです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;強生成力&lt;/strong&gt;は、ある文法が作ることのできる木構造の集合に関する概念であり、Chomsky自身は弱生成力ではなく強生成力を研究の対象とするべし、としました。
+木構造は（ほぼすべての理論において）意味や韻律の理論と直接関わるので、単に容認可能な文字列を識別する装置を考えるのでは不十分だ、ということでしょう。
+ただ、強生成力それ自体に明確な定義があるわけではなく、そのために理論ニュートラルな議論が難しくなっている、というのが現状です。
+私が知らないだけかもしれませんが、Chomskyを中心とした主流生成文法においても、強生成力の議論がなされている、というイメージはないです。&lt;/p&gt;
+&lt;p&gt;もちろん、強生成力についての議論はまったくないわけではなく、最近では、CCGとTAGが弱生成力だけではなく、強生成力においても等価である、と主張されています (&lt;a href=&#34;https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00393/106789/Strong-Equivalence-of-TAG-and-CCG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Schiffer and Maletti, 2021&lt;/a&gt;)。&lt;/p&gt;
+&lt;h2 id=&#34;歴史概要自然言語は文脈自由文法で表現できるのか&#34;&gt;歴史概要：自然言語は文脈自由文法で表現できるのか？&lt;/h2&gt;
+&lt;p&gt;respectively読みの話や、GazdarらによるGPSGの提案など、Shieber (1985) までの話を書きたかった（というかこれがメインだった）はずだが、力尽きたので一旦おいておきます。&lt;/p&gt;
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに：&lt;/h2&gt;
+&lt;p&gt;ここまで、自然言語の文法の弱生成力に関する議論について見てきましたが、そうはいっても本当に自然言語は弱文脈依存なのでしょうか。
+実はここまでの議論は、&lt;a href=&#34;https://www.degruyter.com/document/doi/10.1515/9783112316009/html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chomsky (1957)&lt;/a&gt; で指摘されているように、「文法が有限個」という暗黙の前提を置いた上での議論です。
+考えてみれば当たり前の話で、観測したすべての自然言語の文を「記述」したいと思ったとき、それらの文以下の数の有限状態オートマトンさえ準備すれば、目的は達成されるかもしれません。
+さすがに「そんな記述がしたいわけではない」と言われて終わりな話ですが、自然言語には部分的に正規言語っぽい部分があるのも事実です（具体的に、日本語の助動詞などまさに正規言語でしょう。古文の助動詞を思い出すとわかりすい気がします）。&lt;/p&gt;
+&lt;p&gt;また、正規言語で自然言語を語るのはさすがに厳しそうに思われますが、文脈自由文法は実際に自然言語の記述に広く使われています。
+例えば、&lt;a href=&#34;https://catalog.ldc.upenn.edu/LDC99T42&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Penn Treebank&lt;/a&gt; (&lt;a href=&#34;https://aclanthology.org/J93-2004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Marcus et al., 1993&lt;/a&gt;) はまさに文脈自由文法によるアノテーションであり、多言語に拡張されているところを見る限り、大きな問題は生じていないようです。
+同様に、&lt;a href=&#34;https://universaldependencies.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Universal Dependencies (UD)&lt;/a&gt; (&lt;a href=&#34;https://aclanthology.org/2020.lrec-1.497/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nirve et al., 2020&lt;/a&gt;) においても、（依存関係が交差していない木をprojective、交差している木をnon-projectiveというのですが、）他言語においてもほとんどの木がprojectiveであると報告されています。つまり、UDコーパスのほとんどは文脈自由文法で記述できているということです。&lt;/p&gt;
+&lt;p&gt;一方で、extraposition from NPやscramblingといった構文は、分析の仕方にも依りますが、非常に文脈依存性を感じるところではないでしょうか。
+Extraposition from NPとは、たとえば
+&lt;em&gt;The man fell into the pit who had been chased by dogs.&lt;/em&gt;
+のような文で、ここで、&lt;em&gt;The man&lt;/em&gt; とそこにかかる関係節 &lt;em&gt;who &amp;hellip;&lt;/em&gt; の間に動詞句 &lt;em&gt;fell into the pit&lt;/em&gt; が入っている構造です。
+Scramblingは、日本語でよくある、
+&lt;em&gt;花子に太郎が会った。&lt;/em&gt; のような、名詞句の語順が通常と入れ替わった状態のものです。&lt;/p&gt;
+&lt;p&gt;また、&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog2805_4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (2004)&lt;/a&gt; では、英語においてもcross-serial dependenciesは存在している主張されています（画像は&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog2805_4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (2004; p.701)&lt;/a&gt; より）。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
+               /github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_a2466ec94972e908168211e64f38aee2.webp 400w,
+               /github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_e0daf76219e4e38c32848e569e5598a7.webp 760w,
+               /github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_a2466ec94972e908168211e64f38aee2.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;108&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;つまり、当然ながら、分析の仕方次第で見え方は変わります。&lt;/p&gt;
+&lt;p&gt;個人的には、CCGやMGによる人間の文処理のモデリング研究から計算言語学・計算心理言語学の勉強を始めた人間なので、弱文脈依存仮説は割と「そういうもの」として理解している方の人間であり、いまも昔もずっと「ではなぜ自然言語は弱文脈依存なのか？」ということを考えていますが、ふとしたときに、人間言語って正規言語っぽいなぁ、少なくとも使っている間は正規言語っぽく理解しているなぁと思うときがあります。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>CCGに関する情報集</title>
-      <link>https://kohei-kaji.github.io/github-pages/post/ccg/</link>
+      <link>https://kohei-kaji.github.io/github-pages/post/230112ccg/</link>
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://kohei-kaji.github.io/github-pages/post/ccg/</guid>
-      <description>&lt;p&gt;生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら人口に膾炙しているとは言い難い理論ですので、CCGの広まりを願い、参照したら良いであろう情報を記します。&lt;/p&gt;
+      <guid>https://kohei-kaji.github.io/github-pages/post/230112ccg/</guid>
+      <description>&lt;p&gt;生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら（分野によっては）人口に膾炙しているとは言い難い状況ですので、CCGの広まりを願い、参照したら良いであろう情報を記します。&lt;/p&gt;
 &lt;h1 id=&#34;文献案内&#34;&gt;文献案内&lt;/h1&gt;
 &lt;h3 id=&#34;理論言語学関係&#34;&gt;理論言語学関係&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;統語・意味の理論としてのCCGを理解したい場合に参照すべき文献たちです。&lt;/li&gt;
-&lt;li&gt;その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないので含まていません（Steedman (2000)にはそのあたりも載っています）。&lt;/li&gt;
+&lt;li&gt;その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないので含めていません（Steedman (2000)にはそのあたりも載っています）。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steedman (1996)&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;CCG本の最初。&lt;/li&gt;
@@ -73,7 +278,7 @@
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/J07-4004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clark and Curran (2007)&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;C&amp;amp;C parserとして有名。&lt;/li&gt;
-&lt;li&gt;（いまだに現役だったりする。Supertaggerの評価用としてよく見る。）&lt;/li&gt;
+&lt;li&gt;いまだに現役だったりする。Supertaggerの評価用としてよく見る。　&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/D14-1107/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lewis and Steedman (2014)&lt;/a&gt;
@@ -84,12 +289,17 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P16-4018/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Noji and Miyao (2016)&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;日本語CCG parserの&lt;a href=&#34;https://github.com/mynlp/jigg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jigg&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;日本語CCG parserの &lt;a href=&#34;https://github.com/mynlp/jigg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jigg&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclweb.org/anthology/P/P16/P16-4015/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Martinez-Gomez et al. (2016)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;意味解析システムの &lt;a href=&#34;https://github.com/mynlp/ccg2lambda&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ccg2lambda&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P17-1026/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yoshikawa et al. (2017)&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;日本語CCG parserの&lt;a href=&#34;https://github.com/masashi-y/depccg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;depccg&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;日本語CCG parserの &lt;a href=&#34;https://github.com/masashi-y/depccg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;depccg&lt;/a&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/J07-3004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hockenmaier and Steedman (2007)&lt;/a&gt;
@@ -110,6 +320,20 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;係り受けコーパスである京都大学テキストコーパス（毎日新聞）からの自動変換。&lt;/li&gt;
+&lt;li&gt;日本語CCGBankの続きとしては、以下のようなものがあります。
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/2020.lrec-1.639/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubota et al. (2020)&lt;/a&gt; による &lt;a href=&#34;https://github.com/ABCTreebank/ABCTreebank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ABCTreebank&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.compling.jp/keyaki/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Keyaki Treebank&lt;/a&gt; からの自動変換&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/2024.eacl-srw.14/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tomita et al. (2024)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ABCTreebank/ABCTreebank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ABCTreebank&lt;/a&gt; と &lt;a href=&#34;https://github.com/DaisukeBekki/lightblue&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lightblue&lt;/a&gt; による日本語CCGBankの再構築&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -128,23 +352,47 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.13312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanojevic et al. (2023)&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;CCGによる、英語文処理（fMRIによる血行動態）のモデリング。&lt;/li&gt;
+&lt;li&gt;CCGによる、英語文処理（fMRIによるBOLD信号）のモデリング。&lt;/li&gt;
 &lt;li&gt;貢献は大きく分けて2つ。
 &lt;ol&gt;
-&lt;li&gt;CCGが、CFG（文脈自由文法）よりもより高い精度で血行動態を予測できることを示した。言語理論としてより妥当なCCGが、逐次的な文処理のモデル化の際にも優れていることを示した。&lt;/li&gt;
-&lt;li&gt;CCGの構造構築操作由来の予測子と、LLMで算出したSurprisalが血行動態の予測において別々に効いた。&lt;/li&gt;
+&lt;li&gt;CCGが、CFG（文脈自由文法）よりもより高い精度でBOLD信号を予測できることを示した。言語理論としてより妥当なCCGが、逐次的な文処理のモデル化の際にも優れていることを示した。&lt;/li&gt;
+&lt;li&gt;CCGの構造構築操作由来の予測子と、LLMで算出したSurprisalがBOLD信号の予測において別々に効いた。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4635715&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Isono (to appear in Cognition)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;文を逐次的に理解する際に起こる、短期記憶に由来する処理負荷を、CCGの木構造ベースで説明したもの。&lt;/li&gt;
+&lt;li&gt;貢献・面白い点は、短期記憶由来の処理負荷は、今まで簡単な文脈自由文法（記述力は妥当ではない）や依存文法（単語間関係の記述は優れているが、逐次的に構造がどう構築されるかは不明瞭）でしかなかったが、それをCCG (記述力が妥当かつ、構造構築過程も明確) に発展させたこと。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;生成力関係&#34;&gt;生成力関係&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/BF01191624&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vijay-Shanker and Weir (1994)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/BF01191624&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vijay-Shanker and Weir (1994)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;CCGの弱生成力が、Linear-Indexed Grammar (LIG), Head Grammar (HG), Tree-Adjoining Grammar (TAG) と等価であることを示した。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://direct.mit.edu/coli/article/41/2/215/1507/Lexicalization-and-Generative-Power-in-CCG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kuhlmann et al., 2015&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/BF01191624&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vijay-Shanker and Weir (1994)&lt;/a&gt; のときに想定されていたCCGではなく、より新しいバージョンのCCGにて、TAGと弱生成力が等価であることを示した。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aclanthology.org/2021.tacl-1.43/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Schiffer and Maletti (2021)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;CCGの強生成力が、TAGと等価だと主張。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;標準形関係&#34;&gt;標準形関係&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;CCGでは、同じ意味を複数の異なる統語構造で表現することができます（spurious ambiguity）。このおかげで、逐次的な合成による構造構築が可能なのですが、統語構造と意味の間に一対一対応が取れないことから、parserを作る上では問題になると考えられていました。&lt;/li&gt;
+&lt;li&gt;CCGでは、同じ意味を複数の異なる統語構造で表現することができます（spurious ambiguity; 擬似的曖昧性）。このおかげで、逐次的な合成による構造構築が可能なのですが、統語構造と意味の間に一対一対応が取れないことから、parserを作る上では問題になると考えられていました。
+&lt;ul&gt;
+&lt;li&gt;実際には、学習データのbranchingが一貫していれば、標準形の制約なしでも擬似的曖昧性の問題にはぶつからないようです (&lt;a href=&#34;https://aclanthology.org/P17-1026/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yoshikawa et al. (2017)&lt;/a&gt;, &lt;a href=&#34;https://www.jstage.jst.go.jp/article/jnlp/26/1/26_83/_article/-char/ja/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yoshikawa et al. (2019)&lt;/a&gt; より)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;標準形の定義により、同じ意味を表す複数の異なる統語構造を1つに絞ることができます。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aclanthology.org/P96-1011/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eisner (1996)&lt;/a&gt;
 &lt;ul&gt;
@@ -159,21 +407,21 @@
 &lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/E.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Combinatory Categorial Grammar&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;NLPの教科書として有名なDan Jurafsky氏とJames Martin氏による&lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Speech and Language Processing&lt;/a&gt;の1チャプター。&lt;/li&gt;
-&lt;li&gt;文法規則とチャートパーザの挙動がちょっとわかるようになる。&lt;/li&gt;
+&lt;li&gt;最低限の組合せ規則と、CCGによるチャートパーザを簡潔に説明している。&lt;/li&gt;
+&lt;li&gt;最初にちらっと見るのに向いていそう。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://homepages.inf.ed.ac.uk/steedman/papers/ccg/moravcsik2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Combinatory Categorial Grammar&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;Mark Steedman氏による、割と網羅的なCCGの解説論文。&lt;/li&gt;
 &lt;li&gt;必ずしもわかりやすいわけではないので、最初に読むものとしては向いていない。&lt;/li&gt;
-&lt;li&gt;なんとなくわかってから読むとSteedman氏がどういったことがしたいのかわかる気がする。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://homepages.inf.ed.ac.uk/steedman/papers/ccg/book2DRAFT160622.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Combinatory Categorial Grammar&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;Mark Steedman氏によるCCG本のドラフト。&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;完成するのだろうか。&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;新しいことも多く書いてあり、出版が楽しみ。&lt;/li&gt;
+&lt;li&gt;新しいことが多く書いてあるが、完成するのだろうか、本当なのだろうか、という不安もある。&lt;/li&gt;
+&lt;li&gt;まあ、出版は楽しみ。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2109.10044&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clark (2021)&lt;/a&gt;
@@ -185,8 +433,23 @@
 &lt;/ul&gt;
 &lt;h1 id=&#34;ccg-parserを触ってみよう&#34;&gt;CCG parserを触ってみよう！&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;CCGは、他の文法理論に比べ、高精度なNLP parserが数おおく整備されている、という点で非常に有用です。&lt;/li&gt;
+&lt;li&gt;CCGは、他の文法理論に比べ、高精度なNLP parserが数おおく整備されている、という点で非常に有用です。
+&lt;ul&gt;
+&lt;li&gt;semantic parsingに適度に使いやすいといったことや、ツリーバンクの整備が早かった、という点が要因な気がしています。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;特に、下記のparserたちは動かすのにそこまで難易度が高くないのでおすすめです。&lt;/li&gt;
+&lt;li&gt;そもそも構文解析器とはなんぞやという方へ
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.coronasha.co.jp/np/isbn/9784339027594/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;構文解析&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ohmsha.co.jp/book/9784274229008/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;自然言語処理の基礎&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Speech and Language Processing (3rd ed. draft)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;17章の&lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/17.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Context-Free Grammars and Constituency Parsing&lt;/a&gt;や、18章の&lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/18.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dependency Parsing&lt;/a&gt;あたり。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;depccghttpsgithubcommasashi-ydepccg&#34;&gt;&lt;a href=&#34;https://github.com/masashi-y/depccg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;depccg&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -197,11 +460,12 @@
 &lt;li&gt;1点だけ、&lt;code&gt;depccg_{en/ja} download&lt;/code&gt;コマンドはうまくいかないので、モデルの学習済みパラメータはリンク先のGoogle Driveから直接落としてこないといけない。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;（追記：）最新のmacだとAllenNLPがローカルで動かせないという噂。Dockerで解決するしかない、という話を小耳に挟んだことがある。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;lightbluehttpsgithubcomdaisukebekkilightblue&#34;&gt;&lt;a href=&#34;https://github.com/DaisukeBekki/lightblue&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lightblue&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Haskellによる日本語CCG parser。&lt;/li&gt;
-&lt;li&gt;Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられるので準備は非常に楽。他のOSではよくわかりません。&lt;/li&gt;
+&lt;li&gt;Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられるので準備は非常に楽。&lt;/li&gt;
 &lt;li&gt;残りはREADMEに従えば動かせる。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.9640.jp/book_view/?468&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;戸次 (2010)&lt;/a&gt;+アルファがそのまま実装されているので、語彙項目を参照するのに使い勝手が良い。&lt;/li&gt;
 &lt;/ul&gt;
@@ -216,7 +480,7 @@
 &lt;h3 id=&#34;ccgstyhttpsgithubcomjasonbaldridgecg-latex&#34;&gt;&lt;a href=&#34;https://github.com/jasonbaldridge/cg-latex&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ccg.sty&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Jason Baldridge氏によるスタイルファイル。&lt;/li&gt;
-&lt;li&gt;その他、CTL, 照明木用のスタイルファイルも公開してくれている。&lt;/li&gt;
+&lt;li&gt;その他、CTL, 証明木用のスタイルファイルも公開してくれている。&lt;/li&gt;
 &lt;li&gt;使い方：
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;ccg.sty&lt;/code&gt;をTeXファイルと同じディレクトリにおき、以下のようにする：&lt;/li&gt;
@@ -236,12 +500,12 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\end{document}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;導出木のサイズを変えるのには、&lt;code&gt;\deriv{hoge}{fuga}&lt;/code&gt;の前にたとえば&lt;code&gt;\scriptsize\deriv{hoge}{fuga}&lt;/code&gt;のようにする。&lt;/li&gt;
-&lt;li&gt;通常通り、linguexパッケージで文番号をつけるには、以下のようにする：&lt;/li&gt;
+&lt;li&gt;linguexパッケージで文番号をつける：&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\ex.\label{hoge-label}
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\deriv{hoge}{fuga}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;ulemパッケージ（下線とか打ち消し線を挿入するもの）を入れると、&lt;code&gt;\uline{}&lt;/code&gt;が衝突してしまう。
+&lt;li&gt;ulemパッケージ（下線とか打ち消し線を挿入する用のパッケージ）を入れると、ccg.sty内の&lt;code&gt;\uline{}&lt;/code&gt;が衝突してしまう。
 &lt;ul&gt;
 &lt;li&gt;ccg.styに&lt;code&gt;\newcommand{\ulines}[1]{\ul{#1}}&lt;/code&gt;などと追加して、&lt;code&gt;\deriv&lt;/code&gt;内では&lt;code&gt;\ul{}&lt;/code&gt;を使うようにすれば良い。&lt;/li&gt;
 &lt;/ul&gt;

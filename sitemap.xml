@@ -2,15 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kohei-kaji.github.io/github-pages/misc/</loc>
-    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+    <loc>https://kohei-kaji.github.io/github-pages/post/</loc>
+    <lastmod>2024-03-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/post/240322mcsg/</loc>
+    <lastmod>2024-03-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/publication-type/paper-conference/</loc>
-    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/publication_types/</loc>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/publication/</loc>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-nlp/</loc>
+    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/misc/</loc>
     <lastmod>2024-01-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -27,10 +43,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/publication/kajikawa-2023-lenls/kajikawa-2023/</loc>
-    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/publication/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -62,11 +74,7 @@
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/post/ccg/</loc>
-    <lastmod>2023-01-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/post/</loc>
+    <loc>https://kohei-kaji.github.io/github-pages/post/230112ccg/</loc>
     <lastmod>2023-01-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

@@ -5,12 +5,25 @@
     <link>https://kohei-kaji.github.io/github-pages/publication/</link>
       <atom:link href="https://kohei-kaji.github.io/github-pages/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Sun, 19 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://kohei-kaji.github.io/github-pages/publication/</link>
     </image>
+    
+    <item>
+      <title>統語変形はコミュニケーションから創発するのか？</title>
+      <link>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-nlp/</link>
+      <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-nlp/</guid>
+      <description>&lt;p&gt;「統語変形」といった（言語を文脈自由以上にする）強力な統語操作が&lt;strong&gt;なぜ&lt;/strong&gt;自然言語に存在するのか？という問いへの説明を目指すという目的意識は我ながら非常に面白いと思っていますし、今後もこの方向性で進もうと思っています。&lt;br&gt;
+おそらく委員特別賞をいただけたのも、この目的意識が「面白い」と認識していただけたからだと思っており、この点が評価されたのは素直に嬉しく思います。&lt;br&gt;
+一方で、手法に関してはよろしくないと考えています。特にここに関して学会の場でフィードバックをいただきたく言語処理学会に参加しました。&lt;br&gt;
+結果として、多くの方から有益なコメント・アドバイスを頂けたので、大満足です。&lt;br&gt;
+今後も言語処理学会に何かしらを出し続けようと強く思える会でした（来年以降の自分へ）。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Analyzing Japanese Cleft Construction in Combinatory Categorial Grammar</title>
@@ -19,7 +32,7 @@
       <guid>https://kohei-kaji.github.io/github-pages/publication/kajikawa-2023-lenls/kajikawa-2023/</guid>
       <description>&lt;p&gt;日本語のcleft（分裂文・断裂文）において、focus（焦点）位置に絶対にガ格名詞句を置くことができない（たとえば、　&lt;em&gt;花子を呼んだのは太郎がだ&lt;/em&gt;　は非文。）が、他の格ならOK（&lt;em&gt;花子が呼んだのは太郎をだ&lt;/em&gt;　はOK）、という事実を、CCGの統語論で解決することを提案した論文です。
 具体的に、Kratzer (1996) によるconstructivistのアプローチを参考にした格付与のシステムをCCGで形式化しています。
-これにより、日本語においてガ格だけが他の格と絶対的に異なる挙動をするという事実（長距離かき混ぜ、small clause）も説明できることを示しています。&lt;/p&gt;
+これにより、日本語においてガ格だけが他の格と絶対的に異なる挙動をするという事実（ガ格名詞句は長距離かき混ぜできない、ガ格名詞句はsmall clause内におけない）も説明できることを示しています。&lt;/p&gt;
 </description>
     </item>
     
@@ -37,7 +50,9 @@
       <link>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2023-nlp/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2023-nlp/</guid>
-      <description>&lt;p&gt;CCG（組合せ範疇文法）を使って、日本語の逐次的な文処理をモデリングしたおそらく初の研究です。&lt;/p&gt;
+      <description>&lt;p&gt;CCG（組合せ範疇文法）を使って、日本語の逐次的な文処理をモデリングした初の研究です。&lt;br&gt;
+(i) ある地点 (文節) の読み時間を、その時点で作ることのできるCCGの二分木の数で予測可能なこと、(ii) parsing strategyとして英語で有効だと示されているReveal operation (Stanojevic et al., 2019; 2020; 2021) が、日本語では必ずしも妥当ではない、ということを主に主張したものです。&lt;br&gt;
+卒論の内容だったので書けることを4ページに詰め込んだつもりだったが、そのためにわかりやすさを犠牲にしていたことがこの原稿の反省点です。&lt;/p&gt;
 </description>
     </item>
     
@@ -55,7 +70,9 @@
       <link>https://kohei-kaji.github.io/github-pages/publication/isono-etal-2022-lenls/isono-etal-2022/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://kohei-kaji.github.io/github-pages/publication/isono-etal-2022-lenls/isono-etal-2022/</guid>
-      <description>&lt;p&gt;主流生成文法の分散形態論 (Distributed Morphology, DM) を、CCGで形式化することを目指した研究です。&lt;/p&gt;
+      <description>&lt;p&gt;主流生成文法の分散形態論 (Distributed Morphology, DM) を、CCGで形式化することを目指した研究です。&lt;br&gt;
+初めて「論文を書く（＋発表する）」という作業に携わりました。&lt;br&gt;
+数多くのことを学びました。感謝です。&lt;/p&gt;
 </description>
     </item>
     
