@@ -5,12 +5,20 @@
     <link>https://kohei-kaji.github.io/github-pages/publication-type/paper-conference/</link>
       <atom:link href="https://kohei-kaji.github.io/github-pages/publication-type/paper-conference/index.xml" rel="self" type="application/rss+xml" />
     <description>paper-conference</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>paper-conference</title>
       <link>https://kohei-kaji.github.io/github-pages/publication-type/paper-conference/</link>
     </image>
+    
+    <item>
+      <title>Dissociating Syntactic Operations via Composition Count</title>
+      <link>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-cogsci/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-cogsci/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>統語変形はコミュニケーションから創発するのか？</title>

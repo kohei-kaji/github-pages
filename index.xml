@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>Dissociating Syntactic Operations via Composition Count</title>
+      <link>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-cogsci/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-cogsci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>弱文脈依存文法にまつわる理論言語学のはなし</title>
       <link>https://kohei-kaji.github.io/github-pages/post/240322mcsg/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
@@ -865,7 +873,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-691345278&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-618327594&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -875,7 +883,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-691345278&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-618327594&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

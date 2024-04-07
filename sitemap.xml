@@ -2,24 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-cogsci/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/publication-type/paper-conference/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/publication_types/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/publication/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/post/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/post/240322mcsg/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/publication-type/paper-conference/</loc>
-    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/publication_types/</loc>
-    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/publication/</loc>
-    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-nlp/</loc>
