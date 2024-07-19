@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Journal（雑誌論文） | Kohei Kajikawa</title>
+    <link>https://kohei-kaji.github.io/github-pages/journal/</link>
+      <atom:link href="https://kohei-kaji.github.io/github-pages/journal/index.xml" rel="self" type="application/rss+xml" />
+    <description>Journal（雑誌論文）</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Journal（雑誌論文）</title>
+      <link>https://kohei-kaji.github.io/github-pages/journal/</link>
+    </image>
+    
+    <item>
+      <title>Formalizing Argument Structures with Combinatory Categorial Grammar</title>
+      <link>https://kohei-kaji.github.io/github-pages/journal/isono-etal-2023-lncs/isono-etal-2023/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/journal/isono-etal-2023-lncs/isono-etal-2023/</guid>
+      <description>&lt;p&gt;主流生成文法の分散形態論 (Distributed Morphology, DM) を、CCGで形式化することを目指した研究です。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

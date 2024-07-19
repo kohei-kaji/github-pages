@@ -168,6 +168,7 @@ CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 私が知らないだけかもしれませんが、Chomskyを中心とした主流生成文法においても、強生成力の議論がなされている、というイメージはないです。&lt;/p&gt;
 &lt;p&gt;もちろん、強生成力についての議論はまったくないわけではなく、最近では、CCGとTAGが弱生成力だけではなく、強生成力においても等価である、と主張されています (&lt;a href=&#34;https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00393/106789/Strong-Equivalence-of-TAG-and-CCG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Schiffer and Maletti, 2021&lt;/a&gt;)。&lt;/p&gt;
 &lt;h2 id=&#34;歴史概要自然言語は文脈自由文法で表現できるのか&#34;&gt;歴史概要：自然言語は文脈自由文法で表現できるのか？&lt;/h2&gt;
+&lt;p&gt;cross-serial dependency は日本語にあるのでしょうか。&lt;/p&gt;
 &lt;p&gt;respectively読みの話や、GazdarらによるGPSGの提案など、Shieber (1985) までの話を書きたかった（というかこれがメインだった）はずだが、力尽きたので一旦おいておきます。&lt;/p&gt;
 &lt;h2 id=&#34;おわりに&#34;&gt;おわりに：&lt;/h2&gt;
 &lt;p&gt;ここまで、自然言語の文法の弱生成力に関する議論について見てきましたが、そうはいっても本当に自然言語は弱文脈依存なのでしょうか。

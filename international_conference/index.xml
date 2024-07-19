@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>International Conference（国際会議） | Kohei Kajikawa</title>
+    <link>https://kohei-kaji.github.io/github-pages/international_conference/</link>
+      <atom:link href="https://kohei-kaji.github.io/github-pages/international_conference/index.xml" rel="self" type="application/rss+xml" />
+    <description>International Conference（国際会議）</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Thu, 04 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>International Conference（国際会議）</title>
+      <link>https://kohei-kaji.github.io/github-pages/international_conference/</link>
+    </image>
+    
+    <item>
+      <title>Dissociating Syntactic Operations via Composition Count</title>
+      <link>https://kohei-kaji.github.io/github-pages/international_conference/kajikawa-etal-2024-cogsci/</link>
+      <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/international_conference/kajikawa-etal-2024-cogsci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyzing Japanese Cleft Construction in Combinatory Categorial Grammar</title>
+      <link>https://kohei-kaji.github.io/github-pages/international_conference/kajikawa-2023-lenls/kajikawa-2023/</link>
+      <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/international_conference/kajikawa-2023-lenls/kajikawa-2023/</guid>
+      <description>&lt;p&gt;日本語のcleft（分裂文・断裂文）において、focus（焦点）位置に絶対にガ格名詞句を置くことができない（たとえば、　&lt;em&gt;花子を呼んだのは太郎がだ&lt;/em&gt;　は非文。）が、他の格ならOK（&lt;em&gt;花子が呼んだのは太郎をだ&lt;/em&gt;　はOK）、という事実を、CCGの統語論で解決することを提案した論文です。
+具体的に、Kratzer (1996) によるconstructivistのアプローチを参考にした格付与のシステムをCCGで形式化しています。
+これにより、日本語においてガ格だけが他の格と絶対的に異なる挙動をするという事実（ガ格名詞句は長距離かき混ぜできない、ガ格名詞句はsmall clause内におけない）も説明できることを示しています。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Formalizing argument structures with Combinatory Categorial Grammar</title>
+      <link>https://kohei-kaji.github.io/github-pages/international_conference/isono-etal-2022-lenls/isono-etal-2022/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/international_conference/isono-etal-2022-lenls/isono-etal-2022/</guid>
+      <description>&lt;p&gt;主流生成文法の分散形態論 (Distributed Morphology, DM) を、CCGで形式化することを目指した研究です。&lt;br&gt;
+初めて「論文を書く（＋発表する）」という作業に携わりました。&lt;br&gt;
+数多くのことを学びました。感謝です。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
