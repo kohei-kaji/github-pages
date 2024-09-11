@@ -36,7 +36,7 @@
       <description>&lt;p&gt;近年、計算言語学・NLPの方で、言語モデルの評価の文脈や、自然言語の統計的普遍性に関する研究の文脈で、自然言語の文法の生成力に関する議論が再注目されているように思われます。
 生成力に関しては、理論言語学の知見が今に至るまで少しずつ着実に積み重ねられているものの、情報源が少なすぎるので、これまでの議論と関連研究をまとめて置いておきます。&lt;/p&gt;
 &lt;h2 id=&#34;自然言語は弱文脈依存言語なのか&#34;&gt;自然言語は弱文脈依存言語なのか？&lt;/h2&gt;
-&lt;p&gt;用語や歴史の説明は抜きにして、一旦結論から言うと、自然言語の文法が弱文脈依存文法（Mildly Context-Sensitive Grammar; MCSG）であるということは明確に示されているわけではありません。
+&lt;p&gt;用語や歴史の説明は抜きにして、結論から言うと、自然言語の文法が弱文脈依存文法（Mildly Context-Sensitive Grammar; MCSG）であるということは明確に示されているわけではありません。
 ただ、少なくとも以下の2つの事実から、「自然言語の文法は弱文脈依存文法である」という言説には一定の支持が得られています。そのため、しばしば弱文脈依存仮説（MCS Hypothesis）などとも呼ばれています。&lt;/p&gt;
 &lt;h3 id=&#34;1-文脈自由文法では表現できない構文が自然言語に存在する&#34;&gt;1. 文脈自由文法では表現できない構文が自然言語に存在する。&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/BF00630917&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Shieber (1985)&lt;/a&gt; により、Swiss-German（ドイツ語のスイス方言）の従属節中には、統語的にcross-serial dependencies（連続交差依存）が成り立ち、これにより自然言語には文脈自由文法では作れない表現が存在することが示されました。&lt;/p&gt;
@@ -60,12 +60,12 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
-               /github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_20a7967ca1d31600103a0def10c1d86b.webp 400w,
-               /github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_69c2d7021031db7542dc5b5c96063837.webp 760w,
-               /github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/swiss-german_hu6c3f84abe5f2d9d72a7c44a4f09c117e_105922_20a7967ca1d31600103a0def10c1d86b.webp&#34;
+               /github-pages/post/240322mcsg/swiss-german_hu4c5dbcdd045f65496d0b8ab0e8bf17fc_106861_f998a2b04449c03ae55059d6418165cd.webp 400w,
+               /github-pages/post/240322mcsg/swiss-german_hu4c5dbcdd045f65496d0b8ab0e8bf17fc_106861_44a686987ab0192e5c1f930eef42d3d5.webp 760w,
+               /github-pages/post/240322mcsg/swiss-german_hu4c5dbcdd045f65496d0b8ab0e8bf17fc_106861_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/swiss-german_hu4c5dbcdd045f65496d0b8ab0e8bf17fc_106861_f998a2b04449c03ae55059d6418165cd.webp&#34;
                width=&#34;760&#34;
-               height=&#34;188&#34;
+               height=&#34;186&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -73,7 +73,7 @@
 余談ですが、私は高校生のころ、英語を読むときに句や節ごとに括弧でかこんで読んでいました。いま考えてみると、これは私が英語を文脈自由文法で解析していたことになります。
 もしSwiss-Germanを勉強することになっていたら、このような読み方はできなかったはずです。&lt;/p&gt;
 &lt;p&gt;cross-serial dependenciesはそうあるわけではなく、上記の文と同じ意味を日本語で表そうとすると、以下のように、依存関係は交差せず、入れ子構造になります。
-cross-serial dependencies自体は確かにレアな状況ですが、そのような状況が存在しないわけではないので、自然言語の文法を文脈自由文法で済ますのは不十分であるといえます。&lt;/p&gt;
+cross-serial dependencies自体は確かに頻度が多くはない状況ですが、存在しないわけではないので、自然言語の文法を文脈自由文法で済ますのは不十分であるといえます。&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -93,12 +93,12 @@ cross-serial dependencies自体は確かにレアな状況ですが、そのよ�
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
-               /github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_1f1fce02d02b52c4d78216845415c5d7.webp 400w,
-               /github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_29f1feae91ce6a5f9bccbfb4346d7e90.webp 760w,
-               /github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/japanese_hu1c8d8e3fc4850abd3af34110473cb81a_51219_1f1fce02d02b52c4d78216845415c5d7.webp&#34;
+               /github-pages/post/240322mcsg/japanese_hu4402fab0876c1beed217ba853f9e686b_51260_1816d66e77dbcf40610dc57372917f7c.webp 400w,
+               /github-pages/post/240322mcsg/japanese_hu4402fab0876c1beed217ba853f9e686b_51260_9e2387c6ef4cecb2fdbed37c98efc709.webp 760w,
+               /github-pages/post/240322mcsg/japanese_hu4402fab0876c1beed217ba853f9e686b_51260_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/japanese_hu4402fab0876c1beed217ba853f9e686b_51260_1816d66e77dbcf40610dc57372917f7c.webp&#34;
                width=&#34;760&#34;
-               height=&#34;252&#34;
+               height=&#34;243&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
@@ -121,7 +121,7 @@ CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 &lt;li&gt;ACGはAbstract Categorial Grammar（&lt;a href=&#34;https://aclanthology.org/P01-1033/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;de Groote (2001)&lt;/a&gt;）&lt;/li&gt;
 &lt;li&gt;MCFGはMultiple Context Free Grammar（多重文脈自由文法; &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/030439759190374B&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seki et al. (1991)&lt;/a&gt;）
 &lt;ul&gt;
-&lt;li&gt;MCFGはLCFRS（Linear Context Free Rewriting System; &lt;a href=&#34;https://dl.acm.org/doi/10.3115/981175.981190&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vijay-Shanker et al. (1987)&lt;/a&gt;）と同一という話だった気がするがちょっと詳しくないので覚えていないです。&lt;/li&gt;
+&lt;li&gt;MCFGはLCFRS（Linear Context Free Rewriting System; &lt;a href=&#34;https://dl.acm.org/doi/10.3115/981175.981190&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vijay-Shanker et al. (1987)&lt;/a&gt;）と同一。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;MGはMinimalist Grammar（&lt;a href=&#34;https://link.springer.com/chapter/10.1007/BFb0052152&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (1997)&lt;/a&gt;; &lt;a href=&#34;https://academic.oup.com/edited-volume/38634/chapter/335332383&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (2011)&lt;/a&gt;）&lt;/li&gt;
@@ -136,8 +136,7 @@ CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 &lt;p&gt;も、弱文脈依存文法の仲間であることが示されています (&lt;a href=&#34;https://link.springer.com/article/10.1007/BF01191624&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vijay-Shanker and Weir, 1994&lt;/a&gt;)。&lt;/p&gt;
 &lt;p&gt;ただ、ここで面白いのは、弱文脈依存文法は一枚岩ではなく、上記の &lt;a href=&#34;https://academic.oup.com/book/26119/chapter-abstract/194151165?redirectedFrom=fulltext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (2013)&lt;/a&gt; の引用の最後の関係式で表されているように、2つのクラスに分類できます。
 具体的に、CCG, TAG, LIG, HGと、MCTAG, ACG, MCFG, LCFRS, MGです（MGにも複数の亜種があります）。&lt;/p&gt;
-&lt;p&gt;いまは、それぞれのクラスにおいてそれぞれの優位性が主張されている段階で、これに関しての合意はまだとられていません。
-たとえば、最近ではCCGサイドからは &lt;a href=&#34;https://aclanthology.org/2021.cl-1.2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanojevic and Steedman (2020)&lt;/a&gt; が、MGサイドからは &lt;a href=&#34;https://benjamins.com/catalog/elt.00033.fra&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Frank and Hunter (2021)&lt;/a&gt; などが出ています（もっと色々出ていると思いますが）。&lt;/p&gt;
+&lt;p&gt;その後の議論については、たとえば &lt;a href=&#34;https://aclanthology.org/2021.cl-1.2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanojevic and Steedman (2020)&lt;/a&gt; や &lt;a href=&#34;https://benjamins.com/catalog/elt.00033.fra&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Frank and Hunter (2021)&lt;/a&gt; なども。&lt;/p&gt;
 &lt;p&gt;もちろん、各文法理論内でも、「どのような操作を仮定するか」で揺れはあるので、上記の関係が必ずしも成り立つとは限りません。たとえばCCGは、slash-typingを導入することで（＝組合せ規則の適用に制限をかけることで）、TAGよりも弱生成力が低くなることも示されています (&lt;a href=&#34;https://direct.mit.edu/coli/article/41/2/215/1507/Lexicalization-and-Generative-Power-in-CCG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kuhlmann et al., 2015&lt;/a&gt;)。&lt;/p&gt;
 &lt;p&gt;また、Head-driven Phrase Structure Grammar (HPSG; &lt;a href=&#34;https://press.uchicago.edu/ucp/books/book/chicago/H/bo3618318.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pollard and Sag (1994)&lt;/a&gt;) やType Logical Grammar (TLG; &lt;a href=&#34;https://plato.stanford.edu/entries/typelogical-grammar/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;適切な引用がわからないのでSEPへ&lt;/a&gt;) のような、チューリング完全な文法理論もあります。&lt;/p&gt;
 &lt;h2 id=&#34;弱文脈依存文法の心理的妥当性&#34;&gt;弱文脈依存文法の心理的妥当性&lt;/h2&gt;
@@ -185,7 +184,35 @@ CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 &lt;p&gt;もちろん、強生成力についての議論はまったくないわけではなく、最近では、CCGとTAGが弱生成力だけではなく、強生成力においても等価である、と主張されています (&lt;a href=&#34;https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00393/106789/Strong-Equivalence-of-TAG-and-CCG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Schiffer and Maletti, 2021&lt;/a&gt;)。&lt;/p&gt;
 &lt;h2 id=&#34;歴史概要自然言語は文脈自由文法で表現できるのか&#34;&gt;歴史概要：自然言語は文脈自由文法で表現できるのか？&lt;/h2&gt;
 &lt;p&gt;cross-serial dependency は日本語にあるのでしょうか。&lt;/p&gt;
-&lt;p&gt;respectively読みの話や、GazdarらによるGPSGの提案など、Shieber (1985) までの話を書きたかった（というかこれがメインだった）はずだが、力尽きたので一旦おいておきます。&lt;/p&gt;
+&lt;p&gt;respectively読みの話や、GazdarらによるGPSGの提案など、Shieber (1985) までの話を書きたかった（というかこれがメインだった）はずだが、力尽きたので一旦おいておきます。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
+               /github-pages/post/240322mcsg/respectively_hu4e0ff72ddc8158651498a4899d628897_28892_04d72cdbe819c3bd4fe567b979d7bc1c.webp 400w,
+               /github-pages/post/240322mcsg/respectively_hu4e0ff72ddc8158651498a4899d628897_28892_007441288d231a23181df2219af7b0a2.webp 760w,
+               /github-pages/post/240322mcsg/respectively_hu4e0ff72ddc8158651498a4899d628897_28892_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/respectively_hu4e0ff72ddc8158651498a4899d628897_28892_04d72cdbe819c3bd4fe567b979d7bc1c.webp&#34;
+               width=&#34;586&#34;
+               height=&#34;162&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;おわりに&#34;&gt;おわりに：&lt;/h2&gt;
 &lt;p&gt;ここまで、自然言語の文法の弱生成力に関する議論について見てきましたが、そうはいっても本当に自然言語は弱文脈依存なのでしょうか。
 実はここまでの議論は、&lt;a href=&#34;https://www.degruyter.com/document/doi/10.1515/9783112316009/html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chomsky (1957)&lt;/a&gt; で指摘されているように、「文法が有限個」という暗黙の前提を置いた上での議論です。
@@ -194,7 +221,7 @@ CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 &lt;p&gt;また、正規言語で自然言語を語るのはさすがに厳しそうに思われますが、文脈自由文法は実際に自然言語の記述に広く使われています。
 例えば、&lt;a href=&#34;https://catalog.ldc.upenn.edu/LDC99T42&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Penn Treebank&lt;/a&gt; (&lt;a href=&#34;https://aclanthology.org/J93-2004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Marcus et al., 1993&lt;/a&gt;) はまさに文脈自由文法によるアノテーションであり、多言語に拡張されているところを見る限り、大きな問題は生じていないようです。
 同様に、&lt;a href=&#34;https://universaldependencies.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Universal Dependencies (UD)&lt;/a&gt; (&lt;a href=&#34;https://aclanthology.org/2020.lrec-1.497/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nirve et al., 2020&lt;/a&gt;) においても、（依存関係が交差していない木をprojective、交差している木をnon-projectiveというのですが、）他言語においてもほとんどの木がprojectiveであると報告されています。つまり、UDコーパスのほとんどは文脈自由文法で記述できているということです。&lt;/p&gt;
-&lt;p&gt;一方で、extraposition from NPやscramblingといった構文は、分析の仕方にも依りますが、非常に文脈依存性を感じるところではないでしょうか。
+&lt;p&gt;一方で、extraposition from NPやheavy NP shift、scramblingといった構文は、分析の仕方にも依りますが、非常に文脈依存性を感じるところではないでしょうか。
 Extraposition from NPとは、たとえば
 &lt;em&gt;The man fell into the pit who had been chased by dogs.&lt;/em&gt;
 のような文で、ここで、&lt;em&gt;The man&lt;/em&gt; とそこにかかる関係節 &lt;em&gt;who &amp;hellip;&lt;/em&gt; の間に動詞句 &lt;em&gt;fell into the pit&lt;/em&gt; が入っている構造です。
@@ -230,7 +257,7 @@ Scramblingは、日本語でよくある、
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;つまり、当然ながら、分析の仕方次第で見え方は変わります。&lt;/p&gt;
-&lt;p&gt;個人的には、CCGやMGによる人間の文処理のモデリング研究から計算言語学・計算心理言語学の勉強を始めた人間なので、弱文脈依存仮説は割と「そういうもの」として理解している方の人間であり、いまも昔もずっと「ではなぜ自然言語は弱文脈依存なのか？」ということを考えていますが、ふとしたときに、人間言語って正規言語っぽいなぁ、少なくとも使っている間は正規言語っぽく理解しているなぁと思うときがあります。&lt;/p&gt;
+&lt;p&gt;個人的には、CCGやMGによる人間の文処理のモデリング研究から計算言語学・計算心理言語学の勉強を始めた人間なので、弱文脈依存仮説は「記述研究で示されているのならそういうもの」と理解して、それから「ではなぜ自然言語は弱文脈依存なのか？」ということを考えています。が、言語を使用する際には（プッシュダウン）オートマトンっぽく使っているなぁ、正規言語〜文脈自由文法っぽく理解しているなぁという直感や、cross-serialは必ずしも処理が難しいとは限らない &lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.1080/01690968608404677&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(Bach et al., 1986)&lt;/a&gt; という事実、non-projectivityはむしろ処理をしやすいようにという圧力から来ているかも、というモデリング結果 &lt;a href=&#34;https://aclanthology.org/2022.cl-2.5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(Yadav et al., 2022)&lt;/a&gt; から見ると、もっと使用の観点から文法の複雑さについて考えないといけないよなぁとか、そもそもここでの「文法の複雑さ」はどれだけ意味のある見方なのかなぁなんて思うときはあります。&lt;/p&gt;
 </description>
     </item>
     
@@ -472,8 +499,6 @@ url_video: &#34;&#34;
 &lt;li&gt;&lt;a href=&#34;https://homepages.inf.ed.ac.uk/steedman/papers/ccg/book2DRAFT160622.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steedman (to appear)&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;Mark Steedman氏によるCCG本のドラフト。&lt;/li&gt;
-&lt;li&gt;新しいことが多く書いてあるが、完成するのだろうか、本当なのだろうか、という不安もある。&lt;/li&gt;
-&lt;li&gt;まあ、出版は楽しみ。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -661,6 +686,7 @@ url_video: &#34;&#34;
 &lt;li&gt;高性能 (元State-of-the-Art)。&lt;/li&gt;
 &lt;li&gt;作成者であるMilos Stanojevic氏は、Scalaで &lt;a href=&#34;https://github.com/stanojevic/Rotating-CCG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rotating-CCG&lt;/a&gt; というparserも作っている（論文は &lt;a href=&#34;https://aclanthology.org/N19-1020/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stanojevic and Steedman, 2019&lt;/a&gt;）。&lt;/li&gt;
 &lt;li&gt;Google Colab上で動かせるようにしてくれているので、環境構築の必要がなく非常に便利。&lt;/li&gt;
+&lt;li&gt;（追記：）読み込みができなくなっていた（？）が、エラーメッセージでpre-trained modelのリンクを教えてくれるので、それらをダウンロードすれば、ローカルで動かすことができる。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;ccgの導出木をlatexでかく&#34;&gt;CCGの導出木をLaTeXでかく&lt;/h1&gt;
 &lt;h3 id=&#34;ccgstyhttpsgithubcomjasonbaldridgecg-latex&#34;&gt;&lt;a href=&#34;https://github.com/jasonbaldridge/cg-latex&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ccg.sty&lt;/a&gt;&lt;/h3&gt;
@@ -903,7 +929,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-189574623&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-829135476&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -913,7 +939,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-189574623&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-829135476&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
