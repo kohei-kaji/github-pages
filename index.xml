@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>Is Struncure Dependence Shaped for Efficient Communication? A Case Study on Coordination</title>
+      <link>https://kohei-kaji.github.io/github-pages/international_conference/kajikawa-etal-2024-conll/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/international_conference/kajikawa-etal-2024-conll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Dissociating Syntactic Operations via Composition Count</title>
       <link>https://kohei-kaji.github.io/github-pages/international_conference/kajikawa-etal-2024-cogsci/</link>
       <pubDate>Thu, 04 Jul 2024 00:00:00 +0000</pubDate>
@@ -258,7 +266,7 @@ Scramblingは、日本語でよくある、
 &lt;/p&gt;
 &lt;p&gt;つまり、当然ながら、分析の仕方次第で見え方は変わります。&lt;/p&gt;
 &lt;p&gt;個人的には、CCGやMGによる人間の文処理のモデリング研究から計算言語学・計算心理言語学の勉強を始めた人間なので、弱文脈依存仮説は「記述研究で示されているのならそういうもの」と理解して、それから「ではなぜ自然言語は弱文脈依存なのか？」ということを考えています。が、言語を使用する際には（プッシュダウン）オートマトンっぽく使っているなぁ、正規言語〜文脈自由文法っぽく理解しているなぁという直感や、cross-serialは必ずしも処理が難しいとは限らない &lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.1080/01690968608404677&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(Bach et al., 1986)&lt;/a&gt; という事実、non-projectivityはむしろ処理をしやすいようにという圧力から来ているかも、というモデリング結果 &lt;a href=&#34;https://aclanthology.org/2022.cl-2.5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(Yadav et al., 2022)&lt;/a&gt; から見ると、もっと使用の観点から文法の複雑さについて考えないといけないよなぁとか、そもそもここでの「文法の複雑さ」はどれだけ意味のある見方なのかなぁなんて思うときはあります。&lt;/p&gt;
-</description>
+&lt;!-- CCGのFunction CompositionとかType Raisingは記述のために必要なのではなく、逐次的な構造構築のために必要で、その結果として言語はMCSレベルにいるのでは？みたいな。 --&gt;</description>
     </item>
     
     <item>
@@ -929,7 +937,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-829135476&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-843629571&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -939,7 +947,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-829135476&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-843629571&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
