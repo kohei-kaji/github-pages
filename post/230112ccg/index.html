@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 22, 2024 --><html lang="en-us" >
+<!-- Last Published: December 21, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -708,7 +708,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/github-pages/#misc"><span>MISC</span></a>
+            <a class="nav-link " href="/github-pages/#posts"><span>Posts</span></a>
           </li>
 
           
@@ -745,7 +745,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/github-pages/#posts"><span>Posts</span></a>
+            <a class="nav-link " href="/github-pages/#misc"><span>MISC</span></a>
           </li>
 
           
@@ -934,7 +934,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    3 min read
   </span>
   
 
@@ -962,39 +962,39 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>生成文法理論の1つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら（分野によっては）人口に膾炙しているとは言い難い状況ですので、CCGの広まりを願い、ここに文献リストや参照したら良いであろう情報を記します。</p>
+      <p>生成文法理論の１つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら（分野によっては）人口に膾炙しているとは言い難い状況ですので、CCGの広まりを願い、ここに文献リストや参照したら良いであろう情報を記します。</p>
 <h1 id="文献案内">文献案内</h1>
 <h3 id="さらっと雰囲気を掴みたい場合">さらっと雰囲気を掴みたい場合</h3>
 <ul>
 <li><a href="https://web.stanford.edu/~jurafsky/slp3/E.pdf" target="_blank" rel="noopener">Jurafsky and Martin (to appear)</a>
 <ul>
-<li>NLPの教科書として有名なDan Jurafsky氏とJames Martin氏による <a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank" rel="noopener">Speech and Language Processing</a> のDraftのAppendixの1つ。</li>
-<li>最低限の組合せ規則と、CCGによるチャートパーザを簡潔に説明している。</li>
-<li>言語学の方でも、前半だけ読むと、CCGにどういう操作があるのか・どういう構造を作るのか何となく掴みやすいと思う。</li>
+<li>NLPの教科書として有名なDan Jurafsky氏とJames Martin氏による <a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank" rel="noopener">Speech and Language Processing</a> のDraftのAppendixの１つ。</li>
+<li>最低限の組合せ規則と、CCGによるチャートパーザが簡潔に説明されている。</li>
+<li>言語学の方でも、前半だけ読むと、CCGにどういう文法操作があるのか・どういう構造を作るのか何となく掴みやすいのではないか。</li>
 </ul>
 </li>
 <li><a href="https://homepages.inf.ed.ac.uk/steedman/papers/ccg/moravcsik2.pdf" target="_blank" rel="noopener">Steedman (2022)</a>
 <ul>
-<li>Mark Steedman氏による、割と網羅的なCCGの解説論文。</li>
-<li>すでにCCGでのカテゴリ同士の組合せ方が何となくわかっていれば読みやすいと思う。</li>
-<li>基本的には統語論に関する話。</li>
+<li>Mark Steedman氏による、網羅的なCCGの解説論文。本をギュッと圧縮したイメージ。</li>
+<li>CCG分析で特徴的な構文や関連トピックについて最低限の紙幅で説明されてる。</li>
+<li>私ははじめ、これと、ここで引用されている文献を行き来して勉強した。</li>
 </ul>
 </li>
-<li><a href="https://arxiv.org/abs/2109.10044" target="_blank" rel="noopener">Clark (2021)</a>
+<li><a href="https://arxiv.org/abs/2109.10044" target="_blank" rel="noopener">Clark (2021, arXiv)</a>
 <ul>
-<li>C&amp;C parserのStephen Clark氏によるCCGのparsingに関する論文。</li>
-<li>後半部分は当時最新のCCG parser作りに関する話だが、前半は、CCGの理論やCCGのparsingに関する解説として非常にわかりやすく学びが多い。</li>
+<li><a href="https://aclanthology.org/J07-4004/" target="_blank" rel="noopener">C&amp;C parser</a>のStephen Clark氏によるCCGのparsingに関する論文。</li>
+<li>後半部分は当時最新のCCG parser作りに関する話だが、前半は、CCGの理論やCCGのparsingの概説・歴史解説として読める。</li>
 </ul>
 </li>
 </ul>
 <h3 id="理論言語学関係">理論言語学関係</h3>
 <ul>
 <li>統語・意味の理論としてのCCGを理解したい場合に参照すべき文献たちです。</li>
-<li>その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないので含めていません（Steedman (2000) にはそのあたりも載っています）。</li>
+<li>その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないので含めていません（<a href="https://mitpress.mit.edu/9780262692687/the-syntactic-process/" target="_blank" rel="noopener">Steedman (2000)</a> にはそのあたりも載っています）。</li>
 <li><a href="https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/" target="_blank" rel="noopener">Steedman (1996)</a>
 <ul>
 <li>CCG本の最初。</li>
-<li>100ページ強と薄く、読みやすい。</li>
+<li>LI Monographs。100ページ強。</li>
 <li>CCGで、英語を網羅的に記述できることを示すべく書かれたもの。</li>
 </ul>
 </li>
@@ -1008,7 +1008,12 @@
 <li><a href="https://era.ed.ac.uk/handle/1842/562" target="_blank" rel="noopener">Baldridge (2002)</a>
 <ul>
 <li>Jason Baldridge氏による博論。</li>
-<li>slash typingを導入し、言語理論としてのCCGを大きく進化させた。</li>
+<li>slash typingを導入し、言語理論としてのCCGを大きく進化させた。
+<ul>
+<li>slash type については、<a href="https://aclanthology.org/E03-1036/" target="_blank" rel="noopener">Baldridge and Kruijff (2003; EACL)</a>も参照。</li>
+</ul>
+</li>
+<li>Steedman (2000) までと違い、等位接続を文法規則 ではなくconjunctのカテゴリ X\X/X で導出。</li>
 <li>博論なので、解説としても有用。</li>
 </ul>
 </li>
@@ -1025,8 +1030,9 @@
 </li>
 <li><a href="https://onlinelibrary.wiley.com/doi/10.1002/9781444395037.ch5" target="_blank" rel="noopener">Steedman and Baldridge (2011)</a>
 <ul>
-<li>非常にわかりやすく簡潔にまとまったCCGの解説論文。</li>
+<li>非常に簡潔にまとまったCCGの解説論文。</li>
 <li>そのため、Steedman (1996)や(2000)と並んでしばしば引用されている。</li>
+<li>（CCGを引用したいくらいなら、本を読むのは大変なので、こちらを読んで引用した方が良さそう。）</li>
 <li>Non-Transformational Syntaxという本の1チャプター。
 <ul>
 <li>この本はほかの章も良い。Sag and Wasowの章が好き。</li>
@@ -1052,14 +1058,20 @@
 </ul>
 <h3 id="機械の文処理関係">機械の文処理関係</h3>
 <ul>
-<li>ここでの機械の文処理とは、文を入力とし、確率的に計算した構文木を返してくれるNLP parser（構文解析器）等のことです。</li>
-<li><a href="https://aclanthology.org/J07-4004/" target="_blank" rel="noopener">Clark and Curran (2007)</a>
+<li>ここでの機械の文処理とは、文を入力とし、確率的に計算した構文木を返してくれる構文解析器等のことです。</li>
+<li><a href="https://aclanthology.org/J07-4004/" target="_blank" rel="noopener">Clark and Curran (2007; CL)</a>
 <ul>
-<li>C&amp;C parserとして有名。</li>
-<li>いまだに現役だったりする。Supertaggerの評価用としてよく見る。</li>
+<li><a href="https://web.archive.org/web/20160318193242/http://svn.ask.it.usyd.edu.au/trac/candc" target="_blank" rel="noopener">C&amp;C parser</a>として有名。</li>
+<li>CCGbankを使った最初のwide-coverage parser。</li>
+<li>いまだに現役だったりする。Supertaggerの評価用としてよく見る。
+<ul>
+<li>Supertagとは、CCG含め、lexicalized theory of grammarの語彙範疇のこと。</li>
+<li>通常のPOS tagよりも情報が豊富なので、supertagと呼ばれる。そして、supertagが決まればほとんど文の構造は決まるので、supertaggingは<code>almost parsing</code>であるとも言われている <a href="https://aclanthology.org/J99-2004/" target="_blank" rel="noopener">(Bangalore and Joshi, 1999; CL)</a>。</li>
 </ul>
 </li>
-<li><a href="https://aclanthology.org/J07-3004/" target="_blank" rel="noopener">Hockenmaier and Steedman (2007)</a>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/J07-3004/" target="_blank" rel="noopener">Hockenmaier and Steedman (2007; CL)</a>
 <ul>
 <li>英語CCGbank。
 <ul>
@@ -1069,13 +1081,13 @@
 <li>Penn Treebank (WSJ) からの自動変換。　</li>
 </ul>
 </li>
-<li><a href="https://aclanthology.org/D14-1107/" target="_blank" rel="noopener">Lewis and Steedman (2014)</a>
+<li><a href="https://aclanthology.org/D14-1107/" target="_blank" rel="noopener">Lewis and Steedman (2014; EMNLP)</a>
 <ul>
 <li><a href="https://github.com/mikelewis0/easyccg" target="_blank" rel="noopener">EasyCCG</a> として有名。</li>
 <li>深層学習 + A* search。</li>
 </ul>
 </li>
-<li><a href="https://aclanthology.org/P13-1103/" target="_blank" rel="noopener">Uematsu et al. (2013)</a>
+<li><a href="https://aclanthology.org/P13-1103/" target="_blank" rel="noopener">Uematsu et al. (2013; ACL)</a>
 <ul>
 <li>日本語CCGBank。
 <ul>
@@ -1085,12 +1097,12 @@
 <li>係り受けコーパスである京都大学テキストコーパス（毎日新聞）からの自動変換。</li>
 <li>日本語CCGBankの続きとしては、以下のようなものがあります。
 <ul>
-<li><a href="https://aclanthology.org/2020.lrec-1.639/" target="_blank" rel="noopener">Kubota et al. (2020)</a> による <a href="https://github.com/ABCTreebank/ABCTreebank" target="_blank" rel="noopener">ABCTreebank</a>
+<li><a href="https://aclanthology.org/2020.lrec-1.639/" target="_blank" rel="noopener">Kubota et al. (2020; LREC)</a> による <a href="https://github.com/ABCTreebank/ABCTreebank" target="_blank" rel="noopener">ABCTreebank</a>
 <ul>
 <li><a href="http://www.compling.jp/keyaki/index.html" target="_blank" rel="noopener">The Keyaki Treebank</a> からの自動変換</li>
 </ul>
 </li>
-<li><a href="https://aclanthology.org/2024.eacl-srw.14/" target="_blank" rel="noopener">Tomita et al. (2024)</a>
+<li><a href="https://aclanthology.org/2024.eacl-srw.14/" target="_blank" rel="noopener">Tomita et al. (2024; EACL)</a>
 <ul>
 <li><a href="https://github.com/ABCTreebank/ABCTreebank" target="_blank" rel="noopener">ABCTreebank</a> と <a href="https://github.com/DaisukeBekki/lightblue" target="_blank" rel="noopener">lightblue</a> による日本語CCGBankの再構築</li>
 </ul>
@@ -1099,22 +1111,22 @@
 </li>
 </ul>
 </li>
-<li><a href="https://aclanthology.org/P16-4018/" target="_blank" rel="noopener">Noji and Miyao (2016)</a>
+<li><a href="https://aclanthology.org/P16-4018/" target="_blank" rel="noopener">Noji and Miyao (2016; ACL)</a>
 <ul>
 <li>日本語CCG parserの <a href="https://github.com/mynlp/jigg" target="_blank" rel="noopener">Jigg</a>。</li>
 </ul>
 </li>
-<li><a href="https://aclweb.org/anthology/P/P16/P16-4015/" target="_blank" rel="noopener">Martinez-Gomez et al. (2016)</a>
+<li><a href="https://aclweb.org/anthology/P/P16/P16-4015/" target="_blank" rel="noopener">Martinez-Gomez et al. (2016; ACL)</a>
 <ul>
-<li>意味解析システムの <a href="https://github.com/mynlp/ccg2lambda" target="_blank" rel="noopener">ccg2lambda</a></li>
+<li>意味解析システムの <a href="https://github.com/mynlp/ccg2lambda" target="_blank" rel="noopener">ccg2lambda</a>。</li>
 </ul>
 </li>
-<li><a href="https://link.springer.com/chapter/10.1007/978-3-662-53826-5_4" target="_blank" rel="noopener">Bekki and Kawazoe (2016)</a>
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-662-53826-5_4" target="_blank" rel="noopener">Bekki and Kawazoe (2016; LNTCS)</a>
 <ul>
-<li>日本語CCG parserの <a href="https://github.com/DaisukeBekki/lightblue" target="_blank" rel="noopener">lightblue</a></li>
+<li>日本語CCG parserの <a href="https://github.com/DaisukeBekki/lightblue" target="_blank" rel="noopener">lightblue</a>。</li>
 </ul>
 </li>
-<li><a href="https://aclanthology.org/P17-1026/" target="_blank" rel="noopener">Yoshikawa et al. (2017)</a>
+<li><a href="https://aclanthology.org/P17-1026/" target="_blank" rel="noopener">Yoshikawa et al. (2017; ACL)</a>
 <ul>
 <li>日本語CCG parserの <a href="https://github.com/masashi-y/depccg" target="_blank" rel="noopener">depccg</a>。</li>
 </ul>
@@ -1122,30 +1134,40 @@
 </ul>
 <h3 id="人間の文処理関係">人間の文処理関係</h3>
 <ul>
-<li><a href="https://link.springer.com/article/10.1007/BF00360804" target="_blank" rel="noopener">Ades and Steedman (1982)</a>
+<li><a href="https://link.springer.com/article/10.1007/BF00360804" target="_blank" rel="noopener">Ades and Steedman (1982; Linguist Philos)</a>
 <ul>
 <li>一番最初のCCG論文。</li>
 <li>当初より逐次的な文処理を意図して作っていることが明確で良い。</li>
+<li>notationは今とところどころ異なる。</li>
 </ul>
 </li>
-<li><a href="https://aclanthology.org/W12-4623/" target="_blank" rel="noopener">Demberg (2012)</a>
+<li><a href="https://aclanthology.org/W12-4623/" target="_blank" rel="noopener">Demberg (2012; TAG+)</a>
 <ul>
-<li>CCGの逐次的な構造構築に関して、統語論・心理言語学の知見から述べられている。</li>
+<li>CCGの逐次的な構造構築に関して、統語論・心理言語学の知見から（否定的に）述べられている。</li>
+<li>CCGではfull incremental parseができない（英語の目的語関係節）。
+<ul>
+<li>full incremental parseを実現しようとDコンビネータを導入すると過剰生成する、という指摘。</li>
 </ul>
 </li>
-<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.13312" target="_blank" rel="noopener">Stanojevic et al. (2023)</a>
+</ul>
+</li>
+<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.13312" target="_blank" rel="noopener">Stanojevic et al. (2023; Cognitive Science)</a>
 <ul>
-<li>CCGによる、英語文処理（fMRIによるBOLD信号）のモデリング。</li>
+<li>CCGによる、英語文処理（fMRIによる<a href="https://bsd.neuroinf.jp/wiki/%E6%A9%9F%E8%83%BD%E7%9A%84%E7%A3%81%E6%B0%97%E5%85%B1%E9%B3%B4%E7%94%BB%E5%83%8F%E6%B3%95#BOLD%E4%BF%A1%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A6%8B" target="_blank" rel="noopener">BOLD信号</a>）のモデリング。</li>
 <li>貢献は大きく分けて2つ。
 <ol>
-<li>CCGが、CFG（文脈自由文法）よりもより高い精度でBOLD信号を予測できることを示した。言語理論としてより妥当なCCGが、逐次的な文処理のモデル化の際にも優れていることを示した。</li>
-<li>CCGの構造構築操作由来の予測子と、LLMで算出したSurprisalがBOLD信号の予測において別々に効いた。</li>
+<li>CCGが、CFG（文脈自由文法）よりもより高い精度でBOLD信号を予測できることを示した。言語理論としてより妥当なCCGが、逐次的な文処理のモデル化においても優れていることを示した。</li>
+<li>CCGの構造構築操作由来の予測子と、LLMで算出したsurprisal（文処理における強力な予測子）とは別にBOLD信号の予測に効いた。</li>
 </ol>
 </li>
 </ul>
 </li>
-<li><a href="http://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-cogsci/" target="_blank" rel="noopener">Kajikawa et al. (2024)</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S0010027724000520?dgcid=author" target="_blank" rel="noopener">Isono (2024)</a>
+<li><a href="http://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-cogsci/" target="_blank" rel="noopener">Kajikawa et al. (2024; CogSci)</a>
+<ul>
+<li>日本語と英語の視線計測データで、CCG内の理論的に異なる文法操作が、それぞれ心理的にも異なるものとして使われていることを示唆。</li>
+</ul>
+</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0010027724000520?dgcid=author" target="_blank" rel="noopener">Isono (2024; Cognition)</a>
 <ul>
 <li>文を逐次的に理解する際に起こる、短期記憶に由来する処理負荷を、CCGの木構造ベースで説明したもの。</li>
 <li>貢献・面白い点は、短期記憶由来の処理負荷は、今まで簡単な文脈自由文法（記述力は妥当ではない）や依存文法（単語間関係の記述は優れているが、逐次的に構造がどう構築されるかは不明瞭）でしかなかったが、それをCCG (記述力が妥当かつ、構造構築過程も明確) に発展させたこと。
@@ -1158,17 +1180,17 @@
 </ul>
 <h3 id="生成力関係">生成力関係</h3>
 <ul>
-<li><a href="https://link.springer.com/article/10.1007/BF01191624" target="_blank" rel="noopener">Vijay-Shanker and Weir (1994)</a>
+<li><a href="https://link.springer.com/article/10.1007/BF01191624" target="_blank" rel="noopener">Vijay-Shanker and Weir (1994; Math. Systems Theory)</a>
 <ul>
 <li>CCGの弱生成力が、Linear-Indexed Grammar (LIG), Head Grammar (HG), Tree-Adjoining Grammar (TAG) と等価であることを示した。</li>
 </ul>
 </li>
-<li><a href="https://direct.mit.edu/coli/article/41/2/215/1507/Lexicalization-and-Generative-Power-in-CCG" target="_blank" rel="noopener">Kuhlmann et al. (2015)</a>
+<li><a href="https://direct.mit.edu/coli/article/41/2/215/1507/Lexicalization-and-Generative-Power-in-CCG" target="_blank" rel="noopener">Kuhlmann et al. (2015; CL)</a>
 <ul>
-<li><a href="https://link.springer.com/article/10.1007/BF01191624" target="_blank" rel="noopener">Vijay-Shanker and Weir (1994)</a> のときに想定されていたCCGではなく、より新しいバージョンのCCGにて、TAGと弱生成力が等価であることを示した。</li>
+<li><a href="https://link.springer.com/article/10.1007/BF01191624" target="_blank" rel="noopener">Vijay-Shanker and Weir (1994)</a> のときに想定されていたCCGではなく、slash-typeを導入したCCGにて、TAGと弱生成力が等価であることを示した。</li>
 </ul>
 </li>
-<li><a href="https://aclanthology.org/2021.tacl-1.43/" target="_blank" rel="noopener">Schiffer and Maletti (2021)</a>
+<li><a href="https://aclanthology.org/2021.tacl-1.43/" target="_blank" rel="noopener">Schiffer and Maletti (2021; TACL)</a>
 <ul>
 <li>CCGの強生成力が、TAGと等価だと主張。</li>
 </ul>
@@ -1176,25 +1198,36 @@
 </ul>
 <h3 id="標準形関係">標準形関係</h3>
 <ul>
-<li>CCGでは、同じ意味を複数の異なる統語構造で表現することができます（spurious ambiguity; 擬似的曖昧性）。このおかげで、逐次的な合成による構造構築が可能なのですが、統語構造と意味の間に一対一対応が取れないことから、parserを作る上では問題になると考えられていました。
+<li>CCGでは、同じ意味を複数の異なる統語構造で表現することができます（spurious ambiguity; 擬似的曖昧性）。このおかげで、逐次的な合成による構造構築が可能なのですが、構造的曖昧性がなくとも構文木が一意に定まらないということなので、parserを作る上では問題になると考えられていました。
 <ul>
-<li>実際には、学習データのbranchingが一貫していれば、標準形の制約なしでも擬似的曖昧性の問題にはぶつからないようです (<a href="https://aclanthology.org/P17-1026/" target="_blank" rel="noopener">Yoshikawa et al. (2017)</a>, <a href="https://www.jstage.jst.go.jp/article/jnlp/26/1/26_83/_article/-char/ja/" target="_blank" rel="noopener">Yoshikawa et al. (2019)</a> より)。</li>
+<li>実際には、学習データのbranchingが一貫していれば、標準形の制約なしでも擬似的曖昧性の問題にはぶつからないようです (<a href="https://aclanthology.org/P17-1026/" target="_blank" rel="noopener">Yoshikawa et al. (2017; ACL)</a>, <a href="https://www.jstage.jst.go.jp/article/jnlp/26/1/26_83/_article/-char/ja/" target="_blank" rel="noopener">Yoshikawa et al. (2019; 自然言語処理)</a> より)。</li>
 </ul>
 </li>
-<li>標準形の定義により、同じ意味を表す複数の異なる統語構造を1つに絞ることができます。</li>
-<li><a href="https://aclanthology.org/P96-1011/" target="_blank" rel="noopener">Eisner (1996)</a>
+<li>標準形の定義により、（構造的曖昧性がないとき）統語構造を１つに絞ることができます。</li>
+<li><a href="https://aclanthology.org/P96-1011/" target="_blank" rel="noopener">Eisner (1996; ACL)</a>
 <ul>
 <li><a href="https://www.cs.jhu.edu/~jason/papers/eisner.acl96-proof.html" target="_blank" rel="noopener">証明に関する情報</a></li>
+<li>可能な限り関数合成（function composition）を行わないという制限により、right-branchingな標準形を定義。</li>
+<li>もちろん、逆の制限にすれば、left-branchingを標準形とすることもできる。</li>
 </ul>
 </li>
-<li><a href="https://aclanthology.org/P08-1038/" target="_blank" rel="noopener">Hoyt and Baldridge (2008)</a></li>
-<li><a href="https://aclanthology.org/C10-1053/" target="_blank" rel="noopener">Hockenmaier and Bisk (2010)</a></li>
+<li><a href="https://aclanthology.org/P08-1038/" target="_blank" rel="noopener">Hoyt and Baldridge (2008; ACL)</a>
+<ul>
+<li>Dコンビネータの導入と、それを含めた標準形の定義。</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/C10-1053/" target="_blank" rel="noopener">Hockenmaier and Bisk (2010; COLING)</a>
+<ul>
+<li><a href="https://aclanthology.org/P96-1011/" target="_blank" rel="noopener">Eisner (1996; ACL)</a>の拡張。</li>
+<li>generalized compositionとgrammatical type-raisingを考慮した拡張。</li>
+</ul>
+</li>
 </ul>
 <h1 id="ccg-parserを触ってみよう">CCG parserを触ってみよう！</h1>
 <ul>
-<li>CCGは、他の文法理論に比べ、高精度なNLP parserが数おおく整備されている、という点で非常に有用です。
+<li>CCGは、他の文法理論に比べ、高精度な構文解析器（parser）が数おおく整備されている、という点で非常に有用です。
 <ul>
-<li>semantic parsingに適度に使いやすいといったことや、ツリーバンクの整備が早かった、という点が要因な気がしています。</li>
+<li>semantic parsingに適度に使いやすいといったことや、ツリーバンクの整備が早かった、という点が要因な気がしています（当時を知らないので妄想です）。</li>
 </ul>
 </li>
 <li>特に、下記のparserたちは動かすのにそこまで難易度が高くないのでおすすめです。</li>
@@ -1232,7 +1265,7 @@
 <ul>
 <li>Python, Cythonによる英中CCG parser。</li>
 <li>高性能 (元State-of-the-Art)。</li>
-<li>作成者であるMilos Stanojevic氏は、Scalaで <a href="https://github.com/stanojevic/Rotating-CCG" target="_blank" rel="noopener">Rotating-CCG</a> というparserも作っている（論文は <a href="https://aclanthology.org/N19-1020/" target="_blank" rel="noopener">Stanojevic and Steedman, 2019</a>）。</li>
+<li>作成者であるMilos Stanojevic氏は、Scalaで <a href="https://github.com/stanojevic/Rotating-CCG" target="_blank" rel="noopener">Rotating-CCG</a> というparserも作っている（論文は <a href="https://aclanthology.org/N19-1020/" target="_blank" rel="noopener">Stanojevic and Steedman (2019; NAACL)</a>）。</li>
 <li>Google Colab上で動かせるようにしてくれているので、環境構築の必要がなく非常に便利。</li>
 <li>（追記：）読み込みができなくなっていた（？）が、エラーメッセージでpre-trained modelのリンクを教えてくれるので、それらをダウンロードすれば、ローカルで動かすことができる。</li>
 </ul>
@@ -1265,9 +1298,9 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\ex.\label{hoge-label}
 </span></span><span class="line"><span class="cl">\deriv{hoge}{fuga}
 </span></span></code></pre></div><ul>
-<li>ulemパッケージ（下線とか打ち消し線を挿入する用のパッケージ）を入れると、ccg.sty内の<code>\uline{}</code>が衝突してしまう。
+<li><code>ulem</code>パッケージ（下線とか打ち消し線を挿入する用のパッケージ）を入れると、ccg.sty内の<code>\uline{}</code>が衝突してしまう。
 <ul>
-<li>ccg.styに<code>\newcommand{\ulines}[1]{\ul{#1}}</code>などと追加して、<code>\deriv</code>内では<code>\ul{}</code>を使うようにすれば良い。</li>
+<li>コマンドの名前が一致していなければ良いだけなので、ccg.styに<code>\newcommand{\ulines}[1]{\ul{#1}}</code>などと追加して、<code>\deriv</code>内では<code>\ul{}</code>を使うようにすれば良い。</li>
 </ul>
 </li>
 </ul>

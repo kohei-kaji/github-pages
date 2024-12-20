@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 22, 2024 --><html lang="en-us" >
+<!-- Last Published: December 21, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -708,7 +708,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/github-pages/#misc"><span>MISC</span></a>
+            <a class="nav-link " href="/github-pages/#posts"><span>Posts</span></a>
           </li>
 
           
@@ -745,7 +745,7 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/github-pages/#posts"><span>Posts</span></a>
+            <a class="nav-link " href="/github-pages/#misc"><span>MISC</span></a>
           </li>
 
           
@@ -966,7 +966,8 @@
 生成力に関しては、理論言語学の知見が今に至るまで少しずつ着実に積み重ねられているものの、情報源が少なすぎるので、これまでの議論と関連研究をまとめて置いておきます。</p>
 <h2 id="自然言語は弱文脈依存言語なのか">自然言語は弱文脈依存言語なのか？</h2>
 <p>用語や歴史の説明は抜きにして、結論から言うと、自然言語の文法が弱文脈依存文法（Mildly Context-Sensitive Grammar; MCSG）であるということは明確に示されているわけではありません。
-ただ、少なくとも以下の2つの事実から、「自然言語の文法は弱文脈依存文法である」という言説には一定の支持が得られています。そのため、しばしば弱文脈依存仮説（MCS Hypothesis）などとも呼ばれています。</p>
+ただ、少なくとも以下の2つの事実から、「自然言語の文法は弱文脈依存文法である」という言説には一定の合意が得られています。そのため、しばしば弱文脈依存仮説（MCS Hypothesis）などとも呼ばれています。<br>
+なお、mildly context sensitiveという用語・概念は <a href="https://www.cambridge.org/core/books/abs/natural-language-parsing/tree-adjoining-grammars-how-much-contextsensitivity-is-required-to-provide-reasonable-structural-descriptions/81BFD6DAC6B0CB24A3042A06E964F2E1" target="_blank" rel="noopener">Joshi (1985)</a> が初出です。</p>
 <h3 id="1-文脈自由文法では表現できない構文が自然言語に存在する">1. 文脈自由文法では表現できない構文が自然言語に存在する。</h3>
 <p><a href="https://link.springer.com/article/10.1007/BF00630917" target="_blank" rel="noopener">Shieber (1985)</a> により、Swiss-German（ドイツ語のスイス方言）の従属節中には、統語的にcross-serial dependencies（連続交差依存）が成り立ち、これにより自然言語には文脈自由文法では作れない表現が存在することが示されました。</p>
 <p>cross-serial dependenciesとは、以下のような（ここでは連続する動詞と対応する主格の項）の依存関係が交差しあっている状況です（文は <a href="https://link.springer.com/article/10.1007/BF00630917" target="_blank" rel="noopener">Shieber (1985)</a> より）。</p>
@@ -999,10 +1000,10 @@
   </div></figure>
 </p>
 <p>非常に雑にいうと、依存関係が交差しないネストした（入れ子構造になっている）関係だと文脈自由文法で表現できるのですが、連続交差依存は文脈自由文法では表現できません。
-余談ですが、私は高校生のころ、英語を読むときに句や節ごとに括弧でかこんで読んでいました。いま考えてみると、これは私が英語を文脈自由文法で解析していたことになります。
+たとえば、高校生の頃、英語を読むときに句や節ごとに括弧でかこんで読んでいた人は多いと思うのですが（そうですよね？）、いま考えてみると、これは英語を入れ子構造として、すなわち文脈自由レベルの文法として解析していたことになります。
 もしSwiss-Germanを勉強することになっていたら、このような読み方はできなかったはずです。</p>
 <p>cross-serial dependenciesはそうあるわけではなく、上記の文と同じ意味を日本語で表そうとすると、以下のように、依存関係は交差せず、入れ子構造になります。
-cross-serial dependencies自体は確かに頻度が多くはない状況ですが、存在しないわけではないので、自然言語の文法を文脈自由文法で済ますのは不十分であるといえます。</p>
+cross-serial dependencies自体は確かに頻度は多くはないですが <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378437117310580?via%3Dihub" target="_blank" rel="noopener">(e.g., Ferrer i Cancho et al., 2018)</a>、存在しないわけではないので、自然言語の文法を文脈自由文法で済ますのは不十分であるといえます。</p>
 <p>
 
 
@@ -1031,14 +1032,15 @@ cross-serial dependencies自体は確かに頻度が多くはない状況です�
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>ちなみに、同時期に <a href="https://link.springer.com/article/10.1007/BF00630918" target="_blank" rel="noopener">Culy (1985)</a> にて、Bambaraを用いて、形態的にも文脈自由文法で表現できない事例が存在することが示されています。</p>
+<p>ちなみに、同時期に <a href="https://link.springer.com/article/10.1007/BF00630918" target="_blank" rel="noopener">Culy (1985)</a> にて、Bambaraを用いて、形態的にも文脈自由文法で表現できない事例が存在することが示されています。<br>
+241212追記：Bambaraの例は音調的な振る舞いに依存しており、形態論の問題なのか？、という議論があるようで、結局、アイヌ語にて形態論レベルでのbeyond context-freenessが示されたようです <a href="https://aclanthology.org/2024.tacl-1.36/" target="_blank" rel="noopener">(Sanuma and Aizawa, 2024)</a>。</p>
 <h3 id="2-数多くの独立に提案された文法理論が弱文脈依存文法である">2. 数多くの（独立に提案された）文法理論が、弱文脈依存文法である。</h3>
 <p><a href="https://www.sciencedirect.com/science/article/pii/S0022000075800195" target="_blank" rel="noopener">Joshi et al. (1975)</a> によるTree Adjoining Grammar（TAG; 木接合文法）をはじめ、多くの文法理論が、特に80-90年代にかけて、計算・数理言語学の分野で提案されましたが、そのほとんどが最終的に文脈自由文法と文脈依存文法の間にいることが示されました。
 これは、多くの計算・数理言語学者の間である種の「合意」がとれた状況とも言えるでしょう。</p>
 <p>これについては、<a href="https://academic.oup.com/book/26119/chapter-abstract/194151165?redirectedFrom=fulltext" target="_blank" rel="noopener">Stabler (2013)</a> にてわかりやすくレビューされていますので、少々長いですが引用して提示しておきます。</p>
 <details>
 <summary>Stabler (2013); p.4より</summary>
-In particular, a very significant computational consensus was identified by Joshi (1985) in his hypothesis that human languages are both strongly and weakly mildly context sensitive (MCS). While any empirical test of this hypothesis still depends on a network of theoretical assumptions, the claim is so fundamental that it can be connected to many diverse traditions in grammar. To say that language is "strongly and weakly" MCS is to say that MCS grammars can both define the sentences of human languages (weak adequacy) and also provide the structures of those languages (strong adequacy). Joshi’s original definition of MCS grammars was partly informal, so there are now various precise versions of his claim. One is that human languages are defined by tree adjoining grammars (TAGs) or closely related grammars, and another theoretically weaker (and hence empirically stronger) position is that human language are definable by the more expressive (set local) multi-component TAGs or closely related grammars. The most remarkable thing about this claim came out of the innocent-sounding phrase "or closely related grammars," because it was discovered that a wide range of independently proposed grammar formalisms falls under that description. In particular, a series of papers beginning in the 1980’s and 1990’s established the following inclusion relations among the languages defined by various kinds of grammars, across traditions:
+In particular, a very significant computational consensus was identified by [Joshi (1985)](https://www.cambridge.org/core/books/abs/natural-language-parsing/tree-adjoining-grammars-how-much-contextsensitivity-is-required-to-provide-reasonable-structural-descriptions/81BFD6DAC6B0CB24A3042A06E964F2E1) in his hypothesis that human languages are both strongly and weakly mildly context sensitive (MCS). While any empirical test of this hypothesis still depends on a network of theoretical assumptions, the claim is so fundamental that it can be connected to many diverse traditions in grammar. To say that language is "strongly and weakly" MCS is to say that MCS grammars can both define the sentences of human languages (weak adequacy) and also provide the structures of those languages (strong adequacy). Joshi’s original definition of MCS grammars was partly informal, so there are now various precise versions of his claim. One is that human languages are defined by tree adjoining grammars (TAGs) or closely related grammars, and another theoretically weaker (and hence empirically stronger) position is that human language are definable by the more expressive (set local) multi-component TAGs or closely related grammars. The most remarkable thing about this claim came out of the innocent-sounding phrase "or closely related grammars," because it was discovered that a wide range of independently proposed grammar formalisms falls under that description. In particular, a series of papers beginning in the 1980’s and 1990’s established the following inclusion relations among the languages defined by various kinds of grammars, across traditions:
 CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 </details>
 <p>上記引用にて、</p>
@@ -1148,7 +1150,7 @@ CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 考えてみれば当たり前の話で、観測したすべての自然言語の文を「記述」したいと思ったとき、それらの文以下の数の有限状態オートマトンさえ準備すれば、目的は達成されるかもしれません。
 さすがに「そんな記述がしたいわけではない」と言われて終わりな話ですが、自然言語には部分的に正規言語っぽい部分があるのも事実です（具体的に、日本語の助動詞などまさに正規言語でしょう。古文の助動詞を思い出すとわかりすい気がします）。</p>
 <p>また、正規言語で自然言語を語るのはさすがに厳しそうに思われますが、文脈自由文法は実際に自然言語の記述に広く使われています。
-例えば、<a href="https://catalog.ldc.upenn.edu/LDC99T42" target="_blank" rel="noopener">Penn Treebank</a> (<a href="https://aclanthology.org/J93-2004/" target="_blank" rel="noopener">Marcus et al., 1993</a>) はまさに文脈自由文法によるアノテーションであり、多言語に拡張されているところを見る限り、大きな問題は生じていないようです。
+例えば、<a href="https://catalog.ldc.upenn.edu/LDC99T42" target="_blank" rel="noopener">Penn Treebank</a> (<a href="https://aclanthology.org/J93-2004/" target="_blank" rel="noopener">Marcus et al., 1993</a>) はまさに文脈自由文法によるアノテーションであり、多言語に拡張されているところを見る限り、（実用上）大きな問題は生じていないようです。
 同様に、<a href="https://universaldependencies.org/" target="_blank" rel="noopener">Universal Dependencies (UD)</a> (<a href="https://aclanthology.org/2020.lrec-1.497/" target="_blank" rel="noopener">Nirve et al., 2020</a>) においても、（依存関係が交差していない木をprojective、交差している木をnon-projectiveというのですが、）他言語においてもほとんどの木がprojectiveであると報告されています。つまり、UDコーパスのほとんどは文脈自由文法で記述できているということです。</p>
 <p>一方で、extraposition from NPやheavy NP shift、scramblingといった構文は、分析の仕方にも依りますが、非常に文脈依存性を感じるところではないでしょうか。
 Extraposition from NPとは、たとえば
@@ -1187,6 +1189,7 @@ Scramblingは、日本語でよくある、
 </p>
 <p>つまり、当然ながら、分析の仕方次第で見え方は変わります。</p>
 <p>個人的には、CCGやMGによる人間の文処理のモデリング研究から計算言語学・計算心理言語学の勉強を始めた人間なので、弱文脈依存仮説は「記述研究で示されているのならそういうもの」と理解して、それから「ではなぜ自然言語は弱文脈依存なのか？」ということを考えています。が、言語を使用する際には（プッシュダウン）オートマトンっぽく使っているなぁ、正規言語〜文脈自由文法っぽく理解しているなぁという直感や、cross-serialは必ずしも処理が難しいとは限らない <a href="https://www.tandfonline.com/doi/abs/10.1080/01690968608404677" target="_blank" rel="noopener">(Bach et al., 1986)</a> という事実、non-projectivityはむしろ処理をしやすいようにという圧力から来ているかも、というモデリング結果 <a href="https://aclanthology.org/2022.cl-2.5/" target="_blank" rel="noopener">(Yadav et al., 2022)</a> から見ると、もっと使用の観点から文法の複雑さについて考えないといけないよなぁとか、そもそもここでの「文法の複雑さ」はどれだけ意味のある見方なのかなぁなんて思うときはあります。</p>
+<p>生成力は「最悪のケース」に関する議論である一方、人間の逐次的な処理における「複雑さ」は人間の記憶や予測における平均的な認知負荷を捉えており、弱文脈依存性に関する議論を、後者の方から再検討すべきだよな、とは直観しています。</p>
 <!-- CCGのFunction CompositionとかType Raisingは記述のために必要なのではなく、逐次的な構造構築のために必要で、その結果として言語はMCSレベルにいるのでは？みたいな。 -->
     </div>
 
