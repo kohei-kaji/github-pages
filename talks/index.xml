@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks | Kohei Kajikawa</title>
+    <link>https://kohei-kaji.github.io/github-pages/talks/</link>
+      <atom:link href="https://kohei-kaji.github.io/github-pages/talks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Talks</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2023 Kohei Kajikawa</copyright><lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kohei-kaji.github.io/github-pages/media/icon_hu10226378635250344412.png</url>
+      <title>Talks</title>
+      <link>https://kohei-kaji.github.io/github-pages/talks/</link>
+    </image>
+    
+    <item>
+      <title>Is Structure Dependence Shaped for Efficient Communication? A Case Study on Coordination</title>
+      <link>https://kohei-kaji.github.io/github-pages/talks/nlp-colloquium/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/talks/nlp-colloquium/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

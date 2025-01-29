@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: January 29, 2025 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/github-pages/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/github-pages/css/wowchemy.f6689966c0a10712f95f034011917db0.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/github-pages/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/github-pages/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Kohei Kajikawa" />
+
+
+
+
+
+  
+
+<meta name="description" content="CCG（組合せ範疇文法）に関する雑多な文献案内・parser案内など。" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://kohei-kaji.github.io/github-pages/blogs/230112ccg/" />
+<link rel="canonical" href="https://kohei-kaji.github.io/github-pages/blogs/230112ccg/" />
+
+
+
+  <link rel="manifest" href="/github-pages/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/github-pages/media/icon_hu10978985619530458252.png" />
+<link rel="apple-touch-icon" type="image/png" href="/github-pages/media/icon_hu10391704213710329260.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="https://kohei-kaji.github.io/github-pages/media/icon_hu10226378635250344412.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Kohei Kajikawa" />
+<meta property="og:url" content="https://kohei-kaji.github.io/github-pages/blogs/230112ccg/" />
+<meta property="og:title" content="CCGに関する情報集 | Kohei Kajikawa" />
+<meta property="og:description" content="CCG（組合せ範疇文法）に関する雑多な文献案内・parser案内など。" /><meta property="og:image" content="https://kohei-kaji.github.io/github-pages/media/icon_hu10226378635250344412.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2023-01-12T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-01-12T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>CCGに関する情報集 | Kohei Kajikawa</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="8d83490b81b832dee29d6a573515d42d" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/github-pages/js/wowchemy-init.min.9e4214442a7711d35691acd58f6f6361.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/github-pages/">Kohei Kajikawa</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/github-pages/">Kohei Kajikawa</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#international_conference"><span>International Conference</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#journal"><span>Journal</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#domestic_conference"><span>Domestic Conference</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#blogs"><span>Blogs</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#misc"><span>MISC</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#experience"><span>Experience</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/github-pages/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>CCGに関する情報集</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 12, 2023
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>生成文法理論の１つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら（分野によっては）人口に膾炙しているとは言い難い状況ですので、CCGの広まりを願い、ここに文献リストや参照したら良いであろう情報を記します。</p>
+<h1 id="文献案内">文献案内</h1>
+<h3 id="さらっと雰囲気を掴みたい場合">さらっと雰囲気を掴みたい場合</h3>
+<ul>
+<li><a href="https://web.stanford.edu/~jurafsky/slp3/E.pdf" target="_blank" rel="noopener">Jurafsky and Martin (to appear)</a>
+<ul>
+<li>NLPの教科書として有名なDan Jurafsky氏とJames Martin氏による <a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank" rel="noopener">Speech and Language Processing</a> のDraftのAppendixの１つ。</li>
+<li>最低限の組合せ規則と、CCGによるチャートパーザが簡潔に説明されている。</li>
+<li>言語学の方でも、前半だけ読むと、CCGにどういう文法操作があるのか・どういう構造を作るのか何となく掴みやすいのではないか。</li>
+</ul>
+</li>
+<li><a href="https://homepages.inf.ed.ac.uk/steedman/papers/ccg/moravcsik2.pdf" target="_blank" rel="noopener">Steedman (2022)</a>
+<ul>
+<li>Mark Steedman氏による、網羅的なCCGの解説論文。本をギュッと圧縮したイメージ。</li>
+<li>CCG分析で特徴的な構文や関連トピックについて最低限の紙幅で説明されてる。</li>
+<li>私ははじめ、これと、ここで引用されている文献を行き来して勉強した。</li>
+</ul>
+</li>
+<li><a href="https://arxiv.org/abs/2109.10044" target="_blank" rel="noopener">Clark (2021, arXiv)</a>
+<ul>
+<li><a href="https://aclanthology.org/J07-4004/" target="_blank" rel="noopener">C&amp;C parser</a>のStephen Clark氏によるCCGのparsingに関する論文。</li>
+<li>後半部分は当時最新のCCG parser作りに関する話だが、前半は、CCGの理論やCCGのparsingの概説・歴史解説として読める。</li>
+</ul>
+</li>
+</ul>
+<h3 id="理論言語学関係">理論言語学関係</h3>
+<ul>
+<li>統語・意味の理論としてのCCGを理解したい場合に参照すべき文献たちです。</li>
+<li>その他、CCGには音韻の理論としての顔もありますが、そのあたりは詳しくないので含めていません（<a href="https://mitpress.mit.edu/9780262692687/the-syntactic-process/" target="_blank" rel="noopener">Steedman (2000)</a> にはそのあたりも載っています）。</li>
+<li><a href="https://mitpress.mit.edu/9780262691932/surface-structure-and-interpretation/" target="_blank" rel="noopener">Steedman (1996)</a>
+<ul>
+<li>CCG本の最初。</li>
+<li>LI Monographs。100ページ強。</li>
+<li>CCGで、英語を網羅的に記述できることを示すべく書かれたもの。</li>
+</ul>
+</li>
+<li><a href="https://mitpress.mit.edu/9780262692687/the-syntactic-process/" target="_blank" rel="noopener">Steedman (2000)</a>
+<ul>
+<li>Steedman (1996) の強化版。</li>
+<li>若干の理論的改訂あり。</li>
+<li>Google Scholarでは出版年が誤って2001となっており、ちらほら Steedman (2001) として論文中に登場してしまう。</li>
+</ul>
+</li>
+<li><a href="https://era.ed.ac.uk/handle/1842/562" target="_blank" rel="noopener">Baldridge (2002)</a>
+<ul>
+<li>Jason Baldridge氏による博論。</li>
+<li>slash typingを導入し、言語理論としてのCCGを大きく進化させた。
+<ul>
+<li>slash type については、<a href="https://aclanthology.org/E03-1036/" target="_blank" rel="noopener">Baldridge and Kruijff (2003; EACL)</a>も参照。</li>
+</ul>
+</li>
+<li>Steedman (2000) までと違い、等位接続を文法規則 ではなくconjunctのカテゴリ X\X/X で導出。</li>
+<li>博論なので、解説としても有用。</li>
+</ul>
+</li>
+<li><a href="https://www.9640.jp/book_view/?468" target="_blank" rel="noopener">戸次 (2010)</a>
+<ul>
+<li>日本語CCG本。</li>
+<li>日本語文法の論文としても面白い。
+<ul>
+<li>特に活用体系や、量化子周りの話。</li>
+</ul>
+</li>
+<li><a href="https://www.jstage.jst.go.jp/article/nihongonokenkyu/7/3/7_KJ00007729621/_pdf/-char/ja" target="_blank" rel="noopener">書評 (矢田部, 2011)</a> も面白い。</li>
+</ul>
+</li>
+<li><a href="https://onlinelibrary.wiley.com/doi/10.1002/9781444395037.ch5" target="_blank" rel="noopener">Steedman and Baldridge (2011)</a>
+<ul>
+<li>非常に簡潔にまとまったCCGの解説論文。</li>
+<li>そのため、Steedman (1996)や(2000)と並んでしばしば引用されている。</li>
+<li>（CCGを引用したいくらいなら、本を読むのは大変なので、こちらを読んで引用した方が良さそう。）</li>
+<li>Non-Transformational Syntaxという本の1チャプター。
+<ul>
+<li>この本はほかの章も良い。Sag and Wasowの章が好き。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://direct.mit.edu/ling/article-abstract/doi/10.1162/ling_a_00521/117700/On-Internal-Merge?redirectedFrom=PDF" target="_blank" rel="noopener">Steedman (2023)</a>
+<ul>
+<li>ほとんどミニマリストに向けて書いてあるLIの論文。
+<ul>
+<li>ミニマリストの理論を踏まえ、「CCGならもっと簡潔に書けますよ」と主張したもの。著者の穏健な姿勢が窺える。</li>
+</ul>
+</li>
+<li>ミニマリストがCCGをはじめる際には一番わかりやすいと思われる（自分がミニマリストではないのでわからないが）。</li>
+</ul>
+</li>
+<li><a href="https://homepages.inf.ed.ac.uk/steedman/papers/ccg/book2DRAFT160622.pdf" target="_blank" rel="noopener">Steedman (to appear)</a>
+<ul>
+<li>Mark Steedman氏によるCCG本のドラフト。</li>
+</ul>
+</li>
+</ul>
+<h3 id="機械の文処理関係">機械の文処理関係</h3>
+<ul>
+<li>ここでの機械の文処理とは、文を入力とし、確率的に計算した構文木を返してくれる構文解析器等のことです。</li>
+<li><a href="https://aclanthology.org/J07-4004/" target="_blank" rel="noopener">Clark and Curran (2007; CL)</a>
+<ul>
+<li><a href="https://web.archive.org/web/20160318193242/http://svn.ask.it.usyd.edu.au/trac/candc" target="_blank" rel="noopener">C&amp;C parser</a>として有名。</li>
+<li>CCGbankを使った最初のwide-coverage parser。</li>
+<li>いまだに現役だったりする。Supertaggerの評価用としてよく見る。
+<ul>
+<li>Supertagとは、CCG含め、lexicalized theory of grammarの語彙範疇のこと。</li>
+<li>通常のPOS tagよりも情報が豊富なので、supertagと呼ばれる。そして、supertagが決まればほとんど文の構造は決まるので、supertaggingは<code>almost parsing</code>であるとも言われている <a href="https://aclanthology.org/J99-2004/" target="_blank" rel="noopener">(Bangalore and Joshi, 1999; CL)</a>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/J07-3004/" target="_blank" rel="noopener">Hockenmaier and Steedman (2007; CL)</a>
+<ul>
+<li>英語CCGbank。
+<ul>
+<li>空白なし小文字b</li>
+</ul>
+</li>
+<li>Penn Treebank (WSJ) からの自動変換。　</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/D14-1107/" target="_blank" rel="noopener">Lewis and Steedman (2014; EMNLP)</a>
+<ul>
+<li><a href="https://github.com/mikelewis0/easyccg" target="_blank" rel="noopener">EasyCCG</a> として有名。</li>
+<li>深層学習 + A* search。</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/P13-1103/" target="_blank" rel="noopener">Uematsu et al. (2013; ACL)</a>
+<ul>
+<li>日本語CCGBank。
+<ul>
+<li>空白なし大文字B</li>
+</ul>
+</li>
+<li>係り受けコーパスである京都大学テキストコーパス（毎日新聞）からの自動変換。</li>
+<li>日本語CCGBankの続きとしては、以下のようなものがあります。
+<ul>
+<li><a href="https://aclanthology.org/2020.lrec-1.639/" target="_blank" rel="noopener">Kubota et al. (2020; LREC)</a> による <a href="https://github.com/ABCTreebank/ABCTreebank" target="_blank" rel="noopener">ABCTreebank</a>
+<ul>
+<li><a href="http://www.compling.jp/keyaki/index.html" target="_blank" rel="noopener">The Keyaki Treebank</a> からの自動変換</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/2024.eacl-srw.14/" target="_blank" rel="noopener">Tomita et al. (2024; EACL)</a>
+<ul>
+<li><a href="https://github.com/ABCTreebank/ABCTreebank" target="_blank" rel="noopener">ABCTreebank</a> と <a href="https://github.com/DaisukeBekki/lightblue" target="_blank" rel="noopener">lightblue</a> による日本語CCGBankの再構築</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/P16-4018/" target="_blank" rel="noopener">Noji and Miyao (2016; ACL)</a>
+<ul>
+<li>日本語CCG parserの <a href="https://github.com/mynlp/jigg" target="_blank" rel="noopener">Jigg</a>。</li>
+</ul>
+</li>
+<li><a href="https://aclweb.org/anthology/P/P16/P16-4015/" target="_blank" rel="noopener">Martinez-Gomez et al. (2016; ACL)</a>
+<ul>
+<li>意味解析システムの <a href="https://github.com/mynlp/ccg2lambda" target="_blank" rel="noopener">ccg2lambda</a>。</li>
+</ul>
+</li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-662-53826-5_4" target="_blank" rel="noopener">Bekki and Kawazoe (2016; LNTCS)</a>
+<ul>
+<li>日本語CCG parserの <a href="https://github.com/DaisukeBekki/lightblue" target="_blank" rel="noopener">lightblue</a>。</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/P17-1026/" target="_blank" rel="noopener">Yoshikawa et al. (2017; ACL)</a>
+<ul>
+<li>日本語CCG parserの <a href="https://github.com/masashi-y/depccg" target="_blank" rel="noopener">depccg</a>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="人間の文処理関係">人間の文処理関係</h3>
+<ul>
+<li><a href="https://link.springer.com/article/10.1007/BF00360804" target="_blank" rel="noopener">Ades and Steedman (1982; Linguist Philos)</a>
+<ul>
+<li>一番最初のCCG論文。</li>
+<li>当初より逐次的な文処理を意図して作っていることが明確で良い。</li>
+<li>notationは今とところどころ異なる。</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/W12-4623/" target="_blank" rel="noopener">Demberg (2012; TAG+)</a>
+<ul>
+<li>CCGの逐次的な構造構築に関して、統語論・心理言語学の知見から（否定的に）述べられている。</li>
+<li>CCGではfull incremental parseができない（英語の目的語関係節）。
+<ul>
+<li>full incremental parseを実現しようとDコンビネータを導入すると過剰生成する、という指摘。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.13312" target="_blank" rel="noopener">Stanojevic et al. (2023; Cognitive Science)</a>
+<ul>
+<li>CCGによる、英語文処理（fMRIによる<a href="https://bsd.neuroinf.jp/wiki/%E6%A9%9F%E8%83%BD%E7%9A%84%E7%A3%81%E6%B0%97%E5%85%B1%E9%B3%B4%E7%94%BB%E5%83%8F%E6%B3%95#BOLD%E4%BF%A1%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A6%8B" target="_blank" rel="noopener">BOLD信号</a>）のモデリング。</li>
+<li>貢献は大きく分けて2つ。
+<ol>
+<li>CCGが、CFG（文脈自由文法）よりもより高い精度でBOLD信号を予測できることを示した。言語理論としてより妥当なCCGが、逐次的な文処理のモデル化においても優れていることを示した。</li>
+<li>CCGの構造構築操作由来の予測子と、LLMで算出したsurprisal（文処理における強力な予測子）とは別にBOLD信号の予測に効いた。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><a href="http://kohei-kaji.github.io/github-pages/publication/kajikawa-etal-2024-cogsci/" target="_blank" rel="noopener">Kajikawa et al. (2024; CogSci)</a>
+<ul>
+<li>日本語と英語の視線計測データで、CCG内の理論的に異なる文法操作が、それぞれ心理的にも異なるものとして使われていることを示唆。</li>
+</ul>
+</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0010027724000520?dgcid=author" target="_blank" rel="noopener">Isono (2024; Cognition)</a>
+<ul>
+<li>文を逐次的に理解する際に起こる、短期記憶に由来する処理負荷を、CCGの木構造ベースで説明したもの。</li>
+<li>貢献・面白い点は、短期記憶由来の処理負荷は、今まで簡単な文脈自由文法（記述力は妥当ではない）や依存文法（単語間関係の記述は優れているが、逐次的に構造がどう構築されるかは不明瞭）でしかなかったが、それをCCG (記述力が妥当かつ、構造構築過程も明確) に発展させたこと。
+<ul>
+<li>個人的に、CCGの良さは、単に「competence grammarのままでprocessingのことをちゃんと語れそうな理論」、ということだけではなく、「いろいろなことができすぎない理論」だと思っています。具体的に、ここでは、構成素同士の合成にちゃんと制限があって、必ずしも何でも組合せられるわけではないが（つまり、単語が順に入ってきたとき、毎度毎度その単語をすでに作っている構成素に統合できるとは限らない）、この論文では、その組合せられないポイントを証拠に人間の文処理が説明できることが経験的に示されています。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="生成力関係">生成力関係</h3>
+<ul>
+<li><a href="https://link.springer.com/article/10.1007/BF01191624" target="_blank" rel="noopener">Vijay-Shanker and Weir (1994; Math. Systems Theory)</a>
+<ul>
+<li>CCGの弱生成力が、Linear-Indexed Grammar (LIG), Head Grammar (HG), Tree-Adjoining Grammar (TAG) と等価であることを示した。</li>
+</ul>
+</li>
+<li><a href="https://direct.mit.edu/coli/article/41/2/215/1507/Lexicalization-and-Generative-Power-in-CCG" target="_blank" rel="noopener">Kuhlmann et al. (2015; CL)</a>
+<ul>
+<li><a href="https://link.springer.com/article/10.1007/BF01191624" target="_blank" rel="noopener">Vijay-Shanker and Weir (1994)</a> のときに想定されていたCCGではなく、slash-typeを導入したCCGにて、TAGと弱生成力が等価であることを示した。</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/2021.tacl-1.43/" target="_blank" rel="noopener">Schiffer and Maletti (2021; TACL)</a>
+<ul>
+<li>CCGの強生成力が、TAGと等価だと主張。</li>
+</ul>
+</li>
+</ul>
+<h3 id="標準形関係">標準形関係</h3>
+<ul>
+<li>CCGでは、同じ意味を複数の異なる統語構造で表現することができます（spurious ambiguity; 擬似的曖昧性）。このおかげで、逐次的な合成による構造構築が可能なのですが、構造的曖昧性がなくとも構文木が一意に定まらないということなので、parserを作る上では問題になると考えられていました。
+<ul>
+<li>実際には、学習データのbranchingが一貫していれば、標準形の制約なしでも擬似的曖昧性の問題にはぶつからないようです (<a href="https://aclanthology.org/P17-1026/" target="_blank" rel="noopener">Yoshikawa et al. (2017; ACL)</a>, <a href="https://www.jstage.jst.go.jp/article/jnlp/26/1/26_83/_article/-char/ja/" target="_blank" rel="noopener">Yoshikawa et al. (2019; 自然言語処理)</a> より)。</li>
+</ul>
+</li>
+<li>標準形の定義により、（構造的曖昧性がないとき）統語構造を１つに絞ることができます。</li>
+<li><a href="https://aclanthology.org/P96-1011/" target="_blank" rel="noopener">Eisner (1996; ACL)</a>
+<ul>
+<li><a href="https://www.cs.jhu.edu/~jason/papers/eisner.acl96-proof.html" target="_blank" rel="noopener">証明に関する情報</a></li>
+<li>可能な限り関数合成（function composition）を行わないという制限により、right-branchingな標準形を定義。</li>
+<li>もちろん、逆の制限にすれば、left-branchingを標準形とすることもできる。</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/P08-1038/" target="_blank" rel="noopener">Hoyt and Baldridge (2008; ACL)</a>
+<ul>
+<li>Dコンビネータの導入と、それを含めた標準形の定義。</li>
+</ul>
+</li>
+<li><a href="https://aclanthology.org/C10-1053/" target="_blank" rel="noopener">Hockenmaier and Bisk (2010; COLING)</a>
+<ul>
+<li><a href="https://aclanthology.org/P96-1011/" target="_blank" rel="noopener">Eisner (1996; ACL)</a>の拡張。</li>
+<li>generalized compositionとgrammatical type-raisingを考慮した拡張。</li>
+</ul>
+</li>
+</ul>
+<h1 id="ccg-parserを触ってみよう">CCG parserを触ってみよう！</h1>
+<ul>
+<li>CCGは、他の文法理論に比べ、高精度な構文解析器（parser）が数おおく整備されている、という点で非常に有用です。
+<ul>
+<li>semantic parsingに適度に使いやすいといったことや、ツリーバンクの整備が早かった、という点が要因な気がしています（当時を知らないので妄想です）。</li>
+</ul>
+</li>
+<li>特に、下記のparserたちは動かすのにそこまで難易度が高くないのでおすすめです。</li>
+<li>そもそも構文解析器とはなんぞやという方へ
+<ul>
+<li><a href="https://www.coronasha.co.jp/np/isbn/9784339027594/" target="_blank" rel="noopener">構文解析</a></li>
+<li><a href="https://www.ohmsha.co.jp/book/9784274229008/" target="_blank" rel="noopener">自然言語処理の基礎</a></li>
+<li><a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank" rel="noopener">Speech and Language Processing (3rd ed. draft)</a>
+<ul>
+<li>17章の <a href="https://web.stanford.edu/~jurafsky/slp3/17.pdf" target="_blank" rel="noopener">Context-Free Grammars and Constituency Parsing</a> や、18章の <a href="https://web.stanford.edu/~jurafsky/slp3/18.pdf" target="_blank" rel="noopener">Dependency Parsing</a> あたり。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="depccghttpsgithubcommasashi-ydepccg"><a href="https://github.com/masashi-y/depccg" target="_blank" rel="noopener">depccg</a></h3>
+<ul>
+<li>Pythonによる英日CCG parser。</li>
+<li><a href="mailto:Python@3.6">Python@3.6</a>以上、gcc@4.8以上が必要。</li>
+<li>READMEが丁寧なので、基本そのまま従えば動かせる。
+<ul>
+<li>1点だけ、<code>depccg_{en/ja} download</code>コマンドはうまくいかないので、モデルの学習済みパラメータはリンク先のGoogle Driveから直接落としてこないといけない。</li>
+</ul>
+</li>
+<li>（追記：）最新のmacだとAllenNLPがローカルで動かせないという噂。Dockerで解決するしかない、という話を小耳に挟んだことがある。</li>
+</ul>
+<h3 id="lightbluehttpsgithubcomdaisukebekkilightblue"><a href="https://github.com/DaisukeBekki/lightblue" target="_blank" rel="noopener">lightblue</a></h3>
+<ul>
+<li>Haskellによる日本語CCG parser。</li>
+<li>Macユーザーなら、tidyは（おそらく）初めから入っているし、JUMAN++はHomebrew経由で入れられる。</li>
+<li>残りはREADMEに従えば動かせる。</li>
+<li><a href="https://www.9640.jp/book_view/?468" target="_blank" rel="noopener">戸次 (2010)</a>+アルファがそのまま実装されているので、語彙項目を参照するのに使い勝手が良い。</li>
+</ul>
+<h3 id="ccgtoolshttpsgithubcomstanojevicccgtools"><a href="https://github.com/stanojevic/ccgtools" target="_blank" rel="noopener">ccgtools</a></h3>
+<ul>
+<li>Python, Cythonによる英中CCG parser。</li>
+<li>高性能 (元State-of-the-Art)。</li>
+<li>作成者であるMilos Stanojevic氏は、Scalaで <a href="https://github.com/stanojevic/Rotating-CCG" target="_blank" rel="noopener">Rotating-CCG</a> というparserも作っている（論文は <a href="https://aclanthology.org/N19-1020/" target="_blank" rel="noopener">Stanojevic and Steedman (2019; NAACL)</a>）。</li>
+<li>Google Colab上で動かせるようにしてくれているので、環境構築の必要がなく非常に便利。</li>
+<li>（追記：）読み込みができなくなっていた（？）が、エラーメッセージでpre-trained modelのリンクを教えてくれるので、それらをダウンロードすれば、ローカルで動かすことができる。</li>
+</ul>
+<h1 id="ccgの導出木をlatexでかく">CCGの導出木をLaTeXでかく</h1>
+<h3 id="ccgstyhttpsgithubcomjasonbaldridgecg-latex"><a href="https://github.com/jasonbaldridge/cg-latex" target="_blank" rel="noopener">ccg.sty</a></h3>
+<ul>
+<li>Jason Baldridge氏によるスタイルファイル。</li>
+<li>その他、CTL, 証明木用のスタイルファイルも公開してくれている。</li>
+<li>使い方：
+<ul>
+<li><code>ccg.sty</code>をTeXファイルと同じディレクトリにおき、以下のようにする：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\documentclass[10pt,a4paper]{article}
+</span></span><span class="line"><span class="cl">\usepackage{ccg}
+</span></span><span class="line"><span class="cl">\begin{document}
+</span></span><span class="line"><span class="cl">\deriv{3}{
+</span></span><span class="line"><span class="cl">    \text{Taro} &amp; \text{likes} &amp; \text{Hanako} \\
+</span></span><span class="line"><span class="cl">    \uline{1} &amp; \uline{1} &amp; \uline{1} \\
+</span></span><span class="line"><span class="cl">    \mathit{NP} &amp; \mathit{S\bs NP/NP} &amp; \mathit{NP} \\
+</span></span><span class="line"><span class="cl">    &amp; \fapply{2} \\
+</span></span><span class="line"><span class="cl">    &amp; \mc{2}{\mathit{S\bs NP}} \\
+</span></span><span class="line"><span class="cl">    \bapply{3} \\
+</span></span><span class="line"><span class="cl">    \mc{3}{\mathit{S}}
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">\end{document}
+</span></span></code></pre></div><ul>
+<li>導出木のサイズを変えるのには、<code>\deriv{hoge}{fuga}</code>の前にたとえば<code>\scriptsize\deriv{hoge}{fuga}</code>のようにする。</li>
+<li>linguexパッケージで文番号をつける：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\ex.\label{hoge-label}
+</span></span><span class="line"><span class="cl">\deriv{hoge}{fuga}
+</span></span></code></pre></div><ul>
+<li><code>ulem</code>パッケージ（下線とか打ち消し線を挿入する用のパッケージ）を入れると、ccg.sty内の<code>\uline{}</code>が衝突してしまう。
+<ul>
+<li>コマンドの名前が一致していなければ良いだけなので、ccg.styに<code>\newcommand{\ulines}[1]{\ul{#1}}</code>などと追加して、<code>\deriv</code>内では<code>\ul{}</code>を使うようにすれば良い。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ccg-latexstyhttpsgithubcombozsahinccg-latex"><a href="https://github.com/bozsahin/ccg-latex" target="_blank" rel="noopener">ccg-latex.sty</a></h3>
+<ul>
+<li>Cem Bozsahin氏によるスタイルファイル。</li>
+<li>上述のccg.styよりも充実していそうに思われる（少なくとも、READMEやexampleは充実している。更新も割と頻繁にしているよう？）。</li>
+<li>個人的には、ccg.styで困っていないので使っていないが、いつか乗り換えても良いのかなぁと思っている。</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fblogs%2F230112ccg%2F&amp;text=CCG%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%83%85%E5%A0%B1%E9%9B%86" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fblogs%2F230112ccg%2F&amp;t=CCG%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%83%85%E5%A0%B1%E9%9B%86" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=CCG%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%83%85%E5%A0%B1%E9%9B%86&amp;body=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fblogs%2F230112ccg%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fblogs%2F230112ccg%2F&amp;title=CCG%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%83%85%E5%A0%B1%E9%9B%86" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=CCG%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%83%85%E5%A0%B1%E9%9B%86%20https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fblogs%2F230112ccg%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fkohei-kaji.github.io%2Fgithub-pages%2Fblogs%2F230112ccg%2F&amp;title=CCG%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%83%85%E5%A0%B1%E9%9B%86" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kohei-kaji.github.io/github-pages/"><img class="avatar mr-3 avatar-square" src="/github-pages/authors/admin/avatar_hu18040700168886216705.jpeg" alt="Kohei Kajikawa"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kohei-kaji.github.io/github-pages/">Kohei Kajikawa</a></h5>
+      <h6 class="card-subtitle">Master&rsquo;s student at the University of Tokyo (UTokyo).</h6>
+      <p class="card-text">My research interests include computational linguistics and computational psycholinguistics.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/github-pages/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/qjqw1223" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/kohei-kaji" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Kohei-Kajikawa" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/github-pages/uploads/CV.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Kohei Kajikawa.
+  </p>
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/github-pages/js/vendor-bundle.min.50933d940896e49f984a778650d5f7f5.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/github-pages/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/github-pages/en/js/wowchemy.min.9bbb76a8f35f2d3511c7d5526e75f585.js"></script>
+
+
+
+  <script src="/github-pages/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

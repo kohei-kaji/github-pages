@@ -2,21 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Kohei Kajikawa</title>
-    <link>https://kohei-kaji.github.io/github-pages/post/</link>
-      <atom:link href="https://kohei-kaji.github.io/github-pages/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/github-pages/post/</link>
+      <atom:link href="http://localhost:1313/github-pages/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Fri, 22 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2024 Kohei Kajikawa</copyright><lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kohei-kaji.github.io/github-pages/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/github-pages/media/icon_hu10226378635250344412.png</url>
       <title>Posts</title>
-      <link>https://kohei-kaji.github.io/github-pages/post/</link>
+      <link>http://localhost:1313/github-pages/post/</link>
     </image>
     
     <item>
+      <title>Efficient Communication仮説</title>
+      <link>http://localhost:1313/github-pages/post/241215zipf/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/github-pages/post/241215zipf/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;h2 id=&#34;言語普遍性と効率性の関係&#34;&gt;言語普遍性と効率性の関係&lt;/h2&gt;
+&lt;p&gt;言語には、例外のない普遍的な性質や、強い統計的傾向として現れる性質が多く存在します。このような「普遍性」を記述し、分類することは言語学における中心的な課題でした。そして、これらの普遍性が「なぜ」存在するのかを説明することは、言語学や認知科学において非常に重要でありながら難しい課題です。&lt;/p&gt;
+&lt;p&gt;その中でも、特に影響力のある説明の一つが、「言語はコミュニケーションの効率性に基づいて形成される」という仮説です。この考え方は、言語構造が効率的かつ経済的なコミュニケーションを促進するために進化し、維持されてきたと主張します。ただし、「効率性」を厳密に定義し、測定することの難しさから、これを定量的に研究する試みは長らく困難とされてきました。&lt;/p&gt;
+&lt;p&gt;しかし、近年の認知科学や計算心理言語学の進展により、効率性を定量化する新たな手法が登場しています。大規模な言語コーパスや高度な言語処理モデル、さらには情報理論の応用により、言語効率性を数値的に捉えることが可能になってきました。その結果、「自然言語は効率的なコミュニケーションを実現するように形作られている」という「効率的コミュニケーション仮説」が注目を集めています。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;効率的コミュニケーション仮説の起源&#34;&gt;効率的コミュニケーション仮説の起源&lt;/h2&gt;
+&lt;p&gt;効率的コミュニケーション仮説のルーツは、言語学者ジョージ・ジップ（George Zipf）の研究に遡ることができます。彼は「Zipfの法則」として知られる、単語の出現頻度とランクの間に見られるべき乗則（パワー則）を観察し、このような統計的パターンが「統一性」と「多様性」という二つの相反する力のバランスとして生じると説明しました。&lt;/p&gt;
+&lt;p&gt;具体例として、言語を「信号（言葉）」と「意味」の対応関係と考えてみましょう。すべての意味をたった一つの信号で表現するなら、話者は覚えるべき単語が一つだけになるため、話者の負担は最小限になります。しかし、このような単純なシステムでは信号が曖昧になり、聞き手が意図を理解するのが困難になります。一方で、すべての信号が明確に異なる意味を表現するシステムでは、聞き手の理解は容易になりますが、話者の負担は増加します。ジップは、言語パターンが話者の「単純化」への欲求と聞き手の「明確化」への欲求の間のバランスによって生まれると主張しました。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;効率性の再定義&#34;&gt;効率性の再定義&lt;/h2&gt;
+&lt;p&gt;その後の研究では、ジップの単純な競合モデルに対する批判も登場しました。例えば、「話者の負担を最小化することが、かえって聞き手の負担を増大させる場合がある」という指摘です。これを踏まえ、近年の研究者たちは、言語のパターンを「明確性」と「容易さ」の二つの圧力のバランスとして説明する枠組みを提案しています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;明確性&lt;/strong&gt;: 信号から意図された意味を高い確率で正確に復元できること。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容易さ&lt;/strong&gt;: 信号を効率的に生成し、伝達し、処理できること。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これらの概念は話者と聞き手の両方に関わるものであり、言語効率性の議論には人間の認知的制約を考慮する必要があるとされています。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;言語の進化における効率性の役割&#34;&gt;言語の進化における効率性の役割&lt;/h2&gt;
+&lt;p&gt;重要な点として、効率性に基づく言語の説明は、「話者や聞き手が言語を意図的に効率化する」という前提を置いていません。また、言語が効率に向かって「目的論的に進化する」とも主張していません。むしろ、「効率の原理」という基本的な仕組みが、進化の具体的なメカニズムを問わず、言語パターンを説明する枠組みを提供するという考え方です。&lt;/p&gt;
+&lt;p&gt;たとえば、効率的な構造がより学びやすく、学習時に頻繁に使われるために選ばれる可能性があります。また、世代間で言語が伝達される過程で、効率的な言語が選択されるという文化進化のシナリオも考えられます。このような機能的な圧力が働いている場合、言語は効率的なコミュニケーションを実現する方向に最適化されると予測されます。&lt;/p&gt;
+&lt;h3 id=&#34;ferrer-i-cancho-and-sole-2003-pnas&#34;&gt;Ferrer i Cancho and Sole (2003, PNAS)&lt;/h3&gt;
+&lt;h4 id=&#34;概要&#34;&gt;概要&lt;/h4&gt;
+&lt;p&gt;Zipf則をとZipfの直観的な説明を情報理論を用いたシミュレーション実験で検証した最初の研究。&lt;/p&gt;
+&lt;h4 id=&#34;モデル&#34;&gt;モデル&lt;/h4&gt;
+&lt;p&gt;具体例として、言語を「信号（言葉）」と「意味」の対応関係と考えてみましょう。すべての意味をたった一つの信号で表現するなら、話者は覚えるべき単語が一つだけになるため、話者の負担は最小限になります。しかし、このような単純なシステムでは信号が曖昧になり、聞き手が意図を理解するのが困難になります。一方で、すべての信号が明確に異なる意味を表現するシステムでは、聞き手の理解は容易になりますが、話者の負担は増加します。ジップは、言語パターンが話者の「単純化」への欲求と聞き手の「明確化」への欲求の間のバランスによって生まれると主張しました。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$n$&lt;/code&gt;個のシグナル(\mathcal{S} = {s_1,&amp;hellip;,s_i,&amp;hellip;,s_n})と
+$m$個の意味（objects of reference）$\mathcal{R} = {r_1,&amp;hellip;,r_i,&amp;hellip;,r_m}$があるシステムについて、&lt;br&gt;
+それらのインターラクションをバイナリ行列$\mathbf{A} = {a_{ij}}\ (1\leq i\leq n,\ 1\leq j\leq m)$で表す。&lt;/p&gt;
+&lt;p&gt;例えば、もし$a_{ij} = 1$ならば、$i$番目のシグナルが$j$番目のオブジェクトを指している、ということ。&lt;/p&gt;
+&lt;p&gt;いま、synonymがあるなら、シグナルと意味の確率分布の関係は以下になる：&lt;br&gt;
+$
+\begin{equation}
+p(s_i) = \sum_j p(s_i,r_j).
+\end{equation}
+$&lt;/p&gt;
+&lt;p&gt;なお、$p(r_i) = 1/m$ と仮定する（&lt;strong&gt;仮定１&lt;/strong&gt;）。&lt;/p&gt;
+&lt;p&gt;ベイズの定理より、
+$
+\begin{equation}
+p(s_i,r_j) = p(r_j)p(s_i|r_j).
+\end{equation}
+$
+であり、$p(s_i|r_j)$は、
+$
+\begin{equation}
+p(s_i|r_j) = a_{ij}\frac{1}{\omega_j}.
+\end{equation}
+$
+で定義する。
+$\omega_i = \sum_j a_{ij}$は意味$j$における同義語の数である。&lt;/p&gt;
+&lt;p&gt;代入すると、
+$
+\begin{equation}
+p(s_i,r_j) = a_{ij}\frac{p(r_j)}{\omega_j}.
+\end{equation}
+$&lt;/p&gt;
+&lt;h4 id=&#34;再現コードと結果&#34;&gt;再現コードと結果&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
       <title>弱文脈依存文法にまつわる理論言語学のはなし</title>
-      <link>https://kohei-kaji.github.io/github-pages/post/240322mcsg/</link>
+      <link>http://localhost:1313/github-pages/post/240322mcsg/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://kohei-kaji.github.io/github-pages/post/240322mcsg/</guid>
+      <guid>http://localhost:1313/github-pages/post/240322mcsg/</guid>
       <description>&lt;p&gt;近年、計算言語学・NLPの方で、言語モデルの評価の文脈や、自然言語の統計的普遍性に関する研究の文脈で、自然言語の文法の生成力に関する議論が再注目されているように思われます。
 生成力に関しては、理論言語学の知見が今に至るまで少しずつ着実に積み重ねられているものの、情報源が少なすぎるので、これまでの議論と関連研究をまとめて置いておきます。&lt;/p&gt;
 &lt;h2 id=&#34;自然言語は弱文脈依存言語なのか&#34;&gt;自然言語は弱文脈依存言語なのか？&lt;/h2&gt;
@@ -45,10 +111,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
-               /github-pages/post/240322mcsg/swiss-german_hu4c5dbcdd045f65496d0b8ab0e8bf17fc_106861_f998a2b04449c03ae55059d6418165cd.webp 400w,
-               /github-pages/post/240322mcsg/swiss-german_hu4c5dbcdd045f65496d0b8ab0e8bf17fc_106861_44a686987ab0192e5c1f930eef42d3d5.webp 760w,
-               /github-pages/post/240322mcsg/swiss-german_hu4c5dbcdd045f65496d0b8ab0e8bf17fc_106861_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/swiss-german_hu4c5dbcdd045f65496d0b8ab0e8bf17fc_106861_f998a2b04449c03ae55059d6418165cd.webp&#34;
+               /github-pages/post/240322mcsg/swiss-german_hu7034314326232825233.webp 400w,
+               /github-pages/post/240322mcsg/swiss-german_hu12724652800119912262.webp 760w,
+               /github-pages/post/240322mcsg/swiss-german_hu869190537413510075.webp 1200w&#34;
+               src=&#34;http://localhost:1313/github-pages/github-pages/post/240322mcsg/swiss-german_hu7034314326232825233.webp&#34;
                width=&#34;760&#34;
                height=&#34;186&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -78,10 +144,10 @@ cross-serial dependencies自体は確かに頻度は多くはないですが &lt
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
-               /github-pages/post/240322mcsg/japanese_hu4402fab0876c1beed217ba853f9e686b_51260_1816d66e77dbcf40610dc57372917f7c.webp 400w,
-               /github-pages/post/240322mcsg/japanese_hu4402fab0876c1beed217ba853f9e686b_51260_9e2387c6ef4cecb2fdbed37c98efc709.webp 760w,
-               /github-pages/post/240322mcsg/japanese_hu4402fab0876c1beed217ba853f9e686b_51260_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/japanese_hu4402fab0876c1beed217ba853f9e686b_51260_1816d66e77dbcf40610dc57372917f7c.webp&#34;
+               /github-pages/post/240322mcsg/japanese_hu15470679320395784030.webp 400w,
+               /github-pages/post/240322mcsg/japanese_hu2570914269836168450.webp 760w,
+               /github-pages/post/240322mcsg/japanese_hu17957990151208278955.webp 1200w&#34;
+               src=&#34;http://localhost:1313/github-pages/github-pages/post/240322mcsg/japanese_hu15470679320395784030.webp&#34;
                width=&#34;760&#34;
                height=&#34;243&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -95,7 +161,7 @@ cross-serial dependencies自体は確かに頻度は多くはないですが &lt
 &lt;p&gt;これについては、&lt;a href=&#34;https://academic.oup.com/book/26119/chapter-abstract/194151165?redirectedFrom=fulltext&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stabler (2013)&lt;/a&gt; にてわかりやすくレビューされていますので、少々長いですが引用して提示しておきます。&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;Stabler (2013); p.4より&lt;/summary&gt;
-In particular, a very significant computational consensus was identified by [Joshi (1985)](https://www.cambridge.org/core/books/abs/natural-language-parsing/tree-adjoining-grammars-how-much-contextsensitivity-is-required-to-provide-reasonable-structural-descriptions/81BFD6DAC6B0CB24A3042A06E964F2E1) in his hypothesis that human languages are both strongly and weakly mildly context sensitive (MCS). While any empirical test of this hypothesis still depends on a network of theoretical assumptions, the claim is so fundamental that it can be connected to many diverse traditions in grammar. To say that language is &#34;strongly and weakly&#34; MCS is to say that MCS grammars can both define the sentences of human languages (weak adequacy) and also provide the structures of those languages (strong adequacy). Joshi’s original definition of MCS grammars was partly informal, so there are now various precise versions of his claim. One is that human languages are defined by tree adjoining grammars (TAGs) or closely related grammars, and another theoretically weaker (and hence empirically stronger) position is that human language are definable by the more expressive (set local) multi-component TAGs or closely related grammars. The most remarkable thing about this claim came out of the innocent-sounding phrase &#34;or closely related grammars,&#34; because it was discovered that a wide range of independently proposed grammar formalisms falls under that description. In particular, a series of papers beginning in the 1980’s and 1990’s established the following inclusion relations among the languages defined by various kinds of grammars, across traditions:
+In particular, a very significant computational consensus was identified by Joshi (1985) in his hypothesis that human languages are both strongly and weakly mildly context sensitive (MCS). While any empirical test of this hypothesis still depends on a network of theoretical assumptions, the claim is so fundamental that it can be connected to many diverse traditions in grammar. To say that language is &#34;strongly and weakly&#34; MCS is to say that MCS grammars can both define the sentences of human languages (weak adequacy) and also provide the structures of those languages (strong adequacy). Joshi’s original definition of MCS grammars was partly informal, so there are now various precise versions of his claim. One is that human languages are defined by tree adjoining grammars (TAGs) or closely related grammars, and another theoretically weaker (and hence empirically stronger) position is that human language are definable by the more expressive (set local) multi-component TAGs or closely related grammars. The most remarkable thing about this claim came out of the innocent-sounding phrase &#34;or closely related grammars,&#34; because it was discovered that a wide range of independently proposed grammar formalisms falls under that description. In particular, a series of papers beginning in the 1980’s and 1990’s established the following inclusion relations among the languages defined by various kinds of grammars, across traditions:
 CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 &lt;/details&gt;
 &lt;p&gt;上記引用にて、&lt;/p&gt;
@@ -153,10 +219,10 @@ CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
-               /github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_31f3929bd74a2c22f411dfbfcf04b457.webp 400w,
-               /github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_8ea3de3bb44268c8e67851daafdd8269.webp 760w,
-               /github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/chom_hierarchy_hu452a5698d1d930acc0a4c234d3b0729d_325967_31f3929bd74a2c22f411dfbfcf04b457.webp&#34;
+               /github-pages/post/240322mcsg/chom_hierarchy_hu8374134136788068203.webp 400w,
+               /github-pages/post/240322mcsg/chom_hierarchy_hu9174748545354879079.webp 760w,
+               /github-pages/post/240322mcsg/chom_hierarchy_hu1918991218216860271.webp 1200w&#34;
+               src=&#34;http://localhost:1313/github-pages/github-pages/post/240322mcsg/chom_hierarchy_hu8374134136788068203.webp&#34;
                width=&#34;760&#34;
                height=&#34;592&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -190,10 +256,10 @@ CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
-               /github-pages/post/240322mcsg/respectively_hu4e0ff72ddc8158651498a4899d628897_28892_04d72cdbe819c3bd4fe567b979d7bc1c.webp 400w,
-               /github-pages/post/240322mcsg/respectively_hu4e0ff72ddc8158651498a4899d628897_28892_007441288d231a23181df2219af7b0a2.webp 760w,
-               /github-pages/post/240322mcsg/respectively_hu4e0ff72ddc8158651498a4899d628897_28892_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/respectively_hu4e0ff72ddc8158651498a4899d628897_28892_04d72cdbe819c3bd4fe567b979d7bc1c.webp&#34;
+               /github-pages/post/240322mcsg/respectively_hu7808455904040875432.webp 400w,
+               /github-pages/post/240322mcsg/respectively_hu11395988369503543859.webp 760w,
+               /github-pages/post/240322mcsg/respectively_hu9084051997729566803.webp 1200w&#34;
+               src=&#34;http://localhost:1313/github-pages/github-pages/post/240322mcsg/respectively_hu7808455904040875432.webp&#34;
                width=&#34;586&#34;
                height=&#34;162&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -233,16 +299,16 @@ Scramblingは、日本語でよくある、
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
-               /github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_a2466ec94972e908168211e64f38aee2.webp 400w,
-               /github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_e0daf76219e4e38c32848e569e5598a7.webp 760w,
-               /github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://kohei-kaji.github.io/github-pages/github-pages/post/240322mcsg/stabler_2004_hud99d3ebb02176691f36bc22f04c95a42_204635_a2466ec94972e908168211e64f38aee2.webp&#34;
+               /github-pages/post/240322mcsg/stabler_2004_hu16409881544769631867.webp 400w,
+               /github-pages/post/240322mcsg/stabler_2004_hu5559447429778830936.webp 760w,
+               /github-pages/post/240322mcsg/stabler_2004_hu13786223649734498953.webp 1200w&#34;
+               src=&#34;http://localhost:1313/github-pages/github-pages/post/240322mcsg/stabler_2004_hu16409881544769631867.webp&#34;
                width=&#34;760&#34;
                height=&#34;108&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;つまり、当然ながら、分析の仕方次第で見え方は変わります。&lt;/p&gt;
+&lt;!-- つまり、当然ながら、分析の仕方次第で見え方は変わります。 --&gt;
 &lt;p&gt;個人的には、CCGやMGによる人間の文処理のモデリング研究から計算言語学・計算心理言語学の勉強を始めた人間なので、弱文脈依存仮説は「記述研究で示されているのならそういうもの」と理解して、それから「ではなぜ自然言語は弱文脈依存なのか？」ということを考えています。が、言語を使用する際には（プッシュダウン）オートマトンっぽく使っているなぁ、正規言語〜文脈自由文法っぽく理解しているなぁという直感や、cross-serialは必ずしも処理が難しいとは限らない &lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.1080/01690968608404677&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(Bach et al., 1986)&lt;/a&gt; という事実、non-projectivityはむしろ処理をしやすいようにという圧力から来ているかも、というモデリング結果 &lt;a href=&#34;https://aclanthology.org/2022.cl-2.5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(Yadav et al., 2022)&lt;/a&gt; から見ると、もっと使用の観点から文法の複雑さについて考えないといけないよなぁとか、そもそもここでの「文法の複雑さ」はどれだけ意味のある見方なのかなぁなんて思うときはあります。&lt;/p&gt;
 &lt;p&gt;生成力は「最悪のケース」に関する議論である一方、人間の逐次的な処理における「複雑さ」は人間の記憶や予測における平均的な認知負荷を捉えており、弱文脈依存性に関する議論を、後者の方から再検討すべきだよな、とは直観しています。&lt;/p&gt;
 &lt;!-- CCGのFunction CompositionとかType Raisingは記述のために必要なのではなく、逐次的な構造構築のために必要で、その結果として言語はMCSレベルにいるのでは？みたいな。 --&gt;</description>
@@ -250,9 +316,9 @@ Scramblingは、日本語でよくある、
     
     <item>
       <title>CCGに関する情報集</title>
-      <link>https://kohei-kaji.github.io/github-pages/post/230112ccg/</link>
+      <link>http://localhost:1313/github-pages/post/230112ccg/</link>
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://kohei-kaji.github.io/github-pages/post/230112ccg/</guid>
+      <guid>http://localhost:1313/github-pages/post/230112ccg/</guid>
       <description>&lt;p&gt;生成文法理論の１つであるCCG（組合せ範疇文法）を、私は文法理論としても、そして文処理のモデリングの道具としても非常に有用なものであると考えていますが、残念ながら（分野によっては）人口に膾炙しているとは言い難い状況ですので、CCGの広まりを願い、ここに文献リストや参照したら良いであろう情報を記します。&lt;/p&gt;
 &lt;h1 id=&#34;文献案内&#34;&gt;文献案内&lt;/h1&gt;
 &lt;h3 id=&#34;さらっと雰囲気を掴みたい場合&#34;&gt;さらっと雰囲気を掴みたい場合&lt;/h3&gt;
