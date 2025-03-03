@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 29, 2025 --><html lang="en-us" >
+<!-- Last Published: March 3, 2025 --><html lang="en-us" >
 
 
 <head>
@@ -1002,7 +1002,13 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>自然言語の弱生成力の議論に関しては、<a href="https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0077" target="_blank" rel="noopener">Jager and Rogers (2012)</a>, <a href="https://timhunter.humspace.ucla.edu/papers/blackwell-chomsky-hierarchy.pdf" target="_blank" rel="noopener">Hunter (2020)</a>, <a href="https://rlevy.github.io/9.19-syllabus/syllabus.html" target="_blank" rel="noopener">Roger Levyの計算心理言語学の授業のWeek 7</a> あたりが良かったです。</p>
+<p>自然言語の弱生成力の議論に関しては、</p>
+<ul>
+<li><a href="https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0077" target="_blank" rel="noopener">Jager and Rogers (2012)</a></li>
+<li><a href="https://timhunter.humspace.ucla.edu/papers/blackwell-chomsky-hierarchy.pdf" target="_blank" rel="noopener">Hunter (2020)</a></li>
+<li><a href="https://rlevy.github.io/9.19-syllabus/syllabus.html" target="_blank" rel="noopener">Roger Levyの計算心理言語学の授業のWeek 7</a></li>
+</ul>
+<p>あたりが良かったです。</p>
 <p><strong>強生成力</strong>は、ある文法が作ることのできる木構造の集合に関する概念であり、Chomsky自身は弱生成力ではなく強生成力を研究の対象とするべし、としました。
 木構造は（ほぼすべての理論において）意味や韻律の理論と直接関わるので、単に容認可能な文字列を識別する装置を考えるのでは不十分だ、ということでしょう。
 ただ、強生成力それ自体に明確な定義があるわけではなく、そのために理論ニュートラルな議論が難しくなっている、というのが現状です（形式言語理論の世界だと、単純にある言語クラスにおいて作ることのできる木構造の集合について考えれば良く、本来ならば、理論言語学の言語理論についても同様のことができるはずですが、残念ながら多くの言語理論は、その木構造の集合を定義することができるほど厳密ではないように思えます。もちろん、以下で紹介する範疇文法理論やMinimalist Grammarなどの形式性と記述的妥当性の両面をちゃんと追い求めている文法理論たちを除いて）。
@@ -1240,6 +1246,9 @@ CFG ⊂ CCG = TAG ⊂ MCTAG = ACG = MCFG = MG ⊂ CSG
 <p>もちろん、各文法理論内でも、「どのような操作を仮定するか」で揺れはあるので、上記の関係が必ずしも成り立つとは限りません。たとえばCCGは、slash-typingを導入することで（＝組合せ規則の適用に制限をかけることで）、TAGよりも弱生成力が低くなることも示されています (<a href="https://direct.mit.edu/coli/article/41/2/215/1507/Lexicalization-and-Generative-Power-in-CCG" target="_blank" rel="noopener">Kuhlmann et al., 2015</a>)。</p>
 <p>また、Head-driven Phrase Structure Grammar (HPSG; <a href="https://press.uchicago.edu/ucp/books/book/chicago/H/bo3618318.html" target="_blank" rel="noopener">Pollard and Sag (1994)</a>) やType Logical Grammar (TLG; <a href="https://plato.stanford.edu/entries/typelogical-grammar/" target="_blank" rel="noopener">適切な引用がわからないのでSEPへ</a>) のような、チューリング完全な文法理論もあります。</p>
 <h3 id="多重文脈自由文法-multiple-context-free-grammar">多重文脈自由文法 (Multiple Context-Free Grammar)</h3>
+<ul>
+<li>参考：<a href="https://alexc17.github.io/static/pdfs/mcfgsforlinguists.pdf" target="_blank" rel="noopener">Clark (2014)</a></li>
+</ul>
 <h2 id="弱文脈依存文法の心理的妥当性">弱文脈依存文法の心理的妥当性</h2>
 <p>上記のような議論ほど有名ではありませんが、最近では、計算心理言語学の分野においても、弱文脈依存文法 (MCSG) の文脈自由文法 (CFG) に対する優位性は主張されています。
 たとえば、<a href="https://www.sciencedirect.com/science/article/abs/pii/S0093934X15300687" target="_blank" rel="noopener">Brennan et al. (2016)</a> や <a href="https://academic.oup.com/book/34998/chapter-abstract/298696095?redirectedFrom=fulltext" target="_blank" rel="noopener">Li and Hale (2019)</a> はMGとCFGを比較して、<a href="https://onlinelibrary.wiley.com/doi/10.1111/cogs.13312" target="_blank" rel="noopener">Stanojevic et al. (2023)</a> はCCGとCFGを比較して、それぞれMCSGであるMG, CCGの方が、CFGよりも適切に、人が物語を聞いている間の<a href="https://bsd.neuroinf.jp/wiki/%E6%A9%9F%E8%83%BD%E7%9A%84%E7%A3%81%E6%B0%97%E5%85%B1%E9%B3%B4%E7%94%BB%E5%83%8F%E6%B3%95#BOLD%E4%BF%A1%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A6%8B" target="_blank" rel="noopener">BOLD信号（Blood Oxygen Level Dependent signals; 脳活動を反映した信号）</a>を予測できることを示しました。</p>

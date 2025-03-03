@@ -5,12 +5,20 @@
     <link>https://kohei-kaji.github.io/github-pages/misc/</link>
       <atom:link href="https://kohei-kaji.github.io/github-pages/misc/index.xml" rel="self" type="application/rss+xml" />
     <description>MISC</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2023 Kohei Kajikawa</copyright><lastBuildDate>Sat, 20 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2023 Kohei Kajikawa</copyright><lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kohei-kaji.github.io/github-pages/media/icon_hu10226378635250344412.png</url>
       <title>MISC</title>
       <link>https://kohei-kaji.github.io/github-pages/misc/</link>
     </image>
+    
+    <item>
+      <title>言語の起源はコミュニケーションか?：計算心理言語学の観点から</title>
+      <link>https://kohei-kaji.github.io/github-pages/misc/%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%83%95%E3%82%A7%E3%82%B9-2025/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/misc/%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%83%95%E3%82%A7%E3%82%B9-2025/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>統語変換は文化進化から生じるのか？：等位接続構造での検討</title>
