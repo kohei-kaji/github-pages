@@ -2,6 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kohei-kaji.github.io/github-pages/domestic_conference/isono-etal-2025-nlp/</loc>
+    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/domestic_conference/</loc>
+    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/publication-type/paper-conference/</loc>
+    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/publication_types/</loc>
+    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/domestic_conference/akama-etal-2025-nlp/</loc>
+    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/domestic_conference/yoshida-etal-2025-nlp/</loc>
+    <lastmod>2025-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/domestic_conference/nakaishi-etal-2025-nlp/</loc>
+    <lastmod>2025-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/domestic_conference/kajikawa-etal-2025-nlp/</loc>
+    <lastmod>2025-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/blogs/</loc>
     <lastmod>2025-03-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -11,14 +43,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/misc/</loc>
-    <lastmod>2025-02-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/publication-type/paper-conference/</loc>
-    <lastmod>2025-02-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/publication_types/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -44,10 +68,6 @@
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/international_conference/kajikawa-etal-2024-cogsci/</loc>
     <lastmod>2024-07-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/domestic_conference/</loc>
-    <lastmod>2024-06-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/domestic_conference/isono-etal-2024-lsj/</loc>
