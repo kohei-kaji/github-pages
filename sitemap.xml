@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kohei-kaji.github.io/github-pages/misc/</loc>
+    <lastmod>2025-03-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/misc/nlp-2025/</loc>
+    <lastmod>2025-03-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/domestic_conference/isono-etal-2025-nlp/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -40,10 +48,6 @@
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/blogs/250303information/</loc>
     <lastmod>2025-03-03T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/misc/</loc>
-    <lastmod>2025-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/misc/%E8%A8%80%E8%AA%9E%E5%AD%A6%E3%83%95%E3%82%A7%E3%82%B9-2025/</loc>
@@ -98,18 +102,6 @@
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/journal/isono-etal-2023-lncs/isono-etal-2023/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/publication-type/journal/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://kohei-kaji.github.io/github-pages/journal/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/misc/ewfl8-2023/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -127,14 +119,20 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/international_conference/isono-etal-2022-lenls/isono-etal-2022/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-11T06:07:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/awards/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/categories/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://kohei-kaji.github.io/github-pages/journal/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://kohei-kaji.github.io/github-pages/tags/</loc>

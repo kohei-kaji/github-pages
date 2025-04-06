@@ -5,12 +5,20 @@
     <link>https://kohei-kaji.github.io/github-pages/misc/</link>
       <atom:link href="https://kohei-kaji.github.io/github-pages/misc/index.xml" rel="self" type="application/rss+xml" />
     <description>MISC</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2023 Kohei Kajikawa</copyright><lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2023 Kohei Kajikawa</copyright><lastBuildDate>Sat, 15 Mar 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kohei-kaji.github.io/github-pages/media/icon_hu10226378635250344412.png</url>
       <title>MISC</title>
       <link>https://kohei-kaji.github.io/github-pages/misc/</link>
     </image>
+    
+    <item>
+      <title>計算心理言語学の新地平開拓の試み：効率的なコミュニケーション仮説の検証</title>
+      <link>https://kohei-kaji.github.io/github-pages/misc/nlp-2025/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://kohei-kaji.github.io/github-pages/misc/nlp-2025/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>言語の起源はコミュニケーションか?：計算心理言語学の観点から</title>

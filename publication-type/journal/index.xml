@@ -2,21 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Journal | Kohei Kajikawa</title>
-    <link>https://kohei-kaji.github.io/github-pages/publication-type/journal/</link>
-      <atom:link href="https://kohei-kaji.github.io/github-pages/publication-type/journal/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/github-pages/publication-type/journal/</link>
+      <atom:link href="http://localhost:1313/github-pages/publication-type/journal/index.xml" rel="self" type="application/rss+xml" />
     <description>Journal</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2023 Kohei Kajikawa</copyright><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2023 Kohei Kajikawa</copyright><lastBuildDate>Sat, 15 Mar 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://kohei-kaji.github.io/github-pages/media/icon_hu10226378635250344412.png</url>
+      <url>http://localhost:1313/github-pages/media/icon_hu10226378635250344412.png</url>
       <title>Journal</title>
-      <link>https://kohei-kaji.github.io/github-pages/publication-type/journal/</link>
+      <link>http://localhost:1313/github-pages/publication-type/journal/</link>
     </image>
     
     <item>
+      <title>計算心理言語学の新地平開拓の試み：効率的なコミュニケーション仮説の検証</title>
+      <link>http://localhost:1313/github-pages/journal/kajikawa-2025-nlp/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/github-pages/journal/kajikawa-2025-nlp/</guid>
+      <description>&lt;p&gt;査読なし学会記事です。CoNLL 2024にてBest Paperを取ったので、『自然言語処理』編集委員の方から執筆依頼をいただけました。日本では他に誰もやっていないので、CoNLL 2024で発表した内容自体の解説は抑えめにして、研究の背景や今後についてを書きましたので、読んでもらえると嬉しいです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Formalizing Argument Structures with Combinatory Categorial Grammar</title>
-      <link>https://kohei-kaji.github.io/github-pages/journal/isono-etal-2023-lncs/isono-etal-2023/</link>
+      <link>http://localhost:1313/github-pages/journal/isono-etal-2023-lncs/isono-etal-2023/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://kohei-kaji.github.io/github-pages/journal/isono-etal-2023-lncs/isono-etal-2023/</guid>
+      <guid>http://localhost:1313/github-pages/journal/isono-etal-2023-lncs/isono-etal-2023/</guid>
       <description>&lt;p&gt;主流生成文法の分散形態論 (Distributed Morphology, DM) を、CCGで形式化することを目指した研究です。&lt;/p&gt;
 </description>
     </item>
